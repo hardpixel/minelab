@@ -1,12 +1,14 @@
 // Frameworks
 @import bourbon
 @import neat
-@import jqueryui
-@import select2
-@import icons
 
 // Variables
 @import variables
+
+// Extras
+@import jqueryui
+@import select2
+@import icons
 
 // Partials
 @import scm
@@ -213,7 +215,7 @@ select:focus
 				color: $dark-blue
 
 		#q
-			margin: 0 1em
+			margin-left: 1em
 			padding-left: 2em !important
 			border-color: rgba($dark-blue, .5)
 			padding: .4em
@@ -227,6 +229,22 @@ select:focus
 
 	a, a:hover, a:active, a:focus
 		color: white
+
+	.select2-container
+		margin-left: 1em
+
+		.select2-chosen
+			font-size: .9em
+			color: rgba(white, .8)
+
+		.select2-choice
+			background: rgba($dark-blue, .3)
+			border-color: rgba($dark-blue, .5)
+			box-shadow: none !important
+			height: 2.2em
+
+		.select2-arrow
+			border-color: rgba($dark-blue, .5)
 
 #main-menu
 	+row
@@ -338,83 +356,83 @@ select:focus
 		#content
 			+span-columns(12)
 
-#sidebar
-	+span-columns(3)
-	padding-top: 1em
+	#sidebar
+		+span-columns(3)
+		padding-top: 1em
 
-	h3
-		margin-top: 1em
-		color: $text
-		padding-bottom: .3em
-		text-indent: .2em
-		border-bottom: 1px solid $medium-grey
-		font-weight: 400
+		h3
+			margin-top: 1em
+			color: $text
+			padding-bottom: .3em
+			text-indent: .2em
+			border-bottom: 1px solid $medium-grey
+			font-weight: 400
 
-	hr
-		width: 100%
-		height: 1px
-		background: $medium-grey
-		border: 0
-		margin: 0 auto
-
-	.contextual
-		margin-right: 1em
-
-	ul
-		list-style-type: none
-		padding: 0
-
-		li
-
-			input + label
-				max-width: 90%
-				display: inline-block
-
-		a, + a
-			display: inline-block
+		hr
 			width: 100%
-			border-radius: 4px
-			padding: .5em
-			color: $grey
-			margin-bottom: .2em
-
-			&:hover
-				background: $light-grey
-
-			&.selected
-				background: $blue
-				color: white
-
-#content
-	+span-columns(9)
-	margin-right: 0
-	z-index: 10
-	position: relative
-
-	.contextual:first-child
-		position: absolute
-		top: 1.6em
-		right: 0
-		text-align: right
-
-		a:before
-			margin-left: 1em
-
-	h2:first-of-type
-		font-weight: 400
-		border-bottom: 1px solid $medium-grey
-		margin: 0 0 1.2em
-		padding: .7em 0
-
-	form:first-of-type
+			height: 1px
+			background: $medium-grey
+			border: 0
+			margin: 0 auto
 
 		.contextual
-			float: right
-			position: relative
-			top: .2em
+			margin-right: 1em
+
+		ul
+			list-style-type: none
+			padding: 0
+
+			li
+
+				input + label
+					max-width: 90%
+					display: inline-block
+
+			a, + a
+				display: inline-block
+				width: 100%
+				border-radius: 4px
+				padding: .5em
+				color: $grey
+				margin-bottom: .2em
+
+				&:hover
+					background: $light-grey
+
+				&.selected
+					background: $blue
+					color: white
+
+	#content
+		+span-columns(9)
+		margin-right: 0
+		z-index: 10
+		position: relative
+
+		.contextual:first-child
+			position: absolute
+			top: 1.6em
+			right: 0
+			text-align: right
 
 			a:before
 				margin-left: 1em
+
+		h2:first-of-type
+			font-weight: 400
+			border-bottom: 1px solid $medium-grey
+			margin: 0 0 1.2em
+			padding: .7em 0
+
+		form:first-of-type
+
+			.contextual
+				float: right
+				position: relative
+				top: .2em
+
+				a:before
+					margin-left: 1em
 
 #footer
 	+row
@@ -459,15 +477,13 @@ select:focus
 	margin-top: 5em
 	margin-left: auto
 	margin-right: auto
-	border: 2px solid #FDBF3B
-	background-color: #FFEBC1
 	padding: 1em
 
 #login-form table td
-	padding: 6px
+	padding: .5em
 
 #login-form input#username, #login-form input#password
-	width: 300px
+	width: 20em
 
 div.modal
 	border-radius: 5px
@@ -494,52 +510,64 @@ input#openid_url
 	visibility: hidden
 
 
-table.list
-	border: 1px solid #e4e4e4
-	border-collapse: collapse
-	width: 100%
-	margin-bottom: 4px
-
-table.list th
-	background-color: #EEEEEE
-	white-space: nowrap
-	padding: 4px
-
-table.list td
-	text-align: center
-	vertical-align: top
-	padding-right: 10px
-
-table.list td.id
-	width: 2%
-	text-align: center
-
-table.list td.tick
-	width: 15%
-
-table.list td.checkbox
-	width: 15px
-	padding: 2px 0 0
-
-table.list td.buttons
-	width: 15%
-	white-space: nowrap
-	text-align: right
-
-
-table.list td.buttons a
-	padding-right: .6em
-
-
-table.list td.reorder
-	width: 15%
-	white-space: nowrap
-	text-align: center
-
-
-table.list caption
+table
 	text-align: left
-	padding: .5em .5em .5em 0
+	color: $grey
+
+	&.list
+		border: 0
+		border-collapse: collapse
+		width: 100%
+		margin-bottom: .5em
+
+		th
+			background: none
+			white-space: nowrap
+			padding: .5em
+			font-size: 1.2em
+			border-bottom: 1px solid $medium-grey
+			font-weight: 500
+			color: $text
+
+		td
+			vertical-align: top
+			padding: .7em
+			border-bottom: 1px solid $light-grey
+			text-align: left !important
+
+			&.name
+				font-weight: 600
+
+			&.id
+				width: 2%
+				text-align: center
+
+			&.tick
+				width: 15%
+
+			&.checkbox
+				width: 15px
+				padding: 2px 0 0
+
+			&.buttons
+				width: 15%
+				white-space: nowrap
+				text-align: right
+
+			&.buttons a
+				padding-right: .6em
+
+			&.reorder
+				width: 15%
+				white-space: nowrap
+				text-align: center
+
+		caption
+			text-align: left
+			padding: .5em .5em .5em 0
+
+		small
+			font-size: .9em
 
 tr.issue td.done_ratio table.progress
 	margin-left: auto
@@ -554,6 +582,16 @@ table.issues td.description
 
 table.issue-report
 	table-layout: fixed
+
+tr.project
+
+	[id^="favorite_project"]
+		@extend .fa
+		@extend .fa-star
+		color: $orange
+
+		img
+			display: none !important
 
 tr.entry
 	border: 1px solid #f8f8f8
@@ -671,22 +709,19 @@ tr.group a.toggle-all
 	display: none
 
 table.list tbody tr:hover
-	background-color: #ffffdd
+	background-color: rgba($orange, .1)
 
 table.list tbody tr.group:hover
 	background-color: inherit
 
-
 table td
-	padding: 2px
-
+	padding: .5em
 
 table p
 	margin: 0
 
 .odd
-	background-color: #f6f7f8
-
+	background-color: $white
 
 a.sort
 	padding-right: 16px
@@ -847,6 +882,7 @@ fieldset, fieldset.box
 	padding-top: 3em
 	position: relative
 	background: none
+	margin-bottom: 1em
 
 	legend
 		position: absolute
@@ -925,17 +961,16 @@ div.issue span.private
 div.issue table.attributes td
 	width: 28%
 
-fieldset.collapsible
-	font-size: .9em
-	border-width: 1px 0 0
-
 fieldset.collapsible > legend
-	padding-left: 16px
-	background: url(../images/arrow_expanded.png) no-repeat 0 40%
+	@extend .fa-caret-right
 	cursor: pointer
 
+	&:before
+		@extend .fa
+		margin-right: .5em
+
 fieldset.collapsible.collapsed > legend
-	background-image: url(../images/arrow_collapsed.png)
+	@extend .fa-caret-down
 
 fieldset#date-range p
 	margin: 2px 0
@@ -973,9 +1008,16 @@ fieldset#filters td.add-filter
 	cursor: pointer
 
 .buttons
-	font-size: .9em
 	margin-bottom: 1.4em
 	margin-top: 1em
+
+	a:before
+		vertical-align: middle
+		display: inline-block
+		margin-right: .5em
+
+	a + a:before
+		margin-left: 1em
 
 div#issue-changesets
 	float: right
@@ -1125,8 +1167,13 @@ ul.projects ul
 	margin: 0 0 10px
 
 .my-project
-	padding-left: 18px
-	background: url(../images/fav.png) no-repeat 0 50%
+	@extend .fa-star
+	color: $grey
+
+	&:before
+		@extend .fa
+		margin-right: .5em
+		color: $orange
 
 #notified-projects > ul, #tracker_project_ids > ul, #custom_field_project_ids > ul
 	max-height: 250px
@@ -1369,15 +1416,31 @@ table.members td.group
 	padding-left: 20px
 	background: url(../images/group.png) no-repeat 0 50%
 
-input.autocomplete
-	background: #fff url(../images/magnifier.png) no-repeat 2px 50%
-	padding-left: 20px !important
-	border: 1px solid #9EB1C2
-	border-radius: 2px
-	height: 1.5em
+span.live_search
+	position: relative
+	@extend .fa-search
+	font-size: .7em
+
+	&:before
+		@extend .fa
+		position: absolute
+		top: .2em
+		left: .5em
+		color: $medium-grey
+		z-index: 5
+
+input.autocomplete, input.live_search_field
+	padding-left: 2em !important
+	padding-right: 1.5em !important
+	font-size: inherit !important
+	+transition-property(border, box-shadow)
+	position: relative
+	z-index: 0
+	margin-top: -.8em
+	top: .4em
 
 input.autocomplete.ajax-loading
-	background-image: url(../images/loading.gif)
+	background: url(../images/loading.gif) no-repeat 97% center
 
 #errorExplanation, div.flash, .nodata, .warning, .conflict
 	margin: 2em 0
@@ -2272,9 +2335,6 @@ a.project.closed, a.project.closed:link, a.project.closed:visited, a.user.locked
 #sidebar a.selected:hover, a.toggle-all:hover
 	text-decoration: none
 
-table.list td.name, table.list td.description, table.list td.subject, table.list td.comments, table.list td.roles, tr.issue td.relations, table.files tbody th, tr.user td.username, tr.user td.firstname, tr.user td.lastname, tr.user td.email, table.messages td.last_message
-	text-align: left
-
 table.list td.checkbox input, #relations td.buttons
 	padding: 0
 
@@ -2285,35 +2345,38 @@ tr.project.closed, tr.project.archived, tr.project.closed a, tr.project.archived
 	color: #aaa
 
 tr.project.idnt td.name span, tr.issue.idnt td.subject a
-	background: url(../images/bullet_arrow_right.png) no-repeat 0 50%
-	padding-left: 16px
+	@extend .fa-caret-right
+
+	&:before
+		@extend .fa
+		margin-right: .5em
 
 tr.project.idnt-1 td.name, tr.issue.idnt-1 td.subject
-	padding-left: .5em
-
-tr.project.idnt-2 td.name, tr.issue.idnt-2 td.subject, .role-visibility
 	padding-left: 2em
 
+tr.project.idnt-2 td.name, tr.issue.idnt-2 td.subject, .role-visibility
+	padding-left: 3em
+
 tr.project.idnt-3 td.name, tr.issue.idnt-3 td.subject
-	padding-left: 3.5em
+	padding-left: 4em
 
 tr.project.idnt-4 td.name, tr.issue.idnt-4 td.subject
 	padding-left: 5em
 
 tr.project.idnt-5 td.name, tr.issue.idnt-5 td.subject
-	padding-left: 6.5em
+	padding-left: 6em
 
 tr.project.idnt-6 td.name, tr.issue.idnt-6 td.subject
-	padding-left: 8em
+	padding-left: 7em
 
 tr.project.idnt-7 td.name, tr.issue.idnt-7 td.subject
-	padding-left: 9.5em
+	padding-left: 8em
 
 tr.project.idnt-8 td.name, tr.issue.idnt-8 td.subject
-	padding-left: 11em
+	padding-left: 9em
 
 tr.project.idnt-9 td.name, tr.issue.idnt-9 td.subject
-	padding-left: 12.5em
+	padding-left: 10em
 
 tr.issue, tr.version td.date, tr.version td.status, tr.version td.sharing, tr.time-entry
 	text-align: center

@@ -27,15 +27,15 @@ Version: 3.5.1 Timestamp: Tue Jul 22 18:58:56 EDT 2014
 
 .select2-container .select2-choice {
     display: block;
-    height: 26px;
-    padding: 0 0 0 8px;
+    height: 2.3em;
+    padding: .2em 0 .2em .7em;
     overflow: hidden;
     position: relative;
 
-    border: 1px solid #aaa;
+    border: 1px solid $medium-grey;
     white-space: nowrap;
-    line-height: 26px;
-    color: #444;
+    line-height: 1.8;
+    color: $text;
     text-decoration: none;
 
     border-radius: 4px;
@@ -48,16 +48,11 @@ Version: 3.5.1 Timestamp: Tue Jul 22 18:58:56 EDT 2014
           -ms-user-select: none;
               user-select: none;
 
-    background-color: #fff;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.5, #fff));
-    background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 50%);
-    background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);
-    background-image: linear-gradient(to top, #eee 0%, #fff 50%);
+    background-color: white;
 }
 
 html[dir="rtl"] .select2-container .select2-choice {
-    padding: 0 8px 0 0;
+    padding: .2em .7em .2em 0;
 }
 
 .select2-container.select2-drop-above .select2-choice {
@@ -140,6 +135,7 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
 .select2-drop {
     width: 100%;
     margin-top: -1px;
+    padding-top: .3em;
     position: absolute;
     z-index: 9999;
     top: 100%;
@@ -192,17 +188,8 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
     right: 0;
     top: 0;
 
-    border-left: 1px solid #aaa;
+    border-left: 1px solid $medium-grey;
     border-radius: 0 4px 4px 0;
-
-    background-clip: padding-box;
-
-    background: #ccc;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccc), color-stop(0.6, #eee));
-    background-image: -webkit-linear-gradient(center bottom, #ccc 0%, #eee 60%);
-    background-image: -moz-linear-gradient(center bottom, #ccc 0%, #eee 60%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0);
-    background-image: linear-gradient(to top, #ccc 0%, #eee 60%);
 }
 
 html[dir="rtl"] .select2-container .select2-choice .select2-arrow {
@@ -287,11 +274,11 @@ html[dir="rtl"] .select2-search input {
 
 .select2-container-active .select2-choice,
 .select2-container-active .select2-choices {
-    border: 1px solid #5897fb;
+    border: 1px solid $light-blue;
     outline: none;
 
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
-            box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 5px rgba($light-blue, .3);
+            box-shadow: 0 0 5px rgba($light-blue, .3);
 }
 
 .select2-dropdown-open .select2-choice {
