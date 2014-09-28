@@ -9,6 +9,7 @@
 @import jqueryui
 @import select2
 @import icons
+@import pace
 
 // Partials
 @import scm
@@ -67,6 +68,8 @@ a
 	+transition-duration(.3s)
 	background: white
 	vertical-align: middle
+	max-width: 100%
+	text-align: left
 
 	&:disabled
 		background: $light-grey
@@ -87,6 +90,7 @@ select:focus
 	cursor: pointer
 	display: inline-block
 	vertical-align: middle
+	text-align: center
 
 	+ a
 		@extend .button
@@ -112,6 +116,9 @@ select:focus
 	color: white
 	padding: 1em
 	cursor: default
+
+	*
+		+animation(fadeIn 1s)
 
 	li
 		float: left
@@ -179,6 +186,9 @@ select:focus
 	background: $blue
 	color: white
 
+	*
+		+animation(fadeIn 1s)
+
 	h1
 		margin: 0
 		font-size: 1.5em
@@ -214,6 +224,7 @@ select:focus
 		label[for="q"]
 			@extend .fa-search
 			position: relative
+			z-index: 5
 
 			&:before
 				@extend .fa
@@ -230,6 +241,8 @@ select:focus
 			width: 10em
 			background: rgba($dark-blue, .3)
 			box-shadow: none !important
+			position: relative
+			z-index: 0
 
 			&:active, &:focus
 				background: white
@@ -258,7 +271,10 @@ select:focus
 	+row
 	background: $light-grey
 	cursor: default
-	box-shadow: inset 0 1px 0 $medium-grey
+	box-shadow: inset 0 -1px 0 $medium-grey
+
+	*
+		+animation(fadeIn 1s)
 
 	li
 		display: table-cell
@@ -358,6 +374,7 @@ select:focus
 	+outer-container
 	padding-bottom: 6em
 	position: relative
+	+animation(fadeIn 1s)
 
 	&.nosidebar
 
@@ -385,6 +402,7 @@ select:focus
 
 		.contextual
 			margin-right: 1em
+			float: right
 
 		ul
 			list-style-type: none
@@ -1057,7 +1075,7 @@ div#issue-changesets p
 	margin: 0 0 -3px 4px
 
 div.journal.private-notes
-	border-left: 2px solid #d22
+	border-left: 2px solid $light-grey
 	padding-left: 4px
 	margin-left: -6px
 
@@ -1066,21 +1084,18 @@ div#activity dl, #search-results
 
 div#activity dd, #search-results dd
 	margin-bottom: 1em
-	padding-left: 18px
+	padding-left: 2.8em
 	font-size: .9em
 
 div#activity dt, #search-results dt
 	margin-bottom: 0
-	padding-left: 20px
 	line-height: 18px
-	background-position: 0 50%
-	background-repeat: no-repeat
 
 div#activity dt.me .time
-	border-bottom: 1px solid #999
+	border-bottom: 1px solid $medium-grey
 
 div#activity dt .time
-	color: #777
+	color: $medium-grey
 	font-size: 80%
 
 div#activity span.project:after, #search-results span.project:after
@@ -1088,7 +1103,7 @@ div#activity span.project:after, #search-results span.project:after
 
 div#activity dd span.description, #search-results dd span.description
 	display: block
-	color: #808080
+	color: $grey
 
 div#activity dt.grouped
 	margin-left: 5em
@@ -1443,7 +1458,10 @@ span.live_search
 		color: $medium-grey
 		z-index: 5
 
-input.autocomplete, input.live_search_field
+	&.normal
+		font-size: 1em
+
+input.autocomplete, input.live_search_field, input.questions-search
 	padding-left: 2em !important
 	padding-right: 1.5em !important
 	font-size: inherit !important
@@ -1452,9 +1470,17 @@ input.autocomplete, input.live_search_field
 	z-index: 0
 	margin-top: -.8em
 	top: .4em
+	height: auto !important
+	background: none !important
 
-input.autocomplete.ajax-loading
-	background: url(../images/loading.gif) no-repeat 97% center
+	&.ajax-loading
+		background: url(../images/loading.gif) no-repeat 97% center !important
+
+input.questions-search
+	width: 100% !important
+
+	&.ajax-loading
+		background-position: 98% center !important
 
 #errorExplanation, div.flash, .nodata, .warning, .conflict
 	margin: 2em 0
@@ -1795,9 +1821,10 @@ div.wiki img
 	max-width: 100%
 
 .block-receiver
-	border: 1px dashed #c0c0c0
-	margin-bottom: 20px
-	padding: 15px 0
+	border: 2px dashed $medium-grey
+	margin-bottom: 2em
+	padding: 1em
+	border-radius: 4px
 
 .mypage-box
 	color: #505050
@@ -1809,16 +1836,15 @@ div.wiki img
 
 a.close-icon
 	display: block
-	margin-top: 3px
-	overflow: hidden
-	width: 12px
-	height: 12px
-	background-repeat: no-repeat
-	cursor: pointer
-	background-image: url(../images/close.png)
+	@extend .fa-close
+	left: 1em
+	position: relative
+
+	&:before
+		@extend .fa
 
 a.close-icon:hover
-	background-image: url(../images/close_hl.png)
+	color: $red
 
 .gantt_hdr
 	position: absolute
@@ -2464,8 +2490,14 @@ dt.issue-closed, #search-results dt.issue.closed
 dt.attachment, .icon-attachment
 	@extend .fa-paperclip
 
+dt.time-entry:before, dt.attachment:before, dt.issue-closed:before
+	@extend .fa
+	margin-right: .5em
+
 dt.time-entry, .icon-time
 	@extend .fa-clock-o
+
+.icon-time
 	font-size: 2em
 
 div#roadmap .related-issues, div#version-summary fieldset, #projects-index ul.projects li.root, div.wiki ul, div.wiki ol
@@ -2539,6 +2571,30 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 .syntaxhl .symbol .content, .syntaxhl .symbol .delimiter, .syntaxhl .symbol
 	color: #d33
 
+.icon-contact
+	@extend .fa-book
+	background: none !important
+
+	&:before
+		@extend .fa
+		margin-right: .5em
+
+.icon-phone
+	@extend .fa-phone
+	background: none !important
+
+.icon-email
+	@extend .fa-envelope
+	background: none !important
+
+.icon-linkedin
+	@extend .fa-linkedin
+	background: none !important
+
+#block-form
+	display: inline-block
+	margin-top: -.5em
+
 .jstEditor:not(.zen)
 	margin-bottom: 1em
 
@@ -2553,6 +2609,9 @@ div.contact
 	border: 1px solid $medium-grey !important
 	background: $white !important
 	border-radius: 4px !important
+
+div.person.details table.subject_header h1
+	margin-top: 0
 
 @media print
 
