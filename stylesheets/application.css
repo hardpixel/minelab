@@ -2569,7 +2569,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-star-o:before, .icon-fav-off:before {
   content: "\f006"; }
 
-.fa-user:before, #top-menu a.my-account:before, #admin-menu a.people:before, #admin-menu a.users:before, #admin-menu .icon-user:before {
+.fa-user:before, #top-menu a.my-account:before, #admin-menu a.users:before, #admin-menu .icon-user:before {
   content: "\f007"; }
 
 .fa-film:before {
@@ -2678,7 +2678,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-tags:before {
   content: "\f02c"; }
 
-.fa-book:before, #top-menu a.contacts:before {
+.fa-book:before, #top-menu a.contacts:before, #admin-menu a.contacts:before {
   content: "\f02d"; }
 
 .fa-bookmark:before {
@@ -3013,7 +3013,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-hdd-o:before {
   content: "\f0a0"; }
 
-.fa-bullhorn:before {
+.fa-bullhorn:before, div.news h3:before {
   content: "\f0a1"; }
 
 .fa-bell:before {
@@ -3067,7 +3067,8 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-group:before, #admin-menu a.groups:before,
 .fa-users:before,
 #top-menu a.people:before,
-#admin-menu a.contacts:before {
+#admin-menu a.people:before,
+div.members h3:before {
   content: "\f0c0"; }
 
 .fa-chain:before,
@@ -3095,7 +3096,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-floppy-o:before {
   content: "\f0c7"; }
 
-.fa-square:before, #admin-menu a.trackers:before, #admin-menu dt.issue:before, #admin-menu .icon-issue:before {
+.fa-square:before, #admin-menu a.trackers:before, #admin-menu dt.issue:before, #admin-menu .icon-issue:before, div.issues h3:before {
   content: "\f0c8"; }
 
 .fa-navicon:before,
@@ -3785,7 +3786,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-cube:before, h3.version:before, .icon-package:before {
   content: "\f1b2"; }
 
-.fa-cubes:before, #top-menu a.projects:before, #admin-menu a.projects:before, #admin-menu dt.project:before, #admin-menu .icon-projects:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before {
+.fa-cubes:before, #top-menu a.projects:before, #admin-menu a.projects:before, #admin-menu dt.project:before, #admin-menu .icon-projects:before, div.projects h3:before {
   content: "\f1b3"; }
 
 .fa-behance:before {
@@ -4487,15 +4488,17 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
 select:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(119, 119, 119, 0.6); }
 
-input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button, .button:hover {
+input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button, input[type="button"] + a, input[type="reset"] + a, input[type="submit"] + a, input[type="button"]:hover + a, input[type="reset"]:hover + a, input[type="submit"]:hover + a, .button + a, .button:hover + a, .button:hover, input[type="button"] + a:hover, input[type="reset"] + a:hover, input[type="submit"] + a:hover, .button + a:hover {
   border: 1px solid #019875;
   background: #019875;
   color: white;
   padding: 0.5em 1.5em;
   border-radius: 4px;
-  cursor: pointer; }
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle; }
 
-input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:focus, .button:active {
+input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:focus, input[type="button"] + a:focus, input[type="reset"] + a:focus, input[type="submit"] + a:focus, .button + a:focus, .button:active, input[type="button"] + a:active, input[type="reset"] + a:active, input[type="submit"] + a:active, .button + a:active, input[type="button"]:focus + a:active, input[type="button"]:focus a:focus, input[type="reset"]:focus + a:active, input[type="reset"]:focus a:focus, input[type="submit"]:focus + a:active, input[type="submit"]:focus a:focus, input[type="button"]:active + a:active, input[type="button"]:active a:focus, input[type="reset"]:active + a:active, input[type="reset"]:active a:focus, input[type="submit"]:active + a:active, input[type="submit"]:active a:focus, .button:focus + a:active, input[type="button"] + a:focus + a:active, input[type="reset"] + a:focus + a:active, input[type="submit"] + a:focus + a:active, .button + a:focus + a:active, .button:focus a:focus, input[type="button"] + a:focus a:focus, input[type="reset"] + a:focus a:focus, input[type="submit"] + a:focus a:focus, .button + a:focus a:focus, .button:active + a:active, input[type="button"] + a:active + a:active, input[type="reset"] + a:active + a:active, input[type="submit"] + a:active + a:active, .button + a:active + a:active, .button:active a:focus, input[type="button"] + a:active a:focus, input[type="reset"] + a:active a:focus, input[type="submit"] + a:active a:focus, .button + a:active a:focus {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset; }
 
 /* Layout */
@@ -4743,12 +4746,18 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
       border-bottom: 1px solid #CCCCCC;
       margin: 0 0 1.2em;
       padding: 0.7em 0; }
-    #main #content form:first-of-type .contextual {
+    #main #content form .contextual {
       float: right;
       position: relative;
-      top: 0.2em; }
-      #main #content form:first-of-type .contextual a:before {
+      top: 0.4em;
+      margin: 0; }
+      #main #content form .contextual a:before {
         margin-left: 1em; }
+    #main #content table h2 {
+      margin: inherit !important;
+      padding: 0 !important;
+      border: 0 !important;
+      font-weight: inherit !important; }
 
 #footer {
   display: block;
@@ -4827,7 +4836,8 @@ input#openid_url {
 
 table {
   text-align: left;
-  color: #777777; }
+  color: #777777;
+  border: 0 !important; }
   table.list {
     border: 0;
     border-collapse: collapse;
@@ -5016,8 +5026,8 @@ table td {
 table p {
   margin: 0; }
 
-.odd {
-  background-color: #F9F9F9; }
+.even, tr:nth-child(2n+2) {
+  background-color: #F9F9F9 !important; }
 
 a.sort {
   padding-right: 16px;
@@ -5189,8 +5199,9 @@ abbr {
   cursor: help; }
 
 textarea.wiki-edit {
-  width: 99%;
-  resize: vertical; }
+  width: 99% !important;
+  resize: vertical;
+  margin-bottom: 1em; }
 
 div.issue {
   background: #ffffdd;
@@ -5482,8 +5493,6 @@ p.pagination {
   margin: 0;
   padding-left: 15em;
   margin-bottom: 1em; }
-.tabular input, .tabular select {
-  max-width: 95%; }
 .tabular span[title] {
   border-bottom: 1px dotted #F2F2F2; }
 .tabular label {
@@ -6158,22 +6167,23 @@ a.close-icon:hover {
   top: -2px; }
 
 img.gravatar {
-  border: solid 1px #d5d5d5;
-  background: #fff;
+  background: white;
   vertical-align: middle;
-  padding: 2px; }
+  border-radius: 4px;
+  overflow: hidden; }
+  img.gravatar + a {
+    display: inline-block;
+    vertical-align: middle; }
 
 div.issue img.gravatar {
   float: left;
-  margin: 0 6px 0 0;
-  padding: 5px; }
+  margin: 0 0.5 0 0; }
 
 div.issue table img.gravatar {
-  height: 14px;
-  width: 14px;
+  height: 1em;
+  width: 1em;
   float: left;
-  margin: 0 0.5em 0 0;
-  padding: 2px; }
+  margin: 0 0.5em 0 0; }
 
 h2 img.gravatar {
   margin: -2px 4px -4px 0; }
@@ -6643,6 +6653,19 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 
 .syntaxhl .symbol .content, .syntaxhl .symbol .delimiter, .syntaxhl .symbol {
   color: #d33; }
+
+.jstEditor:not(.zen) {
+  margin-bottom: 1em; }
+  .jstEditor:not(.zen) textarea {
+    width: 99%; }
+  .jstEditor:not(.zen) button.jstb_zenedit {
+    top: -1.8em;
+    right: 1%; }
+
+div.contact {
+  border: 1px solid #CCCCCC !important;
+  background: #F9F9F9 !important;
+  border-radius: 4px !important; }
 
 @media print {
   #main {

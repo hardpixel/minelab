@@ -85,9 +85,17 @@ select:focus
 	padding: .5em 1.5em
 	border-radius: 4px
 	cursor: pointer
+	display: inline-block
+	vertical-align: middle
+
+	+ a
+		@extend .button
 
 #{$all-button-inputs-focus}, #{$all-button-inputs-active}, .button:focus, .button:active
 	box-shadow: 0px 3px 5px rgba(black, .125) inset
+
+	+ a:active, a:focus
+		@extend .button:active
 
 /* Layout */
 
@@ -314,7 +322,7 @@ select:focus
 			@extend .fa-undo
 
 		&.contacts
-			@extend .fa-users
+			@extend .fa-book
 
 		&.invoices
 			@extend .fa-file-excel-o
@@ -323,7 +331,7 @@ select:focus
 			@extend .fa-money
 
 		&.people
-			@extend .fa-user
+			@extend .fa-users
 
 	a.projects, dt.project, .icon-projects
 		@extend .fa-cubes
@@ -424,15 +432,22 @@ select:focus
 			margin: 0 0 1.2em
 			padding: .7em 0
 
-		form:first-of-type
+		form
 
 			.contextual
 				float: right
 				position: relative
-				top: .2em
+				top: .4em
+				margin: 0
 
 				a:before
 					margin-left: 1em
+
+		table h2
+			margin: inherit !important
+			padding: 0 !important
+			border: 0 !important
+			font-weight: inherit !important
 
 #footer
 	+row
@@ -513,6 +528,7 @@ input#openid_url
 table
 	text-align: left
 	color: $grey
+	border: 0 !important
 
 	&.list
 		border: 0
@@ -720,8 +736,8 @@ table td
 table p
 	margin: 0
 
-.odd
-	background-color: $white
+.even, tr:nth-child(2n+2)
+	background-color: $white !important
 
 a.sort
 	padding-right: 16px
@@ -775,7 +791,7 @@ h3.version
 
 div.issues h3
 	margin-top: 0
-	@extend .fa-cubes
+	@extend .fa-square
 
 	&:before
 		@extend .fa
@@ -783,7 +799,7 @@ div.issues h3
 
 div.members h3
 	margin-top: 0
-	@extend .fa-cubes
+	@extend .fa-users
 
 	&:before
 		@extend .fa
@@ -791,7 +807,7 @@ div.members h3
 
 div.news h3
 	margin-top: 0
-	@extend .fa-cubes
+	@extend .fa-bullhorn
 
 	&:before
 		@extend .fa
@@ -912,8 +928,9 @@ abbr
 	cursor: help
 
 textarea.wiki-edit
-	width: 99%
+	width: 99% !important
 	resize: vertical
+	margin-bottom: 1em
 
 div.issue
 	background: #ffffdd
@@ -1220,9 +1237,6 @@ p.pagination
 		margin: 0
 		padding-left: 15em
 		margin-bottom: 1em
-
-	input, select
-		max-width: 95%
 
 	span[title]
 		border-bottom: 1px dotted $light-grey
@@ -2023,22 +2037,24 @@ a.close-icon:hover
 	@extend .fa-file-pdf-o
 
 img.gravatar
-	border: solid 1px #d5d5d5
-	background: #fff
+	background: white
 	vertical-align: middle
-	padding: 2px
+	border-radius: 4px
+	overflow: hidden
+
+	+ a
+		display: inline-block
+		vertical-align: middle
 
 div.issue img.gravatar
 	float: left
-	margin: 0 6px 0 0
-	padding: 5px
+	margin: 0 .5 0 0
 
 div.issue table img.gravatar
-	height: 14px
-	width: 14px
+	height: 1em
+	width: 1em
 	float: left
 	margin: 0 .5em 0 0
-	padding: 2px
 
 h2 img.gravatar
 	margin: -2px 4px -4px 0
@@ -2522,6 +2538,21 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 
 .syntaxhl .symbol .content, .syntaxhl .symbol .delimiter, .syntaxhl .symbol
 	color: #d33
+
+.jstEditor:not(.zen)
+	margin-bottom: 1em
+
+	textarea
+		width: 99%
+
+	button.jstb_zenedit
+		top: -1.8em
+		right: 1%
+
+div.contact
+	border: 1px solid $medium-grey !important
+	background: $white !important
+	border-radius: 4px !important
 
 @media print
 
