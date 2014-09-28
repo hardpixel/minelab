@@ -1,0 +1,178 @@
+div.revision-graph
+	min-width: 1px
+	position: absolute
+
+div.changeset-changes ul > ul
+	margin-left: 18px
+	padding: 0
+
+li.change
+	background-image: url(../images/bullet_black.png)
+	background-position: 1px 1px
+	background-repeat: no-repeat
+	list-style-type: none
+	margin: 0
+	padding-bottom: 1px
+	padding-left: 20px
+	padding-top: 1px
+
+li.change.folder
+	background-image: url(../images/folder_open.png)
+
+li.change.folder.change-A
+	background-image: url(../images/folder_open_add.png)
+
+li.change.folder.change-M
+	background-image: url(../images/folder_open_orange.png)
+
+li.change.change-A
+	background-image: url(../images/bullet_add.png)
+
+li.change.change-M
+	background-image: url(../images/bullet_orange.png)
+
+li.change.change-C
+	background-image: url(../images/bullet_blue.png)
+
+li.change.change-R
+	background-image: url(../images/bullet_purple.png)
+
+li.change.change-D
+	background-image: url(../images/bullet_delete.png)
+
+li.change .copied-from
+	color: #999
+	font-size: .9em
+	font-style: italic
+
+li.change .copied-from:before
+	content: " - "
+
+#changes-legend
+	float: right
+	font-size: .8em
+	margin: 0
+
+#changes-legend li
+	background-position: 5px 0
+	float: left
+
+table.filecontent
+	background-color: #fafafa
+	border: 1px solid #e2e2e2
+	border-collapse: collapse
+	width: 98%
+
+table.filecontent tbody
+	font-size: 12px
+
+table.filecontent th
+	background-color: #eee
+	border: 1px solid #e2e2e2
+
+table.filecontent th.filename
+	background-color: #e4e4d4
+	padding: 5px
+	text-align: left
+
+table.filecontent tr.spacing th
+	text-align: center
+
+table.filecontent tr.spacing td
+	background: #EAF2F5
+	height: .4em
+
+table.filecontent th.line-num
+	border: 1px solid #e2e2e2
+	color: #999
+	font-weight: 400
+	padding: 0 3px 0 0
+	text-align: right
+	+user-select(none)
+	width: 2%
+
+table.filecontent th.line-num a
+	color: inherit
+	text-decoration: none
+
+table.filecontent td.line-code
+	padding: 0 0 0 4px
+
+table.filecontent td.line-code pre
+	font-family: "Liberation Mono", Courier, monospace
+	font-size: 12px
+	margin: 0
+	white-space: pre-wrap
+
+table.filecontent tr:target th.line-num
+	background-color: #E0E0E0
+	color: #777
+
+table.filecontent tr:target td.line-code
+	background-color: #DDEEFF
+
+table.annotate tr.bloc-0
+	background: #FFFFBF
+
+table.annotate tr.bloc-1
+	background: #EABFFF
+
+table.annotate tr.bloc-2
+	background: #BFFFFF
+
+table.annotate tr.bloc-3
+	background: #FFD9BF
+
+table.annotate tr.bloc-4
+	background: #E6FFBF
+
+table.annotate tr.bloc-5
+	background: #BFCFFF
+
+table.annotate tr.bloc-6
+	background: #FFBFEF
+
+table.annotate tr.bloc-7
+	background: #FFE6BF
+
+table.annotate tr.bloc-8
+	background: #FFE680
+
+table.annotate tr.bloc-9
+	background: #AA80FF
+
+table.annotate tr.bloc-10
+	background: #FFBFDC
+
+table.annotate tr.bloc-11
+	background: #BFE4FF
+
+table.annotate td.revision
+	background: inherit
+	padding: 0 0 0 1em
+	text-align: center
+	width: 2%
+
+table.annotate td.author
+	background: inherit
+	border-right: 1px solid #d7d7d7
+	padding: 0 1em
+	text-align: center
+	white-space: nowrap
+	width: 3%
+
+table.annotate td.line-code
+	background-color: #fafafa
+
+div.action_M
+	background: #fd8
+
+div.action_D
+	background: #f88
+
+div.action_A
+	background: #bfb
+
+table.revision-info td, div.changeset-changes ul
+	margin: 0
+	padding: 0
