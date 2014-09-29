@@ -79,8 +79,11 @@ a
 	border-color: $light-blue
 	box-shadow: 0px 1px 1px rgba(black, .075) inset, 0px 0px 8px rgba($light-blue, .6)
 
-select:focus
-	box-shadow: 0px 1px 1px rgba(black, .075) inset, 0px 0px 8px rgba($grey, .6)
+select
+	min-width: 6em
+
+	&:focus
+		box-shadow: 0px 1px 1px rgba(black, .075) inset, 0px 0px 8px rgba($grey, .6)
 
 #{$all-button-inputs}, #{$all-button-inputs-hover}, .button, .button:hover
 	border: 1px solid $blue-green
@@ -401,6 +404,12 @@ select:focus
 			border: 0
 			margin: 0 auto
 
+		p > label
+			color: $grey
+
+			input
+				margin-right: .7em
+
 		.contextual
 			margin-right: 1em
 			float: right
@@ -414,6 +423,9 @@ select:focus
 				input + label
 					max-width: 90%
 					display: inline-block
+
+				label input
+					margin-right: .7em
 
 			a, + a
 				display: inline-block
@@ -1266,6 +1278,13 @@ p.pagination
 		padding-left: 15em
 		margin-bottom: 1em
 
+		&.live_search
+			font-size: 1em
+
+			&:before
+				left: 15.6em
+				top: .3em
+
 	span[title]
 		border-bottom: 1px dotted $light-grey
 
@@ -1458,7 +1477,7 @@ table.members td.group
 	padding-left: 20px
 	background: url(../images/group.png) no-repeat 0 50%
 
-span.live_search
+.live_search
 	position: relative
 	@extend .fa-search
 	font-size: .7em
@@ -1473,6 +1492,12 @@ span.live_search
 
 	&.normal
 		font-size: 1em
+
+th.live_search
+
+	&:before
+		top: 1.1em
+		left: 1em
 
 input.autocomplete, input.live_search_field, input.questions-search
 	padding-left: 2em !important
@@ -2619,17 +2644,6 @@ div.contact
 div.person.details table.subject_header h1,
 div.contact.details table.subject_header h1
 	margin-top: 0
-
-label[for="contact_company"]
-	@extend .fa-search
-	position: relative
-
-	&:before
-		@extend .fa
-		position: absolute
-		top: .3em
-		right: -2.5em
-		color: $medium-grey
 
 #invoice_contact_id_add_link
 	@extend .fa-plus-circle

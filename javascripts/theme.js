@@ -21,5 +21,7 @@ jQuery(document).ready(function($){
 		$('select').select2({
 			width: 'element'
 		});
+
+		$('input.autocomplete').parent().addClass('live_search');
 	});
 });
