@@ -527,14 +527,17 @@ select
 #login-form table td
 	padding: .5em
 
+#login-form table tr
+	background: none !important
+
 #login-form input#username, #login-form input#password
 	width: 20em
 
 div.modal
-	border-radius: 5px
-	background: #fff
+	border-radius: 4px
+	background: white
 	z-index: 50
-	padding: 4px
+	padding: .5em
 
 div.modal p.buttons
 	text-align: right
@@ -2660,8 +2663,20 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 		width: 99%
 
 	button.jstb_zenedit
-		top: -1.8em
+		top: -2em
 		right: 1%
+		font-size: .9em
+		width: 1.8em
+		height: 1.8em
+		border-radius: 4px
+		cursor: pointer
+		@extend .fa-arrows-alt
+		background: none
+		padding: 0
+		text-align: center
+
+		&:before
+			@extend .fa
 
 div.contact
 	border: 1px solid $medium-grey !important
