@@ -2419,7 +2419,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.fa, #top-menu a:before, #header #quick-search label[for="q"]:before, #admin-menu a:before, tr.project [id^="favorite_project"], h3.version:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before, fieldset.collapsible > legend:before, .my-project:before, span.live_search:before, a.close-icon:before, .icon:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, dt.time-entry:before, dt.attachment:before, dt.issue-closed:before, .icon-contact:before {
+.fa, #top-menu a:before, #header #quick-search label[for="q"]:before, #admin-menu a:before, tr.project [id^="favorite_project"], table.boards a.board:before, h3.comments:before, h3.version:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before, #watchers a.delete:before, fieldset.collapsible > legend:before, .my-project:before, span.live_search:before, a.close-icon:before, .icon:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, dt.time-entry:before, dt.attachment:before, dt.issue-closed:before, .icon-contact:before, label[for="contact_company"]:before, #invoice_contact_id_add_link:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -2478,10 +2478,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .pull-left {
   float: left; }
 
-.fa.pull-left, #top-menu a.pull-left:before, #header #quick-search label.pull-left[for="q"]:before, #admin-menu a.pull-left:before, tr.project .pull-left[id^="favorite_project"], h3.pull-left.version:before, div.issues h3.pull-left:before, div.members h3.pull-left:before, div.news h3.pull-left:before, div.projects h3.pull-left:before, fieldset.collapsible > legend.pull-left:before, .pull-left.my-project:before, span.pull-left.live_search:before, a.pull-left.close-icon:before, .pull-left.icon:before, tr.project.idnt td.name span.pull-left:before, tr.issue.idnt td.subject a.pull-left:before, dt.pull-left.time-entry:before, dt.pull-left.attachment:before, dt.pull-left.issue-closed:before, .pull-left.icon-contact:before {
+.fa.pull-left, #top-menu a.pull-left:before, #header #quick-search label.pull-left[for="q"]:before, #admin-menu a.pull-left:before, tr.project .pull-left[id^="favorite_project"], table.boards a.pull-left.board:before, h3.pull-left.comments:before, h3.pull-left.version:before, div.issues h3.pull-left:before, div.members h3.pull-left:before, div.news h3.pull-left:before, div.projects h3.pull-left:before, #watchers a.pull-left.delete:before, fieldset.collapsible > legend.pull-left:before, .pull-left.my-project:before, span.pull-left.live_search:before, a.pull-left.close-icon:before, .pull-left.icon:before, tr.project.idnt td.name span.pull-left:before, tr.issue.idnt td.subject a.pull-left:before, dt.pull-left.time-entry:before, dt.pull-left.attachment:before, dt.pull-left.issue-closed:before, .pull-left.icon-contact:before, label.pull-left[for="contact_company"]:before, .pull-left#invoice_contact_id_add_link:before {
   margin-right: .3em; }
 
-.fa.pull-right, #top-menu a.pull-right:before, #header #quick-search label.pull-right[for="q"]:before, #admin-menu a.pull-right:before, tr.project .pull-right[id^="favorite_project"], h3.pull-right.version:before, div.issues h3.pull-right:before, div.members h3.pull-right:before, div.news h3.pull-right:before, div.projects h3.pull-right:before, fieldset.collapsible > legend.pull-right:before, .pull-right.my-project:before, span.pull-right.live_search:before, a.pull-right.close-icon:before, .pull-right.icon:before, tr.project.idnt td.name span.pull-right:before, tr.issue.idnt td.subject a.pull-right:before, dt.pull-right.time-entry:before, dt.pull-right.attachment:before, dt.pull-right.issue-closed:before, .pull-right.icon-contact:before {
+.fa.pull-right, #top-menu a.pull-right:before, #header #quick-search label.pull-right[for="q"]:before, #admin-menu a.pull-right:before, tr.project .pull-right[id^="favorite_project"], table.boards a.pull-right.board:before, h3.pull-right.comments:before, h3.pull-right.version:before, div.issues h3.pull-right:before, div.members h3.pull-right:before, div.news h3.pull-right:before, div.projects h3.pull-right:before, #watchers a.pull-right.delete:before, fieldset.collapsible > legend.pull-right:before, .pull-right.my-project:before, span.pull-right.live_search:before, a.pull-right.close-icon:before, .pull-right.icon:before, tr.project.idnt td.name span.pull-right:before, tr.issue.idnt td.subject a.pull-right:before, dt.pull-right.time-entry:before, dt.pull-right.attachment:before, dt.pull-right.issue-closed:before, .pull-right.icon-contact:before, label.pull-right[for="contact_company"]:before, .pull-right#invoice_contact_id_add_link:before {
   margin-left: .3em; }
 
 .fa-spin {
@@ -2571,7 +2571,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-music:before {
   content: "\f001"; }
 
-.fa-search:before, #header #quick-search label[for="q"]:before, span.live_search:before {
+.fa-search:before, #header #quick-search label[for="q"]:before, span.live_search:before, label[for="contact_company"]:before {
   content: "\f002"; }
 
 .fa-envelope-o:before {
@@ -2814,7 +2814,7 @@ a.close-icon:before,
 .fa-chevron-right:before {
   content: "\f054"; }
 
-.fa-plus-circle:before, .icon-add:before, .icon-multiple:before, .icon-test:before {
+.fa-plus-circle:before, .icon-add:before, .icon-add-payment:before, .icon-multiple:before, .icon-test:before, #invoice_contact_id_add_link:before {
   content: "\f055"; }
 
 .fa-minus-circle:before {
@@ -2956,7 +2956,7 @@ a.close-icon:before,
 .fa-cogs:before {
   content: "\f085"; }
 
-.fa-comments:before {
+.fa-comments:before, table.boards a.board:before, h3.comments:before {
   content: "\f086"; }
 
 .fa-thumbs-o-up:before {
@@ -3486,7 +3486,7 @@ div.members h3:before {
 .fa-minus-square-o:before {
   content: "\f147"; }
 
-.fa-level-up:before {
+.fa-level-up:before, .icon-merge:before {
   content: "\f148"; }
 
 .fa-level-down:before {
@@ -3845,7 +3845,7 @@ div.members h3:before {
 .fa-database:before {
   content: "\f1c0"; }
 
-.fa-file-pdf-o:before, .icon-file.application-pdf:before {
+.fa-file-pdf-o:before, .icon-file.application-pdf:before, .icon-pdf:before {
   content: "\f1c1"; }
 
 .fa-file-word-o:before {
@@ -4017,7 +4017,7 @@ div.members h3:before {
 .fa-bell-slash-o:before {
   content: "\f1f7"; }
 
-.fa-trash:before, .icon-del:before {
+.fa-trash:before, #watchers a.delete:before, .icon-del:before {
   content: "\f1f8"; }
 
 .fa-copyright:before {
@@ -4557,7 +4557,8 @@ h4, .wiki h3 {
   font-size: 0.9em; }
 
 h4 {
-  border-bottom: 1px solid #CCCCCC; }
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 1em; }
 
 a {
   color: #446E9B;
@@ -4597,7 +4598,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
 select:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(119, 119, 119, 0.6); }
 
-input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button, input[type="button"] + a, input[type="reset"] + a, input[type="submit"] + a, input[type="button"]:hover + a, input[type="reset"]:hover + a, input[type="submit"]:hover + a, .button + a, .button:hover + a, .button:hover, input[type="button"] + a:hover, input[type="reset"] + a:hover, input[type="submit"] + a:hover, .button + a:hover {
+input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button, input[type="button"] + a, input[type="reset"] + a, input[type="submit"] + a, input[type="button"]:hover + a, input[type="reset"]:hover + a, input[type="submit"]:hover + a, .button + a, .button:hover + a, #comments + p > a, .add-link a, .button:hover, input[type="button"] + a:hover, input[type="reset"] + a:hover, input[type="submit"] + a:hover, .button + a:hover, #comments + p > a:hover, .add-link a:hover {
   border: 1px solid #019875;
   background: #019875;
   color: white;
@@ -4608,7 +4609,7 @@ input[type="button"], input[type="reset"], input[type="submit"], input[type="but
   vertical-align: middle;
   text-align: center; }
 
-input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:focus, input[type="button"] + a:focus, input[type="reset"] + a:focus, input[type="submit"] + a:focus, .button + a:focus, .button:active, input[type="button"] + a:active, input[type="reset"] + a:active, input[type="submit"] + a:active, .button + a:active, input[type="button"]:focus + a:active, input[type="button"]:focus a:focus, input[type="reset"]:focus + a:active, input[type="reset"]:focus a:focus, input[type="submit"]:focus + a:active, input[type="submit"]:focus a:focus, input[type="button"]:active + a:active, input[type="button"]:active a:focus, input[type="reset"]:active + a:active, input[type="reset"]:active a:focus, input[type="submit"]:active + a:active, input[type="submit"]:active a:focus, .button:focus + a:active, input[type="button"] + a:focus + a:active, input[type="reset"] + a:focus + a:active, input[type="submit"] + a:focus + a:active, .button + a:focus + a:active, .button:focus a:focus, input[type="button"] + a:focus a:focus, input[type="reset"] + a:focus a:focus, input[type="submit"] + a:focus a:focus, .button + a:focus a:focus, .button:active + a:active, input[type="button"] + a:active + a:active, input[type="reset"] + a:active + a:active, input[type="submit"] + a:active + a:active, .button + a:active + a:active, .button:active a:focus, input[type="button"] + a:active a:focus, input[type="reset"] + a:active a:focus, input[type="submit"] + a:active a:focus, .button + a:active a:focus {
+input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:focus, input[type="button"] + a:focus, input[type="reset"] + a:focus, input[type="submit"] + a:focus, .button + a:focus, #comments + p > a:focus, .add-link a:focus, .button:active, input[type="button"] + a:active, input[type="reset"] + a:active, input[type="submit"] + a:active, .button + a:active, input[type="button"]:focus + a:active, input[type="button"]:focus a:focus, input[type="reset"]:focus + a:active, input[type="reset"]:focus a:focus, input[type="submit"]:focus + a:active, input[type="submit"]:focus a:focus, input[type="button"]:active + a:active, input[type="button"]:active a:focus, input[type="reset"]:active + a:active, input[type="reset"]:active a:focus, input[type="submit"]:active + a:active, input[type="submit"]:active a:focus, .button:focus + a:active, input[type="button"] + a:focus + a:active, input[type="reset"] + a:focus + a:active, input[type="submit"] + a:focus + a:active, .button + a:focus + a:active, .add-link a:focus + a:active, .button:focus a:focus, input[type="button"] + a:focus a:focus, input[type="reset"] + a:focus a:focus, input[type="submit"] + a:focus a:focus, .button + a:focus a:focus, .add-link a:focus a:focus, .button:active + a:active, input[type="button"] + a:active + a:active, input[type="reset"] + a:active + a:active, input[type="submit"] + a:active + a:active, .button + a:active + a:active, .add-link a:active + a:active, .button:active a:focus, input[type="button"] + a:active a:focus, input[type="reset"] + a:active a:focus, input[type="submit"] + a:active a:focus, .button + a:active a:focus, .add-link a:active a:focus, #comments + p > a:active, #comments + p > a:focus, .add-link a:active, .add-link a:focus {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset; }
 
 /* Layout */
@@ -4706,6 +4707,8 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     text-align: center; }
     #header .home:before {
       content: url(../images/logo.svg); }
+    #header .home:hover, #header .home:active {
+      background: rgba(71, 77, 87, 0.5); }
   #header #quick-search {
     position: relative;
     top: 0.7em;
@@ -4755,10 +4758,6 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     content: "";
     display: table;
     clear: both; }
-  #main-menu * {
-    -webkit-animation: fadeIn 1s;
-    -moz-animation: fadeIn 1s;
-    animation: fadeIn 1s; }
   #main-menu li {
     display: table-cell;
     width: 1%; }
@@ -4863,12 +4862,11 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     position: relative; }
     #main #content:last-child {
       margin-right: 0; }
-    #main #content .contextual:first-child {
-      position: absolute;
+    #main #content .contextual:first-child, #main #content .notice + .contextual {
+      position: relative;
       top: 1.6em;
-      right: 0;
-      text-align: right; }
-      #main #content .contextual:first-child a:before {
+      float: right; }
+      #main #content .contextual:first-child a:before, #main #content .notice + .contextual a:before {
         margin-left: 1em; }
     #main #content h2:first-of-type {
       font-weight: 400;
@@ -5176,9 +5174,8 @@ table.attributes th {
 table.attributes td {
   vertical-align: top; }
 
-table.boards a.board, h3.comments {
-  background: url(../images/comment.png) no-repeat 0 50%;
-  padding-left: 20px; }
+table.boards a.board:before, h3.comments:before {
+  margin-right: 0.5em; }
 
 table.boards td.last-message {
   text-align: left;
@@ -5227,6 +5224,11 @@ div.projects h3 {
 #watchers a.delete {
   opacity: 0.4;
   vertical-align: middle; }
+  #watchers a.delete:before {
+    margin-right: 0.5em;
+    font-size: 1.2em; }
+  #watchers a.delete img {
+    display: none !important; }
 
 #watchers img.gravatar {
   margin: 0 4px 2px 0; }
@@ -5333,10 +5335,11 @@ textarea.wiki-edit {
   margin-bottom: 1em; }
 
 div.issue {
-  background: #ffffdd;
-  margin-bottom: 6px;
-  border: 1px solid #d7d7d7;
-  padding: 6px; }
+  background: #F9F9F9 !important;
+  margin-bottom: 1em;
+  border: 1px solid #CCCCCC;
+  padding: 2em;
+  border-radius: 4px; }
 
 p.breadcrumb {
   font-size: 0.9em;
@@ -5851,28 +5854,22 @@ input.questions-search {
   font-size: 1.1em;
   padding: 1em;
   border-radius: 4px; }
-
-div.flash {
-  margin-top: 8px; }
+  #errorExplanation ul, div.flash ul, .nodata ul, .warning ul, .conflict ul {
+    margin: 0;
+    padding-left: 1em; }
 
 div.flash.error, #errorExplanation {
-  background: url(../images/exclamation.png) 8px 50% no-repeat;
-  background-color: #ffe3e3;
-  color: #880000;
-  border-color: #dd0000; }
+  background: red;
+  color: white; }
 
 div.flash.notice {
-  background: url(../images/true.png) 8px 5px no-repeat;
-  background-color: #dfffdf;
-  color: #005f00;
-  border-color: #9fcf9f; }
+  background-color: #2ecc71;
+  color: #176437; }
 
 div.flash.warning, .conflict {
-  background: url(../images/warning.png) 8px 5px no-repeat;
-  background-color: #FFEBC1;
-  color: #A6750C;
-  text-align: left;
-  border-color: #FDBF3B; }
+  background-color: #f39c12;
+  color: #7f5006;
+  text-align: left; }
 
 .nodata, .warning {
   text-align: center;
@@ -6199,7 +6196,7 @@ a.close-icon {
   position: relative; }
 
 a.close-icon:hover {
-  color: #c0392b; }
+  color: #e74c3c; }
 
 .gantt_hdr {
   position: absolute;
@@ -6289,21 +6286,20 @@ a.close-icon:hover {
 .version-behind-schedule a, .issue-behind-schedule a {
   color: #f66914; }
 
-.icon:before {
-  margin-right: 0.3em;
-  vertical-align: middle;
-  position: relative;
-  font-size: 1.2em;
-  top: -2px; }
+.icon {
+  background-image: none !important; }
+  .icon:before {
+    margin-right: 0.3em;
+    vertical-align: middle;
+    position: relative;
+    font-size: 1.2em;
+    top: -2px; }
 
 img.gravatar {
   background: white;
   vertical-align: middle;
   border-radius: 4px;
   overflow: hidden; }
-  img.gravatar + a {
-    display: inline-block;
-    vertical-align: middle; }
 
 div.issue img.gravatar {
   float: left;
@@ -6673,7 +6669,7 @@ tr.changeset td.author, tr.changeset td.committed_on {
 tr.message td.subject, tr.version td.name, fieldset#notified_events .parent {
   padding-left: 20px; }
 
-td.hours .hours-dec, .contextual input, .contextual select, table#time-report .hours-dec, #errorExplanation ul {
+td.hours .hours-dec, .contextual input, .contextual select, table#time-report .hours-dec {
   font-size: 0.9em; }
 
 table.plugins td, #related-issues li img, div.attachments img, h2 img {
@@ -6787,19 +6783,8 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 .syntaxhl .symbol .content, .syntaxhl .symbol .delimiter, .syntaxhl .symbol {
   color: #d33; }
 
-.icon-contact {
-  background: none !important; }
-  .icon-contact:before {
-    margin-right: 0.5em; }
-
-.icon-phone {
-  background: none !important; }
-
-.icon-email {
-  background: none !important; }
-
-.icon-linkedin {
-  background: none !important; }
+.icon-contact:before {
+  margin-right: 0.5em; }
 
 #block-form {
   display: inline-block;
@@ -6818,8 +6803,36 @@ div.contact {
   background: #F9F9F9 !important;
   border-radius: 4px !important; }
 
-div.person.details table.subject_header h1 {
+div.person.details table.subject_header h1,
+div.contact.details table.subject_header h1 {
   margin-top: 0; }
+
+label[for="contact_company"] {
+  position: relative; }
+  label[for="contact_company"]:before {
+    position: absolute;
+    top: 0.3em;
+    right: -2.5em;
+    color: #CCCCCC; }
+
+#invoice_contact_id_add_link:before {
+  margin-left: 0.5em;
+  font-size: 1.2em; }
+#invoice_contact_id_add_link img {
+  display: none !important; }
+
+#comments h4 {
+  border: 0;
+  border-top: 1px solid #CCCCCC;
+  padding: 0;
+  padding-top: 1em; }
+  #comments h4:first-of-type {
+    border: 0; }
+#comments + p > a {
+  margin-top: 2em; }
+
+.add-link a {
+  margin-top: 2em; }
 
 @media print {
   #main {

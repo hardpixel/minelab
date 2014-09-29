@@ -40,6 +40,7 @@ h4, .wiki h3
 
 h4
 	border-bottom: 1px solid $medium-grey
+	padding-bottom: 1em
 
 a
 	color: $blue
@@ -216,6 +217,9 @@ select:focus
 		&:before
 			content: url(../images/logo.svg)
 
+		&:hover, &:active
+			background: rgba($dark-blue, .5)
+
 	#quick-search
 		position: relative
 		top: .7em
@@ -272,9 +276,6 @@ select:focus
 	background: $light-grey
 	cursor: default
 	box-shadow: inset 0 -1px 0 $medium-grey
-
-	*
-		+animation(fadeIn 1s)
 
 	li
 		display: table-cell
@@ -435,11 +436,10 @@ select:focus
 		z-index: 10
 		position: relative
 
-		.contextual:first-child
-			position: absolute
+		.contextual:first-child, .notice + .contextual
+			position: relative
 			top: 1.6em
-			right: 0
-			text-align: right
+			float: right
 
 			a:before
 				margin-left: 1em
@@ -781,8 +781,11 @@ table.attributes td
 
 
 table.boards a.board, h3.comments
-	background: url(../images/comment.png) no-repeat 0 50%
-	padding-left: 20px
+	@extend .fa-comments
+
+	&:before
+		@extend .fa
+		margin-right: .5em
 
 table.boards td.last-message
 	text-align: left
@@ -847,6 +850,15 @@ div.projects h3
 #watchers a.delete
 	opacity: 0.4
 	vertical-align: middle
+	@extend .fa-trash
+
+	&:before
+		@extend .fa
+		margin-right: .5em
+		font-size: 1.2em
+
+	img
+		display: none !important
 
 
 #watchers img.gravatar
@@ -951,10 +963,11 @@ textarea.wiki-edit
 	margin-bottom: 1em
 
 div.issue
-	background: #ffffdd
-	margin-bottom: 6px
-	border: 1px solid #d7d7d7
-	padding: 6px
+	background: $white !important
+	margin-bottom: 1em
+	border: 1px solid $medium-grey
+	padding: 2em
+	border-radius: 4px
 
 p.breadcrumb
 	font-size: .9em
@@ -1488,27 +1501,22 @@ input.questions-search
 	padding: 1em
 	border-radius: 4px
 
-div.flash
-	margin-top: 8px
+	ul
+		margin: 0
+		padding-left: 1em
 
 div.flash.error, #errorExplanation
-	background: url(../images/exclamation.png) 8px 50% no-repeat
-	background-color: #ffe3e3
-	color: #880000
-	border-color: #dd0000
+	background: red
+	color: white
 
 div.flash.notice
-	background: url(../images/true.png) 8px 5px no-repeat
-	background-color: #dfffdf
-	color: #005f00
-	border-color: #9fcf9f
+	background-color: $green
+	color: darken($green, 25%)
 
 div.flash.warning, .conflict
-	background: url(../images/warning.png) 8px 5px no-repeat
-	background-color: #FFEBC1
-	color: #A6750C
+	background-color: $orange
+	color: darken($orange, 25%)
 	text-align: left
-	border-color: #FDBF3B
 
 .nodata, .warning
 	text-align: center
@@ -1934,15 +1942,18 @@ a.close-icon:hover
 .version-behind-schedule a, .issue-behind-schedule a
 	color: #f66914
 
-.icon:before
-	@extend .fa
-	margin-right: .3em
-	vertical-align: middle
-	position: relative
-	font-size: 1.2em
-	top: -2px
+.icon
+	background-image: none !important
 
-.icon-add
+	&:before
+		@extend .fa
+		margin-right: .3em
+		vertical-align: middle
+		position: relative
+		font-size: 1.2em
+		top: -2px
+
+.icon-add, .icon-add-payment
 	@extend .fa-plus-circle
 
 .icon-edit
@@ -2059,7 +2070,7 @@ a.close-icon:hover
 .icon-file.text-html
 	@extend .fa-file-code-o
 
-.icon-file.application-pdf
+.icon-file.application-pdf, .icon-pdf
 	@extend .fa-file-pdf-o
 
 img.gravatar
@@ -2067,10 +2078,6 @@ img.gravatar
 	vertical-align: middle
 	border-radius: 4px
 	overflow: hidden
-
-	+ a
-		display: inline-block
-		vertical-align: middle
 
 div.issue img.gravatar
 	float: left
@@ -2444,7 +2451,7 @@ tr.changeset td.author, tr.changeset td.committed_on
 tr.message td.subject, tr.version td.name, fieldset#notified_events .parent
 	padding-left: 20px
 
-td.hours .hours-dec, .contextual input, .contextual select, table#time-report .hours-dec, #errorExplanation ul
+td.hours .hours-dec, .contextual input, .contextual select, table#time-report .hours-dec
 	font-size: .9em
 
 table.plugins td, #related-issues li img, div.attachments img, h2 img
@@ -2573,7 +2580,6 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 
 .icon-contact
 	@extend .fa-book
-	background: none !important
 
 	&:before
 		@extend .fa
@@ -2581,15 +2587,15 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 
 .icon-phone
 	@extend .fa-phone
-	background: none !important
 
 .icon-email
 	@extend .fa-envelope
-	background: none !important
 
 .icon-linkedin
 	@extend .fa-linkedin
-	background: none !important
+
+.icon-merge
+	@extend .fa-level-up
 
 #block-form
 	display: inline-block
@@ -2610,8 +2616,58 @@ div.contact
 	background: $white !important
 	border-radius: 4px !important
 
-div.person.details table.subject_header h1
+div.person.details table.subject_header h1,
+div.contact.details table.subject_header h1
 	margin-top: 0
+
+label[for="contact_company"]
+	@extend .fa-search
+	position: relative
+
+	&:before
+		@extend .fa
+		position: absolute
+		top: .3em
+		right: -2.5em
+		color: $medium-grey
+
+#invoice_contact_id_add_link
+	@extend .fa-plus-circle
+
+	&:before
+		@extend .fa
+		margin-left: .5em
+		font-size: 1.2em
+
+	img
+		display: none !important
+
+#comments
+
+	h4
+		border: 0
+		border-top: 1px solid $medium-grey
+		padding: 0
+		padding-top: 1em
+
+		&:first-of-type
+			border: 0
+
+	+ p > a
+		@extend .button
+		margin-top: 2em
+
+		&:active, &:focus
+			@extend .button:active
+
+.add-link
+
+	a
+		@extend .button
+		margin-top: 2em
+
+		&:active, &:focus
+			@extend .button:active
 
 @media print
 
