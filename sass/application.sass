@@ -2138,6 +2138,13 @@ td.username img.gravatar
 #activity dt, .journal
 	clear: left
 
+#activity + a
+	@extend .button
+	margin-top: 2em
+
+	&:active, &:focus
+		@extend .button:active
+
 .hascontextmenu
 	cursor: context-menu
 
@@ -2605,6 +2612,15 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 
 .icon-contact
 	@extend .fa-book
+	background: none !important
+
+	&:before
+		@extend .fa
+		margin-right: .5em
+
+.icon-invoice
+	@extend .fa-file-excel-o
+	background: none !important
 
 	&:before
 		@extend .fa
@@ -2621,6 +2637,17 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 
 .icon-merge
 	@extend .fa-level-up
+
+.controller-people.action-show, .controller-contacts.action-show
+
+	#main
+
+		#sidebar
+			+span-columns(4)
+
+		#content
+			+span-columns(8)
+			margin-right: 0 !important
 
 #block-form
 	display: inline-block
@@ -2643,7 +2670,7 @@ div.contact
 
 div.person.details table.subject_header h1,
 div.contact.details table.subject_header h1
-	margin-top: 0
+	margin-top: -.3em
 
 #invoice_contact_id_add_link
 	@extend .fa-plus-circle
