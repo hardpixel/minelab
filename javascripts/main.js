@@ -1,1 +1,3 @@
-console.log('This would be the main JS file.');
+jQuery(document).ready(function($) {
+	$("#screenshots").lightGallery();
+});

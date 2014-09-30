@@ -67,7 +67,7 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   box-shadow: inset 0 -3px 3px -3px #337CB8;
-  background: url(../images/background.svg) no-repeat bottom right;
+  background: url(../images/background.svg) no-repeat bottom right #337CB8;
   background-size: cover;
 }
 
@@ -272,8 +272,8 @@ form {
   color: #474747;
 }
 #main-content h2:before {
-  content: "//";
-  color: #C20E0E;
+  content: ">";
+  color: #337CB8;
   padding-right: 0.3em;
   margin-left: -1.5em;
 }
@@ -534,6 +534,37 @@ footer a:hover {
     padding-right: 0;
     margin-left: 0;
   }
+}
+
+#screenshots {
+  list-style: none outside none;
+  padding-left: 0;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.gallery li {
+  display: block;
+  float: left;
+  margin-bottom: 6px;
+  width: 25%;
+}
+
+.gallery li img {
+  border-radius: 8px;
+  cursor: pointer;
+  border: 4px solid white;
+  -webkit-transition-duration: .4s;
+  -o-transition-duration: .4s;
+  transition-duration: .4s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery img:hover {
+  border-color: #337CB8;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
