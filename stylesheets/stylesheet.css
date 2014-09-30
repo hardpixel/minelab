@@ -257,25 +257,12 @@ form {
   color: #474747;
 }
 
-#main-content h1:before {
-  content: "/";
-  color: #C20E0E;
-  padding-right: 0.3em;
-  margin-left: -0.9em;
-}
-
 #main-content h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #474747;
-}
-#main-content h2:before {
-  content: ">";
-  color: #337CB8;
-  padding-right: 0.3em;
-  margin-left: -1.5em;
 }
 
 #main-content h3 {
@@ -287,13 +274,6 @@ form {
   color: #474747;
 }
 
-#main-content h3:before {
-  content: "///";
-  color: #C20E0E;
-  padding-right: 0.3em;
-  margin-left: -2em;
-}
-
 #main-content h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -301,35 +281,16 @@ form {
   color: #474747;
 }
 
-h4:before {
-  content: "////";
-  color: #C20E0E;
-  padding-right: 0.3em;
-  margin-left: -2.8em;
-}
-
 #main-content h5 {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #474747;
-}
-h5:before {
-  content: "/////";
-  color: #C20E0E;
-  padding-right: 0.3em;
-  margin-left: -3.2em;
 }
 
 #main-content h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: .8em;
   color: #474747;
-}
-h6:before {
-  content: "//////";
-  color: #C20E0E;
-  padding-right: 0.3em;
-  margin-left: -3.7em;
 }
 
 .widgettitle {
@@ -339,12 +300,6 @@ h6:before {
   margin: 20px 0 8px;
   color: #474747;
   margin-left: 35px;
-}
-.widgettitle:before {
-  content: "//";
-  color: #C20E0E;
-  padding-right: 0.3em;
-  margin-left: -1.5em;
 }
 
 .task-list {
