@@ -20,7 +20,4 @@ Screenshots are available at [Minlab's page](http://hardpixel.github.io/minelab/
 
 ## Credits
 
-[Bourbon](http://bourbon.io/)
-[Neat](http://neat.bourbon.io/)
-[Font Awesome](http://fontawesome.io/)
-[PACE](http://github.hubspot.com/pace/)
+[Bourbon](http://bourbon.io/) | [Neat](http://neat.bourbon.io/) | [Font Awesome](http://fontawesome.io/) | [PACE](http://github.hubspot.com/pace/)
