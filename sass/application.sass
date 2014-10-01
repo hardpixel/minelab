@@ -482,6 +482,12 @@ select
 			top: 1.6em
 			position: relative
 
+			+ .breadcrumb
+				position: relative
+				top: .8em
+				float: right
+				margin-right: 2em
+
 			a:before
 				margin-left: 1em
 
@@ -508,14 +514,6 @@ select
 			padding: 0 !important
 			border: 0 !important
 			font-weight: inherit !important
-
-		label
-
-			+ input, + select, + .select2-container, + .select2-container + select
-				margin-left: .5em
-
-				+ label
-					margin-left: 1em
 
 #footer
 	+row
@@ -962,7 +960,7 @@ span.search_for_watchers a, span.add_attachment a
 	background: $white
 	border: 1px solid $medium-grey
 	border-radius: 4px
-	margin-bottom: 2em
+	margin: 1em 0
 
 div.square
 	border: 1px solid #999
@@ -971,6 +969,12 @@ div.square
 	width: .6em
 	height: .6em
 	margin: .3em .4em 0
+
+.splitcontentleft,.splitcontentright
+
+	ul
+		padding-left: 0
+		list-style-type: none
 
 .splitcontentleft
 	+span-columns(6)
@@ -1050,7 +1054,7 @@ div.issue
 
 p.breadcrumb
 	font-size: .9em
-	margin: 4px 0
+	margin: 1em 0
 
 p.subtitle
 	font-size: .9em
@@ -1978,6 +1982,7 @@ a.close-icon:hover
 	overflow: hidden
 	white-space: nowrap
 	text-overflow: ellipsis
+	padding-left: 1em
 
 .task
 	position: absolute
@@ -2814,6 +2819,12 @@ div.contact.details table.subject_header h1
 
 div.agile-board.autoscroll
 	overflow-y: auto !important
+
+
+.controller-gantts.action-show
+
+	table td
+		padding: 0
 
 div[style*="clear:both"], div[style*="clear: both"]
 	display: inline-block

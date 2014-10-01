@@ -4622,6 +4622,11 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
       float: right;
       top: 1.6em;
       position: relative; }
+      #main #content .contextual + .breadcrumb {
+        position: relative;
+        top: 0.8em;
+        float: right;
+        margin-right: 2em; }
       #main #content .contextual a:before, #main #content .contextual .icon-add.checklist-new-only:before {
         margin-left: 1em; }
     #main #content h2:first-of-type {
@@ -4641,10 +4646,6 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
       padding: 0 !important;
       border: 0 !important;
       font-weight: inherit !important; }
-    #main #content label + input, #main #content label + select, #main #content label + .select2-container, #main #content label + .select2-container + select {
-      margin-left: 0.5em; }
-      #main #content label + input + label, #main #content label + select + label, #main #content label + .select2-container + label, #main #content label + .select2-container + select + label {
-        margin-left: 1em; }
 
 #footer {
   display: block;
@@ -5024,7 +5025,7 @@ span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-
   background: #F9F9F9;
   border: 1px solid #CCCCCC;
   border-radius: 4px;
-  margin-bottom: 2em; }
+  margin: 1em 0; }
 
 div.square {
   border: 1px solid #999;
@@ -5033,6 +5034,10 @@ div.square {
   width: 0.6em;
   height: 0.6em;
   margin: 0.3em 0.4em 0; }
+
+.splitcontentleft ul, .splitcontentright ul {
+  padding-left: 0;
+  list-style-type: none; }
 
 .splitcontentleft {
   float: left;
@@ -5114,7 +5119,7 @@ div.issue {
 
 p.breadcrumb {
   font-size: 0.9em;
-  margin: 4px 0; }
+  margin: 1em 0; }
 
 p.subtitle {
   font-size: 0.9em;
@@ -6012,7 +6017,8 @@ a.close-icon:hover, .close-icon.icon-add.checklist-new-only:hover {
   height: 16px;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  padding-left: 1em; }
 
 .task {
   position: absolute;
@@ -6666,6 +6672,9 @@ div.contact.details table.subject_header h1 {
 
 div.agile-board.autoscroll {
   overflow-y: auto !important; }
+
+.controller-gantts.action-show table td {
+  padding: 0; }
 
 div[style*="clear:both"], div[style*="clear: both"] {
   display: inline-block;
