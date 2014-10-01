@@ -4474,7 +4474,8 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
       background: rgba(71, 77, 87, 0.3);
       box-shadow: none !important;
       position: relative;
-      z-index: 0; }
+      z-index: 0;
+      color: rgba(255, 255, 255, 0.8); }
       #header #quick-search #q:active, #header #quick-search #q:focus {
         background: white;
         width: 15em; }
@@ -5038,6 +5039,8 @@ div.square {
 .splitcontentleft ul, .splitcontentright ul {
   padding-left: 0;
   list-style-type: none; }
+  .splitcontentleft ul li, .splitcontentright ul li {
+    padding: 0.3em 0; }
 
 .splitcontentleft {
   float: left;
@@ -5233,7 +5236,7 @@ div.journal.private-notes {
   margin-left: -6px; }
 
 div#activity dl, #search-results {
-  margin-left: 2em; }
+  margin-left: 0; }
 
 div#activity dd, #search-results dd {
   margin-bottom: 1em;
@@ -6673,8 +6676,18 @@ div.contact.details table.subject_header h1 {
 div.agile-board.autoscroll {
   overflow-y: auto !important; }
 
+div.issue.invoice div.subject, div.issue.invoice .author {
+  padding-left: 0 !important; }
+
 .controller-gantts.action-show table td {
   padding: 0; }
+
+#tab-content-projects ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+  #tab-content-projects ul li {
+    padding: 0.3em 0; }
 
 div[style*="clear:both"], div[style*="clear: both"] {
   display: inline-block;

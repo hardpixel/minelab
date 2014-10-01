@@ -265,6 +265,7 @@ select
 			box-shadow: none !important
 			position: relative
 			z-index: 0
+			color: rgba(white, .8)
 
 			&:active, &:focus
 				background: white
@@ -976,6 +977,9 @@ div.square
 		padding-left: 0
 		list-style-type: none
 
+		li
+			padding: .3em 0
+
 .splitcontentleft
 	+span-columns(6)
 
@@ -1179,7 +1183,7 @@ div.journal.private-notes
 	margin-left: -6px
 
 div#activity dl, #search-results
-	margin-left: 2em
+	margin-left: 0
 
 div#activity dd, #search-results dd
 	margin-bottom: 1em
@@ -2820,11 +2824,25 @@ div.contact.details table.subject_header h1
 div.agile-board.autoscroll
 	overflow-y: auto !important
 
+div.issue.invoice
+
+	div.subject, .author
+		padding-left: 0 !important
 
 .controller-gantts.action-show
 
 	table td
 		padding: 0
+
+#tab-content-projects
+
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+
+		li
+			padding: .3em 0
 
 div[style*="clear:both"], div[style*="clear: both"]
 	display: inline-block
