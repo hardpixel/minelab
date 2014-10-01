@@ -22,6 +22,6 @@ jQuery(document).ready(function($){
 			width: 'element'
 		});
 
-		$('input.autocomplete').parent().addClass('live_search');
+		$('input.autocomplete').wrap('<span class="icon-search"></span>');
 	});
 });

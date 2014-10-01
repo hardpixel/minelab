@@ -46,6 +46,7 @@ a
 	color: $blue
 	+transition-duration(.3s)
 	text-decoration: none
+	font-size: 1em
 
 	&:hover, &:active, &:focus
 		color: $dark-blue
@@ -71,6 +72,7 @@ a
 	vertical-align: middle
 	max-width: 100%
 	text-align: left
+	font-size: 1em
 
 	&:disabled
 		background: $light-grey
@@ -95,8 +97,10 @@ select
 	display: inline-block
 	vertical-align: middle
 	text-align: center
+	font-size: 1em
 
 	+ a
+		font-size: 1em
 		@extend .button
 
 #{$all-button-inputs-focus}, #{$all-button-inputs-active}, .button:focus, .button:active
@@ -121,7 +125,7 @@ select
 	padding: 1em
 	cursor: default
 
-	*
+	ul
 		+animation(fadeIn 1s)
 
 	li
@@ -162,6 +166,12 @@ select
 		&.people
 			@extend .fa-users
 
+		&.products
+			@extend .fa-shopping-cart
+
+		&.orders
+			@extend .fa-list-alt
+
 		&.administration
 			@extend .fa-gears
 
@@ -181,17 +191,18 @@ select
 		font-size: .9em
 		position: relative
 		top: .2em
+		+animation(fadeIn 1s)
 
 		a
 			font-size: 1em
+
+	#account
+		+animation(fadeIn 1s)
 
 #header
 	+row
 	background: $blue
 	color: white
-
-	*
-		+animation(fadeIn 1s)
 
 	h1
 		margin: 0
@@ -203,6 +214,7 @@ select
 		position: relative
 		padding-left: 3.8em
 		z-index: 0
+		+animation(fadeIn 1s)
 
 	.home
 		display: block
@@ -227,6 +239,7 @@ select
 		position: relative
 		top: .7em
 		z-index: 5
+		+animation(fadeIn 1s)
 
 		label[for="q"]
 			@extend .fa-search
@@ -279,6 +292,9 @@ select
 	background: $light-grey
 	cursor: default
 	box-shadow: inset 0 -1px 0 $medium-grey
+
+	ul
+		+animation(fadeIn 1s)
 
 	li
 		display: table-cell
@@ -352,6 +368,12 @@ select
 
 		&.people
 			@extend .fa-users
+
+		&.products
+			@extend .fa-shopping-cart
+
+		&.orders
+			@extend .fa-list-alt
 
 	a.projects, dt.project, .icon-projects
 		@extend .fa-cubes
@@ -427,20 +449,25 @@ select
 				label input
 					margin-right: .7em
 
-			a, + a
-				display: inline-block
-				width: 100%
-				border-radius: 4px
-				padding: .5em
-				color: $grey
-				margin-bottom: .2em
+		ul a, a[href$="agile/board"], a[href$="agile_versions"]
+			display: inline-block
+			width: 100%
+			border-radius: 4px
+			padding: .5em
+			color: $grey
+			margin-bottom: .2em
 
-				&:hover
-					background: $light-grey
+			&:hover
+				background: $light-grey
 
-				&.selected
-					background: $blue
-					color: white
+			&.selected
+				background: $blue
+				color: white
+
+		table
+
+			tr
+				background: none !important
 
 	#content
 		+span-columns(9)
@@ -448,10 +475,10 @@ select
 		z-index: 10
 		position: relative
 
-		.contextual:first-child, .notice + .contextual
-			position: relative
-			top: 1.6em
+		.contextual
 			float: right
+			top: 1.6em
+			position: relative
 
 			a:before
 				margin-left: 1em
@@ -462,11 +489,12 @@ select
 			margin: 0 0 1.2em
 			padding: .7em 0
 
+			.live_search
+				margin-left: 1em
+
 		form
 
 			.contextual
-				float: right
-				position: relative
 				top: .4em
 				margin: 0
 
@@ -478,6 +506,14 @@ select
 			padding: 0 !important
 			border: 0 !important
 			font-weight: inherit !important
+
+		label
+
+			+ input, + select, + .select2-container, + .select2-container + select
+				margin-left: .5em
+
+				+ label
+					margin-left: 1em
 
 #footer
 	+row
@@ -518,20 +554,23 @@ select
 
 /* Login */
 
-#login-form table
-	margin-top: 5em
-	margin-left: auto
-	margin-right: auto
-	padding: 1em
+#login-form
 
-#login-form table td
-	padding: .5em
+	input#username, #login-form input#password
+		width: 20em
 
-#login-form table tr
-	background: none !important
+	table
+		margin-top: 5em
+		margin-left: auto
+		margin-right: auto
+		padding: 1em
 
-#login-form input#username, #login-form input#password
-	width: 20em
+	td
+		padding: .5em
+
+	tr
+		background: none !important
+
 
 div.modal
 	border-radius: 4px
@@ -539,9 +578,9 @@ div.modal
 	z-index: 50
 	padding: .5em
 
-div.modal p.buttons
-	text-align: right
-	margin-bottom: 0
+	p.buttons
+		text-align: right
+		margin-bottom: 0
 
 input#openid_url
 	background: url(../images/openid-bg.gif) no-repeat
@@ -984,6 +1023,24 @@ div.issue
 	padding: 2em
 	border-radius: 4px
 
+	div.subject
+		padding-left: 4.5em
+
+	.author
+		margin: .3em 0 0
+		padding-left: 4.5em
+
+	.attributes
+		margin-top: 2em
+
+	.contextual
+		top: 0 !important
+
+	table.issues
+
+		tr:last-child td
+			border-bottom: 0 !important
+
 p.breadcrumb
 	font-size: .9em
 	margin: 4px 0
@@ -998,13 +1055,9 @@ p.footnote
 	margin-top: 0
 	margin-bottom: 0
 
-div.issue div.subject div div
-	padding-left: 16px
-
 div.issue div.subject p
 	font-size: 90%
-	color: #999
-	margin: 0 0 .1em
+	margin: 0 0 .3em
 
 div.issue div.subject h3
 	margin: 0 0 .1em
@@ -1099,8 +1152,15 @@ div#issue-changesets p
 	margin-top: 0
 	margin-bottom: 1em
 
-.journal ul.details img
-	margin: 0 0 -3px 4px
+.journal
+
+	ul.details
+		list-style-type: none
+		padding-left: 0
+		color: $grey
+
+		img
+			margin: 0 0 -3px 4px
 
 div.journal.private-notes
 	border-left: 2px solid $light-grey
@@ -1428,9 +1488,10 @@ div.thumbnails img
 	margin: 3px
 
 p.other-formats
+	+outer-container
 	text-align: right
 	font-size: .9em
-	color: #666
+	margin-top: 3em
 
 .other-formats span + span:before
 	content: "| "
@@ -1482,8 +1543,14 @@ table.members td.group
 
 .live_search
 	position: relative
-	@extend .fa-search
 	font-size: .7em
+
+	&.normal
+		font-size: 1em
+
+.icon-search
+	@extend .fa-search
+	position: relative
 
 	&:before
 		@extend .fa
@@ -1492,9 +1559,6 @@ table.members td.group
 		left: .5em
 		color: $medium-grey
 		z-index: 5
-
-	&.normal
-		font-size: 1em
 
 th.live_search
 
@@ -1508,11 +1572,11 @@ input.autocomplete, input.live_search_field, input.questions-search
 	font-size: inherit !important
 	+transition-property(border, box-shadow)
 	position: relative
-	z-index: 0
 	margin-top: -.8em
 	top: .4em
 	height: auto !important
-	background: none !important
+	background: white !important
+	z-index: 0
 
 	&.ajax-loading
 		background: url(../images/loading.gif) no-repeat 97% center !important
@@ -1866,6 +1930,11 @@ div.wiki img
 	color: #505050
 	line-height: 1.5em
 	margin: 0 0 20px
+	border: 0 !important
+	border-radius: 4px
+	background: white
+	padding: .5em !important
+	margin: 0 0 1em !important
 
 .handle
 	cursor: move
@@ -2109,7 +2178,7 @@ img.gravatar
 
 div.issue img.gravatar
 	float: left
-	margin: 0 .5 0 0
+	margin: 0
 
 div.issue table img.gravatar
 	height: 1em
@@ -2517,7 +2586,7 @@ span.search_for_watchers, fieldset.settings label, #tab-content-members fieldset
 .splitcontent, div.journal, .syntaxhl .code pre
 	overflow: auto
 
-div.issue div.subject > div > p, div#search-results-counts ul
+div#search-results-counts ul
 	margin-top: .5em
 
 fieldset#filters td.values input, table.progress td
@@ -2724,6 +2793,10 @@ div.contact.details table.subject_header h1
 
 		&:active, &:focus
 			@extend .button:active
+
+div[style*="clear:both"], div[style*="clear: both"]
+	display: inline-block
+	width: 100%
 
 @media print
 
