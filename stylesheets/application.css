@@ -128,7 +128,7 @@
   background: #ffffff;
   color: #4F4F4F; }
 
-.ui-widget-content a {
+.ui-widget-content a, .ui-widget-content .icon-add.checklist-new-only {
   color: #4F4F4F; }
 
 .ui-widget-header {
@@ -152,7 +152,7 @@
   background: linear-gradient(top, #ededed 0%, #c4c4c4 100%);
   /* W3C */ }
 
-.ui-widget-header a {
+.ui-widget-header a, .ui-widget-header .icon-add.checklist-new-only {
   color: #4F4F4F; }
 
 /* Interaction states
@@ -181,7 +181,7 @@
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset; }
 
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+.ui-state-default a, .ui-state-default .icon-add.checklist-new-only, .ui-state-default a:link, .ui-state-default .icon-add.checklist-new-only:link, .ui-state-default a:visited, .ui-state-default .icon-add.checklist-new-only:visited {
   color: #4F4F4F;
   text-decoration: none; }
 
@@ -190,7 +190,7 @@
   font-weight: normal;
   color: #313131; }
 
-.ui-state-hover a, .ui-state-hover a:hover {
+.ui-state-hover a, .ui-state-hover .icon-add.checklist-new-only, .ui-state-hover a:hover, .ui-state-hover .icon-add.checklist-new-only:hover {
   color: #313131;
   text-decoration: none; }
 
@@ -216,7 +216,7 @@
   -moz-box-shadow: none;
   box-shadow: none; }
 
-.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+.ui-state-active a, .ui-state-active .icon-add.checklist-new-only, .ui-state-active a:link, .ui-state-active .icon-add.checklist-new-only:link, .ui-state-active a:visited, .ui-state-active .icon-add.checklist-new-only:visited {
   color: #313131;
   text-decoration: none; }
 
@@ -233,7 +233,7 @@
   -webkit-border-radius: 0 !important;
   border-radius: 0 !important; }
 
-.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+.ui-state-highlight a, .ui-state-highlight .icon-add.checklist-new-only, .ui-widget-content .ui-state-highlight a, .ui-widget-content .ui-state-highlight .icon-add.checklist-new-only, .ui-widget-header .ui-state-highlight a, .ui-widget-header .ui-state-highlight .icon-add.checklist-new-only {
   color: #363636; }
 
 .ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
@@ -244,7 +244,7 @@
   -webkit-border-radius: 0 !important;
   border-radius: 0 !important; }
 
-.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+.ui-state-error a, .ui-state-error .icon-add.checklist-new-only, .ui-widget-content .ui-state-error a, .ui-widget-content .ui-state-error .icon-add.checklist-new-only, .ui-widget-header .ui-state-error a, .ui-widget-header .ui-state-error .icon-add.checklist-new-only {
   color: #cd0a0a; }
 
 .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
@@ -1016,13 +1016,13 @@
 .ui-accordion .ui-accordion-header-active {
   border-bottom: 0 !important; }
 
-.ui-accordion .ui-accordion-header a {
+.ui-accordion .ui-accordion-header a, .ui-accordion .ui-accordion-header .icon-add.checklist-new-only {
   display: block;
   font-size: 12px;
   font-weight: bold;
   padding: .5em .5em .5em .7em; }
 
-.ui-accordion-icons .ui-accordion-header a {
+.ui-accordion-icons .ui-accordion-header a, .ui-accordion-icons .ui-accordion-header .icon-add.checklist-new-only {
   padding-left: 2.2em; }
 
 .ui-accordion .ui-accordion-header .ui-icon {
@@ -1097,15 +1097,16 @@
   clear: left;
   width: 100%; }
 
-.ui-menu .ui-menu-item a {
+.ui-menu .ui-menu-item a, .ui-menu .ui-menu-item .icon-add.checklist-new-only {
   text-decoration: none;
   display: block;
   padding: .2em .4em;
   line-height: 1.5;
   zoom: 1; }
 
-.ui-menu .ui-menu-item a.ui-state-hover,
-.ui-menu .ui-menu-item a.ui-state-active {
+.ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item .ui-state-hover.icon-add.checklist-new-only,
+.ui-menu .ui-menu-item a.ui-state-active,
+.ui-menu .ui-menu-item .ui-state-active.icon-add.checklist-new-only {
   font-weight: normal;
   margin: -1px;
   background: #5f83b9;
@@ -1497,7 +1498,7 @@ button.ui-button::-moz-focus-inner {
   padding: 0;
   white-space: nowrap; }
 
-.ui-tabs .ui-tabs-nav li a {
+.ui-tabs .ui-tabs-nav li a, .ui-tabs .ui-tabs-nav li .icon-add.checklist-new-only {
   float: left;
   padding: .5em 1em;
   text-decoration: none;
@@ -1511,11 +1512,11 @@ button.ui-button::-moz-focus-inner {
   background: #fff;
   border-color: #B6B6B6; }
 
-.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-tabs-selected .icon-add.checklist-new-only, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-disabled .icon-add.checklist-new-only, .ui-tabs .ui-tabs-nav li.ui-state-processing a, .ui-tabs .ui-tabs-nav li.ui-state-processing .icon-add.checklist-new-only {
   cursor: text;
   outline: none; }
 
-.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+.ui-tabs .ui-tabs-nav li a, .ui-tabs .ui-tabs-nav li .icon-add.checklist-new-only, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected .icon-add.checklist-new-only {
   cursor: pointer; }
 
 /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
@@ -1633,7 +1634,7 @@ button.ui-button::-moz-focus-inner {
   border: 0;
   padding: 1px; }
 
-.ui-datepicker td span, .ui-datepicker td a {
+.ui-datepicker td span, .ui-datepicker td a, .ui-datepicker td .icon-add.checklist-new-only {
   display: block;
   padding: .2em;
   text-align: right;
@@ -2419,7 +2420,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.fa, .jstElements button[type="button"]:before, #top-menu a:before, #header #quick-search label[for="q"]:before, #admin-menu a:before, tr.project [id^="favorite_project"], table.boards a.board:before, h3.comments:before, h3.version:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before, #watchers a.delete:before, fieldset.collapsible > legend:before, .my-project:before, .icon-search:before, a.close-icon:before, .icon:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, dt.time-entry:before, dt.attachment:before, dt.issue-closed:before, .icon-contact:before, .icon-invoice:before, .jstEditor:not(.zen) button.jstb_zenedit:before, #invoice_contact_id_add_link:before {
+.fa, #context-menu li a.submenu:before, .jstElements button[type="button"]:before, #top-menu a:before, #top-menu .icon-add.checklist-new-only:before, #header #quick-search label[for="q"]:before, #admin-menu a:before, #admin-menu .icon-add.checklist-new-only:before, tr.project [id^="favorite_project"], table.boards a.board:before, table.boards .board.icon-add.checklist-new-only:before, h3.comments:before, h3.version:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before, #watchers a.delete:before, #watchers .delete.icon-add.checklist-new-only:before, span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before, fieldset.collapsible > legend:before, .my-project:before, .icon-search:before, a.close-icon:before, .close-icon.icon-add.checklist-new-only:before, .icon:before, #context-menu li a:before, #context-menu li .icon-add.checklist-new-only:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before, dt.time-entry:before, dt.attachment:before, dt.issue-closed:before, .icon-contact:before, .icon-invoice:before, .jstEditor:not(.zen) button.jstb_zenedit:before, #invoice_contact_id_add_link:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -2478,10 +2479,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .pull-left {
   float: left; }
 
-.fa.pull-left, .jstElements button.pull-left[type="button"]:before, #top-menu a.pull-left:before, #header #quick-search label.pull-left[for="q"]:before, #admin-menu a.pull-left:before, tr.project .pull-left[id^="favorite_project"], table.boards a.pull-left.board:before, h3.pull-left.comments:before, h3.pull-left.version:before, div.issues h3.pull-left:before, div.members h3.pull-left:before, div.news h3.pull-left:before, div.projects h3.pull-left:before, #watchers a.pull-left.delete:before, fieldset.collapsible > legend.pull-left:before, .pull-left.my-project:before, .pull-left.icon-search:before, a.pull-left.close-icon:before, .pull-left.icon:before, tr.project.idnt td.name span.pull-left:before, tr.issue.idnt td.subject a.pull-left:before, dt.pull-left.time-entry:before, dt.pull-left.attachment:before, dt.pull-left.issue-closed:before, .pull-left.icon-contact:before, .pull-left.icon-invoice:before, .jstEditor:not(.zen) button.pull-left.jstb_zenedit:before, .pull-left#invoice_contact_id_add_link:before {
+.fa.pull-left, .jstElements button.pull-left[type="button"]:before, #top-menu a.pull-left:before, #top-menu .pull-left.icon-add.checklist-new-only:before, #header #quick-search label.pull-left[for="q"]:before, #admin-menu a.pull-left:before, #admin-menu .pull-left.icon-add.checklist-new-only:before, tr.project .pull-left[id^="favorite_project"], table.boards a.pull-left.board:before, table.boards .pull-left.board.icon-add.checklist-new-only:before, h3.pull-left.comments:before, h3.pull-left.version:before, div.issues h3.pull-left:before, div.members h3.pull-left:before, div.news h3.pull-left:before, div.projects h3.pull-left:before, #watchers a.pull-left.delete:before, #watchers .pull-left.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-left:before, span.search_for_watchers .pull-left.icon-add.checklist-new-only:before, span.add_attachment a.pull-left:before, span.add_attachment .pull-left.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-left:before, .pull-left.my-project:before, .pull-left.icon-search:before, a.pull-left.close-icon:before, .pull-left.close-icon.icon-add.checklist-new-only:before, .pull-left.icon:before, #context-menu li a.pull-left:before, #context-menu li .pull-left.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-left:before, tr.issue.idnt td.subject a.pull-left:before, tr.issue.idnt td.subject .pull-left.icon-add.checklist-new-only:before, dt.pull-left.time-entry:before, dt.pull-left.attachment:before, dt.pull-left.issue-closed:before, .pull-left.icon-contact:before, .pull-left.icon-invoice:before, .jstEditor:not(.zen) button.pull-left.jstb_zenedit:before, .pull-left#invoice_contact_id_add_link:before {
   margin-right: .3em; }
 
-.fa.pull-right, .jstElements button.pull-right[type="button"]:before, #top-menu a.pull-right:before, #header #quick-search label.pull-right[for="q"]:before, #admin-menu a.pull-right:before, tr.project .pull-right[id^="favorite_project"], table.boards a.pull-right.board:before, h3.pull-right.comments:before, h3.pull-right.version:before, div.issues h3.pull-right:before, div.members h3.pull-right:before, div.news h3.pull-right:before, div.projects h3.pull-right:before, #watchers a.pull-right.delete:before, fieldset.collapsible > legend.pull-right:before, .pull-right.my-project:before, .pull-right.icon-search:before, a.pull-right.close-icon:before, .pull-right.icon:before, tr.project.idnt td.name span.pull-right:before, tr.issue.idnt td.subject a.pull-right:before, dt.pull-right.time-entry:before, dt.pull-right.attachment:before, dt.pull-right.issue-closed:before, .pull-right.icon-contact:before, .pull-right.icon-invoice:before, .jstEditor:not(.zen) button.pull-right.jstb_zenedit:before, .pull-right#invoice_contact_id_add_link:before {
+.fa.pull-right, .jstElements button.pull-right[type="button"]:before, #top-menu a.pull-right:before, #top-menu .pull-right.icon-add.checklist-new-only:before, #header #quick-search label.pull-right[for="q"]:before, #admin-menu a.pull-right:before, #admin-menu .pull-right.icon-add.checklist-new-only:before, tr.project .pull-right[id^="favorite_project"], table.boards a.pull-right.board:before, table.boards .pull-right.board.icon-add.checklist-new-only:before, h3.pull-right.comments:before, h3.pull-right.version:before, div.issues h3.pull-right:before, div.members h3.pull-right:before, div.news h3.pull-right:before, div.projects h3.pull-right:before, #watchers a.pull-right.delete:before, #watchers .pull-right.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-right:before, span.search_for_watchers .pull-right.icon-add.checklist-new-only:before, span.add_attachment a.pull-right:before, span.add_attachment .pull-right.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-right:before, .pull-right.my-project:before, .pull-right.icon-search:before, a.pull-right.close-icon:before, .pull-right.close-icon.icon-add.checklist-new-only:before, .pull-right.icon:before, #context-menu li a.pull-right:before, #context-menu li .pull-right.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-right:before, tr.issue.idnt td.subject a.pull-right:before, tr.issue.idnt td.subject .pull-right.icon-add.checklist-new-only:before, dt.pull-right.time-entry:before, dt.pull-right.attachment:before, dt.pull-right.issue-closed:before, .pull-right.icon-contact:before, .pull-right.icon-invoice:before, .jstEditor:not(.zen) button.pull-right.jstb_zenedit:before, .pull-right#invoice_contact_id_add_link:before {
   margin-left: .3em; }
 
 .fa-spin {
@@ -2586,13 +2587,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-star-o:before, .icon-fav-off:before {
   content: "\f006"; }
 
-.fa-user:before, #top-menu a.my-account:before, #admin-menu a.users:before, #admin-menu .icon-user:before {
+.fa-user:before, #top-menu a.my-account:before, #top-menu .my-account.icon-add.checklist-new-only:before, #admin-menu a.users:before, #admin-menu .users.icon-add.checklist-new-only:before, #admin-menu .icon-user:before {
   content: "\f007"; }
 
 .fa-film:before {
   content: "\f008"; }
 
-.fa-th-large:before, #admin-menu a.workflows:before {
+.fa-th-large:before, #admin-menu a.workflows:before, #admin-menu .workflows.icon-add.checklist-new-only:before {
   content: "\f009"; }
 
 .fa-th:before {
@@ -2607,6 +2608,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-remove:before,
 .fa-close:before,
 a.close-icon:before,
+.close-icon.icon-add.checklist-new-only:before,
 .fa-times:before {
   content: "\f00d"; }
 
@@ -2663,7 +2665,7 @@ a.close-icon:before,
 .fa-refresh:before, .icon-reload:before {
   content: "\f021"; }
 
-.fa-list-alt:before, #top-menu a.orders:before, #admin-menu a.orders:before {
+.fa-list-alt:before, #top-menu a.orders:before, #top-menu .orders.icon-add.checklist-new-only:before, #admin-menu a.orders:before, #admin-menu .orders.icon-add.checklist-new-only:before {
   content: "\f022"; }
 
 .fa-lock:before, .icon-lock:before {
@@ -2696,7 +2698,7 @@ a.close-icon:before,
 .fa-tags:before {
   content: "\f02c"; }
 
-.fa-book:before, #top-menu a.contacts:before, #admin-menu a.contacts:before, .icon-contact:before {
+.fa-book:before, #top-menu a.contacts:before, #top-menu .contacts.icon-add.checklist-new-only:before, #admin-menu a.contacts:before, #admin-menu .contacts.icon-add.checklist-new-only:before, .icon-contact:before {
   content: "\f02d"; }
 
 .fa-bookmark:before {
@@ -2735,7 +2737,7 @@ a.close-icon:before,
 .fa-align-justify:before {
   content: "\f039"; }
 
-.fa-list:before, #admin-menu a.enumerations:before {
+.fa-list:before, #admin-menu a.enumerations:before, #admin-menu .enumerations.icon-add.checklist-new-only:before {
   content: "\f03a"; }
 
 .fa-dedent:before,
@@ -2767,7 +2769,7 @@ a.close-icon:before,
 .fa-tint:before {
   content: "\f043"; }
 
-.fa-edit:before, #admin-menu a.custom_fields:before,
+.fa-edit:before, #admin-menu a.custom_fields:before, #admin-menu .custom_fields.icon-add.checklist-new-only:before,
 .fa-pencil-square-o:before {
   content: "\f044"; }
 
@@ -2816,7 +2818,7 @@ a.close-icon:before,
 .fa-chevron-right:before {
   content: "\f054"; }
 
-.fa-plus-circle:before, .icon-add:before, .icon-add-payment:before, .icon-multiple:before, .icon-test:before, #invoice_contact_id_add_link:before {
+.fa-plus-circle:before, span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before, .icon-add:before, .icon-add-payment:before, .icon-multiple:before, .icon-test:before, #invoice_contact_id_add_link:before {
   content: "\f055"; }
 
 .fa-minus-circle:before {
@@ -2831,7 +2833,7 @@ a.close-icon:before,
 .fa-question-circle:before, .jstElements .jstb_help:before {
   content: "\f059"; }
 
-.fa-info-circle:before, #admin-menu a.info:before, #admin-menu .icon-help:before {
+.fa-info-circle:before, #admin-menu a.info:before, #admin-menu .info.icon-add.checklist-new-only:before, #admin-menu .icon-help:before {
   content: "\f05a"; }
 
 .fa-crosshairs:before, .icon-move:before {
@@ -2889,7 +2891,7 @@ a.close-icon:before,
 .fa-fire:before {
   content: "\f06d"; }
 
-.fa-eye:before, #admin-menu a.roles:before {
+.fa-eye:before, #admin-menu a.roles:before, #admin-menu .roles.icon-add.checklist-new-only:before {
   content: "\f06e"; }
 
 .fa-eye-slash:before {
@@ -2923,7 +2925,7 @@ a.close-icon:before,
 .fa-retweet:before {
   content: "\f079"; }
 
-.fa-shopping-cart:before, #top-menu a.products:before, #admin-menu a.products:before {
+.fa-shopping-cart:before, #top-menu a.products:before, #top-menu .products.icon-add.checklist-new-only:before, #admin-menu a.products:before, #admin-menu .products.icon-add.checklist-new-only:before {
   content: "\f07a"; }
 
 .fa-folder:before, .icon-folder:before {
@@ -2951,14 +2953,14 @@ a.close-icon:before,
 .fa-camera-retro:before {
   content: "\f083"; }
 
-.fa-key:before, #admin-menu a.server_authentication:before, #admin-menu .icon-server-authentication:before {
+.fa-key:before, #admin-menu a.server_authentication:before, #admin-menu .server_authentication.icon-add.checklist-new-only:before, #admin-menu .icon-server-authentication:before {
   content: "\f084"; }
 
-.fa-gears:before, #top-menu a.administration:before, #admin-menu a.settings:before, #admin-menu dt.changeset:before,
+.fa-gears:before, #top-menu a.administration:before, #top-menu .administration.icon-add.checklist-new-only:before, #admin-menu a.settings:before, #admin-menu .settings.icon-add.checklist-new-only:before, #admin-menu dt.changeset:before,
 .fa-cogs:before {
   content: "\f085"; }
 
-.fa-comments:before, table.boards a.board:before, h3.comments:before {
+.fa-comments:before, table.boards a.board:before, table.boards .board.icon-add.checklist-new-only:before, h3.comments:before {
   content: "\f086"; }
 
 .fa-thumbs-o-up:before {
@@ -2973,7 +2975,7 @@ a.close-icon:before,
 .fa-heart-o:before {
   content: "\f08a"; }
 
-.fa-sign-out:before, #top-menu a.logout:before {
+.fa-sign-out:before, #top-menu a.logout:before, #top-menu .logout.icon-add.checklist-new-only:before {
   content: "\f08b"; }
 
 .fa-linkedin-square:before {
@@ -3084,10 +3086,12 @@ a.close-icon:before,
 .fa-arrows-alt:before, .jstEditor:not(.zen) button.jstb_zenedit:before {
   content: "\f0b2"; }
 
-.fa-group:before, #admin-menu a.groups:before,
+.fa-group:before, #admin-menu a.groups:before, #admin-menu .groups.icon-add.checklist-new-only:before,
 .fa-users:before,
 #top-menu a.people:before,
+#top-menu .people.icon-add.checklist-new-only:before,
 #admin-menu a.people:before,
+#admin-menu .people.icon-add.checklist-new-only:before,
 div.members h3:before {
   content: "\f0c0"; }
 
@@ -3117,7 +3121,7 @@ div.members h3:before {
 .fa-floppy-o:before {
   content: "\f0c7"; }
 
-.fa-square:before, #admin-menu a.trackers:before, #admin-menu dt.issue:before, #admin-menu .icon-issue:before, div.issues h3:before {
+.fa-square:before, #admin-menu a.trackers:before, #admin-menu .trackers.icon-add.checklist-new-only:before, #admin-menu dt.issue:before, #admin-menu .icon-issue:before, div.issues h3:before {
   content: "\f0c8"; }
 
 .fa-navicon:before,
@@ -3158,7 +3162,7 @@ div.members h3:before {
 .fa-google-plus:before {
   content: "\f0d5"; }
 
-.fa-money:before, #top-menu a.finance:before, #admin-menu a.finance:before {
+.fa-money:before, #top-menu a.finance:before, #top-menu .finance.icon-add.checklist-new-only:before, #admin-menu a.finance:before, #admin-menu .finance.icon-add.checklist-new-only:before {
   content: "\f0d6"; }
 
 .fa-caret-down:before, fieldset.collapsible.collapsed > legend:before {
@@ -3170,7 +3174,7 @@ div.members h3:before {
 .fa-caret-left:before {
   content: "\f0d9"; }
 
-.fa-caret-right:before, fieldset.collapsible > legend:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before {
+.fa-caret-right:before, fieldset.collapsible > legend:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before {
   content: "\f0da"; }
 
 .fa-columns:before, .jstElements .jstb_pre:before {
@@ -3196,14 +3200,15 @@ div.members h3:before {
 
 .fa-rotate-left:before,
 .fa-undo:before,
-#admin-menu a.agile:before {
+#admin-menu a.agile:before,
+#admin-menu .agile.icon-add.checklist-new-only:before {
   content: "\f0e2"; }
 
 .fa-legal:before,
 .fa-gavel:before {
   content: "\f0e3"; }
 
-.fa-dashboard:before, #top-menu a.my-page:before,
+.fa-dashboard:before, #top-menu a.my-page:before, #top-menu .my-page.icon-add.checklist-new-only:before,
 .fa-tachometer:before {
   content: "\f0e4"; }
 
@@ -3344,7 +3349,7 @@ div.members h3:before {
 .fa-github-alt:before {
   content: "\f113"; }
 
-.fa-folder-o:before {
+.fa-folder-o:before, #context-menu li a.submenu:before, #context-menu li .submenu.icon-add.checklist-new-only:before {
   content: "\f114"; }
 
 .fa-folder-open-o:before {
@@ -3417,7 +3422,7 @@ div.members h3:before {
 .fa-eraser:before {
   content: "\f12d"; }
 
-.fa-puzzle-piece:before, #admin-menu a.plugins:before {
+.fa-puzzle-piece:before, #admin-menu a.plugins:before, #admin-menu .plugins.icon-add.checklist-new-only:before {
   content: "\f12e"; }
 
 .fa-microphone:before {
@@ -3498,7 +3503,7 @@ div.members h3:before {
 .fa-check-square:before, .icon-checked:before {
   content: "\f14a"; }
 
-.fa-pencil-square:before, #admin-menu a.issue_statuses:before, #admin-menu dt.issue-edit:before {
+.fa-pencil-square:before, #admin-menu a.issue_statuses:before, #admin-menu .issue_statuses.icon-add.checklist-new-only:before, #admin-menu dt.issue-edit:before {
   content: "\f14b"; }
 
 .fa-external-link-square:before {
@@ -3807,7 +3812,7 @@ div.members h3:before {
 .fa-cube:before, h3.version:before, .icon-package:before {
   content: "\f1b2"; }
 
-.fa-cubes:before, #top-menu a.projects:before, #admin-menu a.projects:before, #admin-menu dt.project:before, #admin-menu .icon-projects:before, div.projects h3:before {
+.fa-cubes:before, #top-menu a.projects:before, #top-menu .projects.icon-add.checklist-new-only:before, #admin-menu a.projects:before, #admin-menu .projects.icon-add.checklist-new-only:before, #admin-menu dt.project:before, #admin-menu .icon-projects:before, div.projects h3:before {
   content: "\f1b3"; }
 
 .fa-behance:before {
@@ -3854,7 +3859,7 @@ div.members h3:before {
 .fa-file-word-o:before {
   content: "\f1c2"; }
 
-.fa-file-excel-o:before, #top-menu a.invoices:before, #admin-menu a.invoices:before, .icon-invoice:before {
+.fa-file-excel-o:before, #top-menu a.invoices:before, #top-menu .invoices.icon-add.checklist-new-only:before, #admin-menu a.invoices:before, #admin-menu .invoices.icon-add.checklist-new-only:before, .icon-invoice:before {
   content: "\f1c3"; }
 
 .fa-file-powerpoint-o:before {
@@ -3894,6 +3899,7 @@ div.members h3:before {
 .fa-life-saver:before,
 .fa-support:before,
 #top-menu a.questions:before,
+#top-menu .questions.icon-add.checklist-new-only:before,
 .fa-life-ring:before {
   content: "\f1cd"; }
 
@@ -4020,7 +4026,7 @@ div.members h3:before {
 .fa-bell-slash-o:before {
   content: "\f1f7"; }
 
-.fa-trash:before, #watchers a.delete:before, .icon-del:before {
+.fa-trash:before, #watchers a.delete:before, #watchers .delete.icon-add.checklist-new-only:before, .icon-del:before {
   content: "\f1f8"; }
 
 .fa-copyright:before {
@@ -4198,10 +4204,31 @@ li.change.change-R {
 li.change.change-D {
   background-image: url(../images/bullet_delete.png); }
 
-#context-menu li a.submenu {
-  background: url("../images/bullet_arrow_right.png") right no-repeat; }
+#context-menu {
+  margin-top: -13em;
+  margin-left: -37em;
+  padding-bottom: 4em; }
+  #context-menu ul {
+    border-color: #CCCCCC !important;
+    border-radius: 4px !important;
+    padding: 0 !important; }
+  #context-menu li {
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0.2em; }
+    #context-menu li:first-child {
+      border-radius: 3px 3px 0 0 !important; }
+    #context-menu li:last-child {
+      border-radius: 0 0 3px 3px !important; }
+    #context-menu li a, #context-menu li .icon-add.checklist-new-only {
+      position: relative;
+      padding: 0.2em 0.2em 0.2em 2em; }
+      #context-menu li a.submenu:before, #context-menu li .submenu.icon-add.checklist-new-only:before {
+        margin-right: 0.5em; }
+      #context-menu li a.submenu + ul, #context-menu li .submenu.icon-add.checklist-new-only + ul {
+        margin-left: -1em; }
 
-#context-menu a.icon-checked {
+#context-menu a.icon-checked, #context-menu .icon-checked.icon-add.checklist-new-only {
   background: url(../images/toggle_check.png) no-repeat 3px 40%; }
 
 /* selected element */
@@ -4209,7 +4236,7 @@ li.change.change-D {
   background-color: #507AAA !important;
   color: #f8f8f8 !important; }
 
-.context-menu-selection a, .context-menu-selection a:hover {
+.context-menu-selection a, .context-menu-selection .icon-add.checklist-new-only, .context-menu-selection a:hover, .context-menu-selection .icon-add.checklist-new-only:hover {
   color: #f8f8f8 !important; }
 
 .context-menu-selection:hover {
@@ -4235,6 +4262,9 @@ li.change.change-D {
   font-size: 0.8em !important; }
 
 /* Common */
+html {
+  overflow-y: scroll; }
+
 body {
   color: #333333;
   font-size: 14px;
@@ -4258,22 +4288,22 @@ h4 {
   border-bottom: 1px solid #CCCCCC;
   padding-bottom: 1em; }
 
-a {
+a, .icon-add.checklist-new-only {
   color: #446E9B;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s;
   text-decoration: none;
   font-size: 1em; }
-  a:hover, a:active, a:focus {
+  a:hover, .icon-add.checklist-new-only:hover, a:active, .icon-add.checklist-new-only:active, a:focus, .icon-add.checklist-new-only:focus {
     color: #474D57; }
-  a.issue.closed, a.issue.closed:link, a.issue.closed:visited {
+  a.issue.closed, .issue.closed.icon-add.checklist-new-only, a.issue.closed:link, .issue.closed.icon-add.checklist-new-only:link, a.issue.closed:visited, .issue.closed.icon-add.checklist-new-only:visited {
     color: #777777;
     text-decoration: line-through; }
-  a.collapsible {
+  a.collapsible, .collapsible.icon-add.checklist-new-only {
     padding-left: 1em;
     background: url(../images/arrow_expanded.png) no-repeat -3px 40%; }
-  a.collapsible.collapsed {
+  a.collapsible.collapsed, .collapsible.collapsed.icon-add.checklist-new-only {
     background: url(../images/arrow_collapsed.png) no-repeat -5px 40%; }
 
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, textarea, textarea:hover, select, select:hover {
@@ -4300,7 +4330,7 @@ select {
   select:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(119, 119, 119, 0.6); }
 
-input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button, input[type="button"] + a, input[type="reset"] + a, input[type="submit"] + a, input[type="button"]:hover + a, input[type="reset"]:hover + a, input[type="submit"]:hover + a, .button + a, .button:hover + a, #activity + a, #comments + p > a, .add-link a, .button:hover, input[type="button"] + a:hover, input[type="reset"] + a:hover, input[type="submit"] + a:hover, .button + a:hover, #activity + a:hover, #comments + p > a:hover, .add-link a:hover {
+input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button, input[type="button"] + a, input[type="button"] + .icon-add.checklist-new-only, input[type="reset"] + a, input[type="reset"] + .icon-add.checklist-new-only, input[type="submit"] + a, input[type="submit"] + .icon-add.checklist-new-only, input[type="button"]:hover + a, input[type="reset"]:hover + a, input[type="submit"]:hover + a, .button + a, .button + .icon-add.checklist-new-only, .button:hover + a, #activity + a, #activity + .icon-add.checklist-new-only, #comments + p > a, #comments + p > .icon-add.checklist-new-only, .add-link a, .add-link .icon-add.checklist-new-only, .button:hover, input[type="button"] + a:hover, input[type="button"] + .icon-add.checklist-new-only:hover, input[type="reset"] + a:hover, input[type="reset"] + .icon-add.checklist-new-only:hover, input[type="submit"] + a:hover, input[type="submit"] + .icon-add.checklist-new-only:hover, .button + a:hover, .button + .icon-add.checklist-new-only:hover, #activity + a:hover, #activity + .icon-add.checklist-new-only:hover, #comments + p > a:hover, #comments + p > .icon-add.checklist-new-only:hover, .add-link a:hover, .add-link .icon-add.checklist-new-only:hover {
   border: 1px solid #019875;
   background: #019875;
   color: white;
@@ -4311,10 +4341,10 @@ input[type="button"], input[type="reset"], input[type="submit"], input[type="but
   vertical-align: middle;
   text-align: center;
   font-size: 1em; }
-  input[type="button"] + a, input[type="reset"] + a, input[type="submit"] + a, input[type="button"]:hover + a, input[type="reset"]:hover + a, input[type="submit"]:hover + a, .button + a, input[type="button"] + a + a, input[type="reset"] + a + a, input[type="submit"] + a + a, input[type="button"]:hover + a + a, input[type="reset"]:hover + a + a, input[type="submit"]:hover + a + a, .button:hover + a + a, #activity + a + a, #comments + p > a + a, .add-link a + a, .button:hover + a, input[type="button"] + a:hover + a, input[type="reset"] + a:hover + a, input[type="submit"] + a:hover + a, .button + a:hover + a, #activity + a:hover + a, #comments + p > a:hover + a, .add-link a:hover + a {
+  input[type="button"] + a, input[type="button"] + .icon-add.checklist-new-only, input[type="reset"] + a, input[type="reset"] + .icon-add.checklist-new-only, input[type="submit"] + a, input[type="submit"] + .icon-add.checklist-new-only, input[type="button"]:hover + a, input[type="button"]:hover + .icon-add.checklist-new-only, input[type="reset"]:hover + a, input[type="reset"]:hover + .icon-add.checklist-new-only, input[type="submit"]:hover + a, input[type="submit"]:hover + .icon-add.checklist-new-only, .button + a, input[type="button"] + a + a, input[type="button"] + .icon-add.checklist-new-only + a, input[type="reset"] + a + a, input[type="reset"] + .icon-add.checklist-new-only + a, input[type="submit"] + a + a, input[type="submit"] + .icon-add.checklist-new-only + a, input[type="button"]:hover + a + a, input[type="reset"]:hover + a + a, input[type="submit"]:hover + a + a, .button + .icon-add.checklist-new-only + a, .button:hover + a + a, #activity + a + a, #activity + .icon-add.checklist-new-only + a, #comments + p > a + a, #comments + p > .icon-add.checklist-new-only + a, .add-link a + a, .add-link .icon-add.checklist-new-only + a, .button + .icon-add.checklist-new-only, input[type="button"] + a + .icon-add.checklist-new-only, input[type="button"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, input[type="reset"] + a + .icon-add.checklist-new-only, input[type="reset"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, input[type="submit"] + a + .icon-add.checklist-new-only, input[type="submit"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, #activity + a + .icon-add.checklist-new-only, #activity + .icon-add.checklist-new-only + .icon-add.checklist-new-only, #comments + p > a + .icon-add.checklist-new-only, #comments + p > .icon-add.checklist-new-only + .icon-add.checklist-new-only, .add-link a + .icon-add.checklist-new-only, .add-link .icon-add.checklist-new-only + .icon-add.checklist-new-only, .button:hover + a, input[type="button"] + a:hover + a, input[type="button"] + .icon-add.checklist-new-only:hover + a, input[type="reset"] + a:hover + a, input[type="reset"] + .icon-add.checklist-new-only:hover + a, input[type="submit"] + a:hover + a, input[type="submit"] + .icon-add.checklist-new-only:hover + a, .button + a:hover + a, .button + .icon-add.checklist-new-only:hover + a, #activity + a:hover + a, #activity + .icon-add.checklist-new-only:hover + a, #comments + p > a:hover + a, #comments + p > .icon-add.checklist-new-only:hover + a, .add-link a:hover + a, .add-link .icon-add.checklist-new-only:hover + a, .button:hover + .icon-add.checklist-new-only, input[type="button"] + a:hover + .icon-add.checklist-new-only, input[type="button"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, input[type="reset"] + a:hover + .icon-add.checklist-new-only, input[type="reset"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, input[type="submit"] + a:hover + .icon-add.checklist-new-only, input[type="submit"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, .button + a:hover + .icon-add.checklist-new-only, .button + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, #activity + a:hover + .icon-add.checklist-new-only, #activity + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, #comments + p > a:hover + .icon-add.checklist-new-only, #comments + p > .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, .add-link a:hover + .icon-add.checklist-new-only, .add-link .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only {
     font-size: 1em; }
 
-input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:focus, input[type="button"] + a:focus, input[type="reset"] + a:focus, input[type="submit"] + a:focus, .button + a:focus, #activity + a:focus, #comments + p > a:focus, .add-link a:focus, .button:active, input[type="button"] + a:active, input[type="reset"] + a:active, input[type="submit"] + a:active, .button + a:active, input[type="button"]:focus + a:active, input[type="button"]:focus a:focus, input[type="reset"]:focus + a:active, input[type="reset"]:focus a:focus, input[type="submit"]:focus + a:active, input[type="submit"]:focus a:focus, input[type="button"]:active + a:active, input[type="button"]:active a:focus, input[type="reset"]:active + a:active, input[type="reset"]:active a:focus, input[type="submit"]:active + a:active, input[type="submit"]:active a:focus, .button:focus + a:active, input[type="button"] + a:focus + a:active, input[type="reset"] + a:focus + a:active, input[type="submit"] + a:focus + a:active, .button + a:focus + a:active, .add-link a:focus + a:active, .button:focus a:focus, input[type="button"] + a:focus a:focus, input[type="reset"] + a:focus a:focus, input[type="submit"] + a:focus a:focus, .button + a:focus a:focus, .add-link a:focus a:focus, .button:active + a:active, input[type="button"] + a:active + a:active, input[type="reset"] + a:active + a:active, input[type="submit"] + a:active + a:active, .button + a:active + a:active, .add-link a:active + a:active, .button:active a:focus, input[type="button"] + a:active a:focus, input[type="reset"] + a:active a:focus, input[type="submit"] + a:active a:focus, .button + a:active a:focus, .add-link a:active a:focus, #activity + a:active, #activity + a:focus, #comments + p > a:active, #comments + p > a:focus, .add-link a:active, .add-link a:focus {
+input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:focus, input[type="button"] + a:focus, input[type="button"] + .icon-add.checklist-new-only:focus, input[type="reset"] + a:focus, input[type="reset"] + .icon-add.checklist-new-only:focus, input[type="submit"] + a:focus, input[type="submit"] + .icon-add.checklist-new-only:focus, .button + a:focus, .button + .icon-add.checklist-new-only:focus, #activity + a:focus, #activity + .icon-add.checklist-new-only:focus, #comments + p > a:focus, #comments + p > .icon-add.checklist-new-only:focus, .add-link a:focus, .add-link .icon-add.checklist-new-only:focus, .button:active, input[type="button"] + a:active, input[type="button"] + .icon-add.checklist-new-only:active, input[type="reset"] + a:active, input[type="reset"] + .icon-add.checklist-new-only:active, input[type="submit"] + a:active, input[type="submit"] + .icon-add.checklist-new-only:active, input[type="button"]:hover + a:active, input[type="button"]:hover + .icon-add.checklist-new-only:active, input[type="reset"]:hover + a:active, input[type="reset"]:hover + .icon-add.checklist-new-only:active, input[type="submit"]:hover + a:active, input[type="submit"]:hover + .icon-add.checklist-new-only:active, .button + a:active, .button + .icon-add.checklist-new-only:active, .button:hover + a:active, .button:hover + .icon-add.checklist-new-only:active, input[type="button"]:focus + a:active, input[type="button"]:focus + .icon-add.checklist-new-only:active, input[type="button"]:focus a:focus, input[type="button"]:focus .icon-add.checklist-new-only:focus, input[type="reset"]:focus + a:active, input[type="reset"]:focus + .icon-add.checklist-new-only:active, input[type="reset"]:focus a:focus, input[type="reset"]:focus .icon-add.checklist-new-only:focus, input[type="submit"]:focus + a:active, input[type="submit"]:focus + .icon-add.checklist-new-only:active, input[type="submit"]:focus a:focus, input[type="submit"]:focus .icon-add.checklist-new-only:focus, input[type="button"]:active + a:active, input[type="button"]:active + .icon-add.checklist-new-only:active, input[type="button"]:active a:focus, input[type="button"]:active .icon-add.checklist-new-only:focus, input[type="reset"]:active + a:active, input[type="reset"]:active + .icon-add.checklist-new-only:active, input[type="reset"]:active a:focus, input[type="reset"]:active .icon-add.checklist-new-only:focus, input[type="submit"]:active + a:active, input[type="submit"]:active + .icon-add.checklist-new-only:active, input[type="submit"]:active a:focus, input[type="submit"]:active .icon-add.checklist-new-only:focus, .button:focus + a:active, input[type="button"] + a:focus + a:active, input[type="button"] + .icon-add.checklist-new-only:focus + a:active, input[type="reset"] + a:focus + a:active, input[type="reset"] + .icon-add.checklist-new-only:focus + a:active, input[type="submit"] + a:focus + a:active, input[type="submit"] + .icon-add.checklist-new-only:focus + a:active, .button + a:focus + a:active, .button + .icon-add.checklist-new-only:focus + a:active, #activity + a:focus + a:active, #activity + .icon-add.checklist-new-only:focus + a:active, #comments + p > a:focus + a:active, #comments + p > .icon-add.checklist-new-only:focus + a:active, .add-link a:focus + a:active, .add-link .icon-add.checklist-new-only:focus + a:active, .button:focus + .icon-add.checklist-new-only:active, input[type="button"] + a:focus + .icon-add.checklist-new-only:active, input[type="button"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, input[type="reset"] + a:focus + .icon-add.checklist-new-only:active, input[type="reset"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, input[type="submit"] + a:focus + .icon-add.checklist-new-only:active, input[type="submit"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .button + a:focus + .icon-add.checklist-new-only:active, .button + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, #activity + a:focus + .icon-add.checklist-new-only:active, #activity + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, #comments + p > a:focus + .icon-add.checklist-new-only:active, #comments + p > .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .add-link a:focus + .icon-add.checklist-new-only:active, .add-link .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .button:focus a:focus, input[type="button"] + a:focus a:focus, input[type="button"] + .icon-add.checklist-new-only:focus a:focus, input[type="reset"] + a:focus a:focus, input[type="reset"] + .icon-add.checklist-new-only:focus a:focus, input[type="submit"] + a:focus a:focus, input[type="submit"] + .icon-add.checklist-new-only:focus a:focus, .button + a:focus a:focus, .button + .icon-add.checklist-new-only:focus a:focus, #activity + a:focus a:focus, #activity + .icon-add.checklist-new-only:focus a:focus, #comments + p > a:focus a:focus, #comments + p > .icon-add.checklist-new-only:focus a:focus, .add-link a:focus a:focus, .add-link .icon-add.checklist-new-only:focus a:focus, .button:focus .icon-add.checklist-new-only:focus, input[type="button"] + a:focus .icon-add.checklist-new-only:focus, input[type="button"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, input[type="reset"] + a:focus .icon-add.checklist-new-only:focus, input[type="reset"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, input[type="submit"] + a:focus .icon-add.checklist-new-only:focus, input[type="submit"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .button + a:focus .icon-add.checklist-new-only:focus, .button + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, #activity + a:focus .icon-add.checklist-new-only:focus, #activity + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, #comments + p > a:focus .icon-add.checklist-new-only:focus, #comments + p > .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .add-link a:focus .icon-add.checklist-new-only:focus, .add-link .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .button:active + a:active, input[type="button"] + a:active + a:active, input[type="button"] + .icon-add.checklist-new-only:active + a:active, input[type="reset"] + a:active + a:active, input[type="reset"] + .icon-add.checklist-new-only:active + a:active, input[type="submit"] + a:active + a:active, input[type="submit"] + .icon-add.checklist-new-only:active + a:active, .button + a:active + a:active, .button + .icon-add.checklist-new-only:active + a:active, #activity + a:active + a:active, #activity + .icon-add.checklist-new-only:active + a:active, #comments + p > a:active + a:active, #comments + p > .icon-add.checklist-new-only:active + a:active, .add-link a:active + a:active, .add-link .icon-add.checklist-new-only:active + a:active, .button:active + .icon-add.checklist-new-only:active, input[type="button"] + a:active + .icon-add.checklist-new-only:active, input[type="button"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, input[type="reset"] + a:active + .icon-add.checklist-new-only:active, input[type="reset"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, input[type="submit"] + a:active + .icon-add.checklist-new-only:active, input[type="submit"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .button + a:active + .icon-add.checklist-new-only:active, .button + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, #activity + a:active + .icon-add.checklist-new-only:active, #activity + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, #comments + p > a:active + .icon-add.checklist-new-only:active, #comments + p > .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .add-link a:active + .icon-add.checklist-new-only:active, .add-link .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .button:active a:focus, input[type="button"] + a:active a:focus, input[type="button"] + .icon-add.checklist-new-only:active a:focus, input[type="reset"] + a:active a:focus, input[type="reset"] + .icon-add.checklist-new-only:active a:focus, input[type="submit"] + a:active a:focus, input[type="submit"] + .icon-add.checklist-new-only:active a:focus, .button + a:active a:focus, .button + .icon-add.checklist-new-only:active a:focus, #activity + a:active a:focus, #activity + .icon-add.checklist-new-only:active a:focus, #comments + p > a:active a:focus, #comments + p > .icon-add.checklist-new-only:active a:focus, .add-link a:active a:focus, .add-link .icon-add.checklist-new-only:active a:focus, .button:active .icon-add.checklist-new-only:focus, input[type="button"] + a:active .icon-add.checklist-new-only:focus, input[type="button"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, input[type="reset"] + a:active .icon-add.checklist-new-only:focus, input[type="reset"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, input[type="submit"] + a:active .icon-add.checklist-new-only:focus, input[type="submit"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, .button + a:active .icon-add.checklist-new-only:focus, .button + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #activity + a:active .icon-add.checklist-new-only:focus, #activity + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #comments + p > a:active .icon-add.checklist-new-only:focus, #comments + p > .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, .add-link a:active .icon-add.checklist-new-only:focus, .add-link .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #activity + a:active, #activity + .icon-add.checklist-new-only:active, #activity + a:focus, #activity + .icon-add.checklist-new-only:focus, #comments + p > a:active, #comments + p > .icon-add.checklist-new-only:active, #comments + p > a:focus, #comments + p > .icon-add.checklist-new-only:focus, .add-link a:active, .add-link .icon-add.checklist-new-only:active, .add-link a:focus, .add-link .icon-add.checklist-new-only:focus {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset; }
 
 /* Layout */
@@ -4355,15 +4385,15 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     white-space: nowrap;
     margin-right: 1em;
     padding: 0; }
-  #top-menu a {
+  #top-menu a, #top-menu .icon-add.checklist-new-only {
     color: #979DA7;
     font-size: 0.9em;
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-    #top-menu a:hover, #top-menu a:focus, #top-menu a:active {
+    #top-menu a:hover, #top-menu .icon-add.checklist-new-only:hover, #top-menu a:focus, #top-menu .icon-add.checklist-new-only:focus, #top-menu a:active, #top-menu .icon-add.checklist-new-only:active {
       color: white; }
-    #top-menu a:before {
+    #top-menu a:before, #top-menu .icon-add.checklist-new-only:before {
       margin-right: 0.5em;
       vertical-align: middle; }
   #top-menu #loggedas {
@@ -4376,7 +4406,7 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
     animation: fadeIn 1s; }
-    #top-menu #loggedas a {
+    #top-menu #loggedas a, #top-menu #loggedas .icon-add.checklist-new-only {
       font-size: 1em; }
   #top-menu #account {
     -webkit-animation: fadeIn 1s;
@@ -4448,7 +4478,7 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
       #header #quick-search #q:active, #header #quick-search #q:focus {
         background: white;
         width: 15em; }
-  #header a, #header a:hover, #header a:active, #header a:focus {
+  #header a, #header .icon-add.checklist-new-only, #header a:hover, #header .icon-add.checklist-new-only:hover, #header a:active, #header .icon-add.checklist-new-only:active, #header a:focus, #header .icon-add.checklist-new-only:focus {
     color: white; }
   #header .select2-container {
     margin-left: 1em; }
@@ -4479,17 +4509,17 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   #main-menu li {
     display: table-cell;
     width: 1%; }
-    #main-menu li a {
+    #main-menu li a, #main-menu li .icon-add.checklist-new-only {
       display: block;
       color: #777777;
       margin: 0;
       padding: 1em;
       white-space: nowrap;
       text-align: center; }
-      #main-menu li a:hover {
+      #main-menu li a:hover, #main-menu li .icon-add.checklist-new-only:hover {
         color: #474D57;
         box-shadow: inset 0 -3px 0 #474D57; }
-      #main-menu li a.selected, #main-menu li a.selected:hover {
+      #main-menu li a.selected, #main-menu li .selected.icon-add.checklist-new-only, #main-menu li a.selected:hover, #main-menu li .selected.icon-add.checklist-new-only:hover {
         font-weight: 600;
         color: #446E9B;
         box-shadow: inset 0 -3px 0 #446E9B; }
@@ -4498,10 +4528,10 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   list-style-type: none;
   margin: 0;
   padding: 0; }
-#admin-menu a {
+#admin-menu a, #admin-menu .icon-add.checklist-new-only {
   background-image: none !important;
   margin-bottom: 0.2em; }
-  #admin-menu a:before {
+  #admin-menu a:before, #admin-menu .icon-add.checklist-new-only:before {
     margin-right: 0.5em;
     width: 1.5em;
     text-align: center;
@@ -4564,16 +4594,16 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
         display: inline-block; }
       #main #sidebar ul li label input {
         margin-right: 0.7em; }
-    #main #sidebar ul a, #main #sidebar a[href$="agile/board"], #main #sidebar a[href$="agile_versions"] {
+    #main #sidebar ul a, #main #sidebar ul .icon-add.checklist-new-only, #main #sidebar a[href$="agile/board"], #main #sidebar [href$="agile/board"].icon-add.checklist-new-only, #main #sidebar a[href$="agile_versions"], #main #sidebar [href$="agile_versions"].icon-add.checklist-new-only {
       display: inline-block;
       width: 100%;
       border-radius: 4px;
       padding: 0.5em;
       color: #777777;
       margin-bottom: 0.2em; }
-      #main #sidebar ul a:hover, #main #sidebar a[href$="agile/board"]:hover, #main #sidebar a[href$="agile_versions"]:hover {
+      #main #sidebar ul a:hover, #main #sidebar ul .icon-add.checklist-new-only:hover, #main #sidebar a[href$="agile/board"]:hover, #main #sidebar [href$="agile/board"].icon-add.checklist-new-only:hover, #main #sidebar a[href$="agile_versions"]:hover, #main #sidebar [href$="agile_versions"].icon-add.checklist-new-only:hover {
         background: #F2F2F2; }
-      #main #sidebar ul a.selected, #main #sidebar a[href$="agile/board"].selected, #main #sidebar a[href$="agile_versions"].selected {
+      #main #sidebar ul a.selected, #main #sidebar ul .selected.icon-add.checklist-new-only, #main #sidebar a[href$="agile/board"].selected, #main #sidebar [href$="agile/board"].selected.icon-add.checklist-new-only, #main #sidebar a[href$="agile_versions"].selected, #main #sidebar [href$="agile_versions"].selected.icon-add.checklist-new-only {
         background: #446E9B;
         color: white; }
     #main #sidebar table tr {
@@ -4592,7 +4622,7 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
       float: right;
       top: 1.6em;
       position: relative; }
-      #main #content .contextual a:before {
+      #main #content .contextual a:before, #main #content .contextual .icon-add.checklist-new-only:before {
         margin-left: 1em; }
     #main #content h2:first-of-type {
       font-weight: 400;
@@ -4604,7 +4634,7 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     #main #content form .contextual {
       top: 0.4em;
       margin: 0; }
-      #main #content form .contextual a:before {
+      #main #content form .contextual a:before, #main #content form .contextual .icon-add.checklist-new-only:before {
         margin-left: 1em; }
     #main #content table h2 {
       margin: inherit !important;
@@ -4643,15 +4673,15 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     margin-right: 0; }
   #admin-index #admin-menu li:nth-child(4n+1) {
     clear: left; }
-  #admin-index #admin-menu li a {
+  #admin-index #admin-menu li a, #admin-index #admin-menu li .icon-add.checklist-new-only {
     display: inline-block;
     width: 100%;
     border-radius: 4px;
     padding: 1em;
     color: #777777; }
-    #admin-index #admin-menu li a:hover {
+    #admin-index #admin-menu li a:hover, #admin-index #admin-menu li .icon-add.checklist-new-only:hover {
       background: #F2F2F2; }
-    #admin-index #admin-menu li a.selected {
+    #admin-index #admin-menu li a.selected, #admin-index #admin-menu li .selected.icon-add.checklist-new-only {
       background: #446E9B;
       color: white; }
 
@@ -4721,12 +4751,13 @@ table {
         width: 15%; }
       table.list td.checkbox {
         width: 15px;
-        padding: 2px 0 0; }
+        padding: 2px 0 0;
+        vertical-align: middle; }
       table.list td.buttons {
         width: 15%;
         white-space: nowrap;
         text-align: right; }
-      table.list td.buttons a {
+      table.list td.buttons a, table.list td.buttons .icon-add.checklist-new-only {
         padding-right: 0.6em; }
       table.list td.reorder {
         width: 15%;
@@ -4864,7 +4895,7 @@ table.list tbody tr.group span.count {
   margin-left: 4px;
   padding: 0 6px 1px; }
 
-tr.group a.toggle-all {
+tr.group a.toggle-all, tr.group .toggle-all.icon-add.checklist-new-only {
   color: #aaa;
   font-size: 80%;
   font-weight: 400;
@@ -4885,15 +4916,15 @@ table p {
 .even, tr:nth-child(2n+2) {
   background-color: #F9F9F9 !important; }
 
-a.sort {
+a.sort, .sort.icon-add.checklist-new-only {
   padding-right: 16px;
   background-position: 100% 50%;
   background-repeat: no-repeat; }
 
-a.sort.asc {
+a.sort.asc, .sort.asc.icon-add.checklist-new-only {
   background-image: url(../images/sort_asc.png); }
 
-a.sort.desc {
+a.sort.desc, .sort.desc.icon-add.checklist-new-only {
   background-image: url(../images/sort_desc.png); }
 
 table.attributes th {
@@ -4903,7 +4934,7 @@ table.attributes th {
 table.attributes td {
   vertical-align: top; }
 
-table.boards a.board:before, h3.comments:before {
+table.boards a.board:before, table.boards .board.icon-add.checklist-new-only:before, h3.comments:before {
   margin-right: 0.5em; }
 
 table.boards td.last-message {
@@ -4950,13 +4981,13 @@ div.projects h3 {
   width: 95%;
   display: block; }
 
-#watchers a.delete {
+#watchers a.delete, #watchers .delete.icon-add.checklist-new-only {
   opacity: 0.4;
   vertical-align: middle; }
-  #watchers a.delete:before {
+  #watchers a.delete:before, #watchers .delete.icon-add.checklist-new-only:before {
     margin-right: 0.5em;
     font-size: 1.2em; }
-  #watchers a.delete img {
+  #watchers a.delete img, #watchers .delete.icon-add.checklist-new-only img {
     display: none !important; }
 
 #watchers img.gravatar {
@@ -4967,12 +4998,12 @@ span#watchers_inputs {
   display: block; }
 
 span.search_for_watchers, span.add_attachment {
-  font-size: 80%;
+  font-size: 0.9em;
   line-height: 2.5em; }
 
-span.search_for_watchers a, span.add_attachment a {
-  padding-left: 16px;
-  background: url(../images/bullet_add.png) no-repeat 0 50%; }
+span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before {
+  margin-right: 0.5em;
+  margin-left: 0.5em; }
 
 .highlight {
   background-color: #FCFD8D; }
@@ -5160,11 +5191,11 @@ fieldset#filters td.add-filter {
 .buttons {
   margin-bottom: 1.4em;
   margin-top: 1em; }
-  .buttons a:before {
+  .buttons a:before, .buttons .icon-add.checklist-new-only:before {
     vertical-align: middle;
     display: inline-block;
     margin-right: 0.5em; }
-  .buttons a + a:before {
+  .buttons a + a:before, .buttons .icon-add.checklist-new-only + a:before, .buttons a + .icon-add.checklist-new-only:before, .buttons .icon-add.checklist-new-only + .icon-add.checklist-new-only:before {
     margin-left: 1em; }
 
 div#issue-changesets {
@@ -5223,7 +5254,7 @@ div#activity dd span.description, #search-results dd span.description {
   color: #777777; }
 
 div#activity dt.grouped {
-  margin-left: 5em; }
+  margin-left: 2.8em; }
 
 div#activity dd.grouped {
   margin-left: 9em; }
@@ -5285,7 +5316,7 @@ table#time-report tbody tr.total {
   background-color: #EEEEEE;
   border-top: 1px solid #e4e4e4; }
 
-div.wiki-page .contextual a {
+div.wiki-page .contextual a, div.wiki-page .contextual .icon-add.checklist-new-only {
   opacity: 0.4; }
 
 form .attributes select {
@@ -5308,7 +5339,7 @@ ul.projects ul {
 #projects-index ul.projects li.child {
   margin-top: 1em; }
 
-#projects-index ul.projects div.root a.project {
+#projects-index ul.projects div.root a.project, #projects-index ul.projects div.root .project.icon-add.checklist-new-only {
   font-weight: 700;
   font-size: 16px;
   margin: 0 0 10px; }
@@ -5464,13 +5495,13 @@ span.required {
   display: inline-block;
   margin: 2px 0 -5px 8px; }
 
-a.remove-upload {
+a.remove-upload, .remove-upload.icon-add.checklist-new-only {
   background: url(../images/delete.png) no-repeat 1px 50%;
   width: 1px;
   display: inline-block;
   padding-left: 16px; }
 
-a.remove-upload:hover {
+a.remove-upload:hover, .remove-upload.icon-add.checklist-new-only:hover {
   text-decoration: none !important; }
 
 div.fileover {
@@ -5513,7 +5544,7 @@ p.other-formats {
 .other-formats span + span:before {
   content: "| "; }
 
-a.atom {
+a.atom, .atom.icon-add.checklist-new-only {
   background: url(../images/feed.png) no-repeat 1px 50%;
   padding: 2px 0 3px 16px; }
 
@@ -5595,9 +5626,6 @@ input.autocomplete, input.live_search_field, input.questions-search {
   -moz-transition-property: border, box-shadow;
   transition-property: border, box-shadow;
   position: relative;
-  z-index: 0;
-  margin-top: -0.8em;
-  top: 0.4em;
   height: auto !important;
   background: white !important;
   z-index: 0; }
@@ -5697,15 +5725,15 @@ table.cal td.odd p.day-num {
 table.cal td.today {
   background: #ffffdd; }
 
-table.cal .starting a, p.cal.legend .starting {
+table.cal .starting a, table.cal .starting .icon-add.checklist-new-only, p.cal.legend .starting {
   background: url(../images/bullet_go.png) no-repeat -1px -2px;
   padding-left: 16px; }
 
-table.cal .ending a, p.cal.legend .ending {
+table.cal .ending a, table.cal .ending .icon-add.checklist-new-only, p.cal.legend .ending {
   background: url(../images/bullet_end.png) no-repeat -1px -2px;
   padding-left: 16px; }
 
-table.cal .starting.ending a, p.cal.legend .starting.ending {
+table.cal .starting.ending a, table.cal .starting.ending .icon-add.checklist-new-only, p.cal.legend .starting.ending {
   background: url(../images/bullet_diamond.png) no-repeat -1px -2px;
   padding-left: 16px; }
 
@@ -5783,7 +5811,7 @@ p.progress-info {
       margin-right: 0.3em;
       background: white;
       position: relative; }
-      #content .tabs ul li a {
+      #content .tabs ul li a, #content .tabs ul li .icon-add.checklist-new-only {
         display: block;
         text-decoration: none;
         line-height: 1.3em;
@@ -5795,10 +5823,10 @@ p.progress-info {
         padding: 1em;
         color: #777777;
         font-size: 0.9em; }
-        #content .tabs ul li a:hover {
+        #content .tabs ul li a:hover, #content .tabs ul li .icon-add.checklist-new-only:hover {
           background-color: #F2F2F2;
           text-decoration: none; }
-        #content .tabs ul li a.selected {
+        #content .tabs ul li a.selected, #content .tabs ul li .selected.icon-add.checklist-new-only {
           background-color: white;
           border-color: #CCCCCC;
           box-shadow: 0 2px 0 white;
@@ -5867,7 +5895,7 @@ div.wiki .external {
   padding-left: 12px;
   background-image: url(../images/external.png); }
 
-div.wiki a.new {
+div.wiki a.new, div.wiki .new.icon-add.checklist-new-only {
   color: #b73535; }
 
 div.wiki pre {
@@ -5913,22 +5941,22 @@ div.wiki ul.toc li li {
   margin-left: 1.5em;
   font-size: 10px; }
 
-div.wiki ul.toc a {
+div.wiki ul.toc a, div.wiki ul.toc .icon-add.checklist-new-only {
   font-size: 0.9em;
   font-weight: 400;
   text-decoration: none;
   color: #606060; }
 
-a.wiki-anchor {
+a.wiki-anchor, .wiki-anchor.icon-add.checklist-new-only {
   display: none;
   margin-left: 6px;
   text-decoration: none; }
 
-a.wiki-anchor:hover {
+a.wiki-anchor:hover, .wiki-anchor.icon-add.checklist-new-only:hover {
   color: #aaa !important;
   text-decoration: none; }
 
-h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor {
+h1:hover a.wiki-anchor, h1:hover .wiki-anchor.icon-add.checklist-new-only, h2:hover a.wiki-anchor, h2:hover .wiki-anchor.icon-add.checklist-new-only, h3:hover a.wiki-anchor, h3:hover .wiki-anchor.icon-add.checklist-new-only {
   display: inline;
   color: #ddd; }
 
@@ -5955,12 +5983,12 @@ div.wiki img {
 .handle {
   cursor: move; }
 
-a.close-icon {
+a.close-icon, .close-icon.icon-add.checklist-new-only {
   display: block;
   left: 1em;
   position: relative; }
 
-a.close-icon:hover {
+a.close-icon:hover, .close-icon.icon-add.checklist-new-only:hover {
   color: #e74c3c; }
 
 .gantt_hdr {
@@ -6048,17 +6076,23 @@ a.close-icon:hover {
   margin-left: -4px;
   margin-top: 1px; }
 
-.version-behind-schedule a, .issue-behind-schedule a {
+.version-behind-schedule a, .version-behind-schedule .icon-add.checklist-new-only, .issue-behind-schedule a, .issue-behind-schedule .icon-add.checklist-new-only {
   color: #f66914; }
 
-.icon {
+.icon, #context-menu li a, #context-menu li .icon-add.checklist-new-only {
   background-image: none !important; }
-  .icon:before {
+  .icon:before, #context-menu li a:before, #context-menu li .icon-add.checklist-new-only:before {
     margin-right: 0.3em;
     vertical-align: middle;
     position: relative;
     font-size: 1.2em;
     top: -2px; }
+
+#context-menu li a:before, #context-menu li .icon-add.checklist-new-only:before {
+  font-size: 1em;
+  top: 0.4em;
+  left: 0.4em;
+  position: absolute; }
 
 img.gravatar {
   background: white;
@@ -6091,7 +6125,7 @@ td.username img.gravatar {
 
 #activity dt img.gravatar {
   float: left;
-  margin: 0 1em 1em 0; }
+  margin: 0 1.2em 1.2em 0; }
 
 .icon-gravatar {
   float: left;
@@ -6100,7 +6134,7 @@ td.username img.gravatar {
 #activity dt, .journal {
   clear: left; }
 
-#activity + a {
+#activity + a, #activity + .icon-add.checklist-new-only {
   margin-top: 2em; }
 
 .hascontextmenu {
@@ -6349,7 +6383,7 @@ td.username img.gravatar {
 #account, #quick-search, div#search-results-counts, .journal-link {
   float: right; }
 
-#header h1 a.ancestor, table.files tr.file td.digest, .conflict-details, p.percent {
+#header h1 a.ancestor, #header h1 .ancestor.icon-add.checklist-new-only, table.files tr.file td.digest, .conflict-details, p.percent {
   font-size: 80%; }
 
 * html #sidebar, div.issue table.attributes th {
@@ -6361,29 +6395,29 @@ td.username img.gravatar {
 #login-form label, .settings.enabled_scm td.scm_name, #tab-content-members fieldset legend, #tab-content-memberships fieldset legend, #tab-content-users fieldset legend, table.cal td.today p.day-num, .task.label.project, .task.label.version {
   font-weight: 700; }
 
-div.wiki ul.toc a:hover {
+div.wiki ul.toc a:hover, div.wiki ul.toc .icon-add.checklist-new-only:hover {
   color: #c61a1a;
   text-decoration: underline; }
 
-a img, #issue_tree table.issues, #relations table.issues, div.wiki .noborder, div.wiki .noborder td, div.wiki .noborder th {
+a img, .icon-add.checklist-new-only img, #issue_tree table.issues, #relations table.issues, div.wiki .noborder, div.wiki .noborder td, div.wiki .noborder th {
   border: 0; }
 
-a.project.closed, a.project.closed:link, a.project.closed:visited, a.user.locked, a.user.locked:link, a.user.locked:visited, a#toggle-completed-versions, tr.version.closed, tr.version.closed a, div.issue .next-prev-links {
+a.project.closed, .project.closed.icon-add.checklist-new-only, a.project.closed:link, .project.closed.icon-add.checklist-new-only:link, a.project.closed:visited, .project.closed.icon-add.checklist-new-only:visited, a.user.locked, .user.locked.icon-add.checklist-new-only, a.user.locked:link, .user.locked.icon-add.checklist-new-only:link, a.user.locked:visited, .user.locked.icon-add.checklist-new-only:visited, a#toggle-completed-versions, #toggle-completed-versions.icon-add.checklist-new-only, tr.version.closed, tr.version.closed a, tr.version.closed .icon-add.checklist-new-only, div.issue .next-prev-links {
   color: #999; }
 
-#sidebar a.selected:hover, a.toggle-all:hover {
+#sidebar a.selected:hover, #sidebar .selected.icon-add.checklist-new-only:hover, a.toggle-all:hover, .toggle-all.icon-add.checklist-new-only:hover {
   text-decoration: none; }
 
 table.list td.checkbox input, #relations td.buttons {
   padding: 0; }
 
-tr.project td.name a, tr.issue td.relations span, tr.entry td, tr.message td.created_on, fieldset#filters td.values {
+tr.project td.name a, tr.project td.name .icon-add.checklist-new-only, tr.issue td.relations span, tr.entry td, tr.message td.created_on, fieldset#filters td.values {
   white-space: nowrap; }
 
-tr.project.closed, tr.project.archived, tr.project.closed a, tr.project.archived a, tr.user.locked, tr.user.registered, tr.user.locked a, tr.user.registered a {
+tr.project.closed, tr.project.archived, tr.project.closed a, tr.project.closed .icon-add.checklist-new-only, tr.project.archived a, tr.project.archived .icon-add.checklist-new-only, tr.user.locked, tr.user.registered, tr.user.locked a, tr.user.locked .icon-add.checklist-new-only, tr.user.registered a, tr.user.registered .icon-add.checklist-new-only {
   color: #aaa; }
 
-tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before {
+tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before {
   margin-right: 0.5em; }
 
 tr.project.idnt-1 td.name, tr.issue.idnt-1 td.subject {
@@ -6426,7 +6460,7 @@ tr.entry td.revision, tr.entry td.author, tr.wiki-page-version td.updated_on, tr
 tr.entry td.age, div#version-summary th, div#version-summary td.total-hours {
   text-align: right; }
 
-tr.entry.file td.filename a, tr.entry.file td.filename_no_report a {
+tr.entry.file td.filename a, tr.entry.file td.filename .icon-add.checklist-new-only, tr.entry.file td.filename_no_report a, tr.entry.file td.filename_no_report .icon-add.checklist-new-only {
   margin-left: 16px; }
 
 tr.changeset td.author, tr.changeset td.committed_on {
@@ -6447,16 +6481,16 @@ table.plugins span.description, table.plugins span.url {
   display: block;
   font-size: 0.9em; }
 
-tr.group:hover a.toggle-all, form, .check_box_group.bool_cf label, .syntaxhl div {
+tr.group:hover a.toggle-all, tr.group:hover .toggle-all.icon-add.checklist-new-only, form, .check_box_group.bool_cf label, .syntaxhl div {
   display: inline; }
 
-.even, #content .tabs ul li a.selected:hover {
+.even, #content .tabs ul li a.selected:hover, #content .tabs ul li .selected.icon-add.checklist-new-only:hover {
   background-color: #fff; }
 
 table.attributes, div#version-summary fieldset.time-tracking table, .settings.enabled_scm table, .task.label {
   width: 100%; }
 
-#watchers a.delete:hover, div.wiki-page .contextual a:hover {
+#watchers a.delete:hover, #watchers .delete.icon-add.checklist-new-only:hover, div.wiki-page .contextual a:hover, div.wiki-page .contextual .icon-add.checklist-new-only:hover {
   opacity: 1; }
 
 span.search_for_watchers, fieldset.settings label, #tab-content-members fieldset label, #tab-content-memberships fieldset label, #tab-content-users fieldset label, #users_for_watcher label, p.cal.legend span {
@@ -6520,7 +6554,7 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
   height: 2px;
   margin-top: 3px; }
 
-.version-overdue a, .issue-overdue a, .project-overdue a, .syntaxhl .imaginary {
+.version-overdue a, .version-overdue .icon-add.checklist-new-only, .issue-overdue a, .issue-overdue .icon-add.checklist-new-only, .project-overdue a, .project-overdue .icon-add.checklist-new-only, .syntaxhl .imaginary {
   color: #f00; }
 
 .icon-file.image-gif, .icon-file.image-jpeg, .icon-file.image-png, .icon-file.image-tiff {
@@ -6619,11 +6653,19 @@ div.contact.details table.subject_header h1 {
   padding-top: 1em; }
   #comments h4:first-of-type {
     border: 0; }
-#comments + p > a {
+#comments + p > a, #comments + p > .icon-add.checklist-new-only {
   margin-top: 2em; }
 
-.add-link a {
+.add-link a, .add-link .icon-add.checklist-new-only {
   margin-top: 2em; }
+
+.icon-add.checklist-new-only {
+  cursor: pointer; }
+  .icon-add.checklist-new-only:hover, .icon-add.checklist-new-only:active, .icon-add.checklist-new-only:focus {
+    color: #474D57; }
+
+div.agile-board.autoscroll {
+  overflow-y: auto !important; }
 
 div[style*="clear:both"], div[style*="clear: both"] {
   display: inline-block;

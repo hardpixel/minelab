@@ -1,5 +1,37 @@
-#context-menu li a.submenu
-	background: url("../images/bullet_arrow_right.png") right no-repeat
+#context-menu
+	margin-top: -13em
+	margin-left: -37em
+	padding-bottom: 4em
+
+	ul
+		border-color: $medium-grey !important
+		border-radius: 4px !important
+		padding: 0 !important
+
+	li
+		border: 0 !important
+		border-radius: 0 !important
+		padding: .2em
+
+		&:first-child
+			border-radius: 3px 3px 0 0 !important
+
+		&:last-child
+			border-radius: 0 0 3px 3px !important
+
+		a
+			position: relative
+			padding: .2em .2em .2em 2em
+
+			&.submenu
+				@extend .fa-folder-o
+
+				&:before
+					@extend .fa
+					margin-right: .5em
+
+				+ ul
+					margin-left: -1em
 
 #context-menu a.icon-checked
 	background: url(../images/toggle_check.png) no-repeat 3px 40%

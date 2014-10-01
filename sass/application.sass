@@ -18,6 +18,8 @@
 
 
 /* Common */
+html
+	overflow-y: scroll
 
 body
 	color: $text
@@ -636,6 +638,7 @@ table
 			&.checkbox
 				width: 15px
 				padding: 2px 0 0
+				vertical-align: middle
 
 			&.buttons
 				width: 15%
@@ -924,12 +927,16 @@ span#watchers_inputs
 	display: block
 
 span.search_for_watchers, span.add_attachment
-	font-size: 80%
+	font-size: .9em
 	line-height: 2.5em
 
 span.search_for_watchers a, span.add_attachment a
-	padding-left: 16px
-	background: url(../images/bullet_add.png) no-repeat 0 50%
+	@extend .fa-plus-circle
+
+	&:before
+		@extend .fa
+		margin-right: .5em
+		margin-left: .5em
 
 
 .highlight
@@ -1194,7 +1201,7 @@ div#activity dd span.description, #search-results dd span.description
 	color: $grey
 
 div#activity dt.grouped
-	margin-left: 5em
+	margin-left: 2.8em
 
 div#activity dd.grouped
 	margin-left: 9em
@@ -1572,8 +1579,6 @@ input.autocomplete, input.live_search_field, input.questions-search
 	font-size: inherit !important
 	+transition-property(border, box-shadow)
 	position: relative
-	margin-top: -.8em
-	top: .4em
 	height: auto !important
 	background: white !important
 	z-index: 0
@@ -2039,7 +2044,7 @@ a.close-icon:hover
 .version-behind-schedule a, .issue-behind-schedule a
 	color: #f66914
 
-.icon
+.icon, #context-menu li a
 	background-image: none !important
 
 	&:before
@@ -2049,6 +2054,12 @@ a.close-icon:hover
 		position: relative
 		font-size: 1.2em
 		top: -2px
+
+#context-menu li a:before
+	font-size: 1em
+	top: .4em
+	left: .4em
+	position: absolute
 
 .icon-add, .icon-add-payment
 	@extend .fa-plus-circle
@@ -2201,7 +2212,7 @@ td.username img.gravatar
 
 #activity dt img.gravatar
 	float: left
-	margin: 0 1em 1em 0
+	margin: 0 1.2em 1.2em 0
 
 .icon-gravatar
 	float: left
@@ -2793,6 +2804,16 @@ div.contact.details table.subject_header h1
 
 		&:active, &:focus
 			@extend .button:active
+
+.icon-add.checklist-new-only
+	@extend a
+	cursor: pointer
+
+	&:hover, &:active, &:focus
+		color: $dark-blue
+
+div.agile-board.autoscroll
+	overflow-y: auto !important
 
 div[style*="clear:both"], div[style*="clear: both"]
 	display: inline-block
