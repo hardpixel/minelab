@@ -124,8 +124,40 @@ select
 	+row
 	background: $dark-blue
 	color: white
-	padding: 1em
+	padding: 0 1em
 	cursor: default
+	position: relative
+	z-index: 999
+	height: 3.15em
+
+	.outer-container
+
+		ul.menu-children
+			width: 26em
+			top: 99%
+			border: 0
+			background: $dark-blue
+			border-radius: 0 0 4px 4px
+			padding: .5em 1em .6em
+
+			> li
+				+span-columns(6)
+				+omega(2n)
+				padding: 0
+
+				a
+					color: $grey-blue
+					padding: .4em
+					width: 95%
+					white-space: nowrap
+					overflow: hidden
+					text-overflow: ellipsis
+
+					&:hover, &:active, &:focus
+						color: white
+
+					&:before
+						margin-right: .5em !important
 
 	ul
 		+animation(fadeIn 1s)
@@ -143,7 +175,10 @@ select
 	a
 		color: $grey-blue
 		font-size: .9em
+		padding-top: 1em
+		padding-bottom: 1em
 		+transition-duration(.3s)
+		display: inline-block
 
 		&:hover, &:focus, &:active
 			color: white
@@ -186,18 +221,53 @@ select
 		&.my-account
 			@extend .fa-user
 
-			&:before
-				margin-right: 0
-
 		&.logout
 			@extend .fa-sign-out
-			margin-right: 0
-
-			&:before
-				margin-right: 0
 
 		&.time-tracker-main-menu
 			@extend .fa-clock-o
+
+		&.adm-groups
+			@extend .fa-group
+
+		&.adm-roles
+			@extend .fa-eye
+
+		&.adm-workflows
+			@extend .fa-th-large
+
+		&.adm-custom-fields
+			@extend .fa-edit
+
+		&.adm-enumerations
+			@extend .fa-list
+
+		&.adm-plugins
+			@extend .fa-puzzle-piece
+
+		&.adm-projects
+			@extend .fa-cubes
+
+		&.adm-users
+			@extend .fa-user
+
+		&.adm-trackers
+			@extend .fa-square
+
+		&.adm-issue-statuses
+			@extend .fa-pencil-square
+
+		&.adm-settings
+			@extend .fa-gears
+
+		&.adm-info
+			@extend .fa-info-circle
+
+		&.adm-ldap-authentication
+			@extend .fa-key
+
+		&.cms
+			@extend .fa-sitemap
 
 		&.tt_start:before, &.tt_stop:before
 			position: relative
@@ -208,8 +278,6 @@ select
 		margin-right: 1em
 		color: $grey-blue
 		font-size: .9em
-		position: relative
-		top: .2em
 		+animation(fadeIn 1s)
 
 		a
@@ -217,6 +285,21 @@ select
 
 	#account
 		+animation(fadeIn 1s)
+
+		&.cms
+
+			ul li
+				height: auto !important
+
+				img.gravatar
+					top: 0
+					margin-right: .5em
+
+		a:before
+			margin-right: 0
+
+		.menu-children
+			width: 18em
 
 #header
 	+row
@@ -260,15 +343,12 @@ select
 		z-index: 5
 		+animation(fadeIn 1s)
 
-		label[for="q"]
-			@extend .fa-search
-			position: relative
-			z-index: 5
+		.icon-search
 
 			&:before
-				@extend .fa
+				z-index: 5
 				position: absolute
-				right: -2.6em
+				left: 1.6em
 				top: .2em
 				color: $dark-blue
 
@@ -285,6 +365,7 @@ select
 			color: rgba(white, .8)
 
 			&:active, &:focus
+				color: $text
 				background: white
 				width: 15em
 
@@ -394,6 +475,9 @@ select
 
 		&.orders
 			@extend .fa-list-alt
+
+		&.cms
+			@extend .fa-sitemap
 
 	a.projects, dt.project, .icon-projects
 		@extend .fa-cubes
@@ -588,9 +672,13 @@ select
 
 	td
 		padding: .5em
+		text-align: right
 
 	tr
 		background: none !important
+
+	#username, #password
+		width: 100%
 
 
 div.modal
@@ -1530,7 +1618,7 @@ div.thumbnails img
 	margin: 3px
 
 p.other-formats
-	+outer-container
+	+row
 	text-align: right
 	font-size: .9em
 	margin-top: 3em

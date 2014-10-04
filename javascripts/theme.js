@@ -17,14 +17,17 @@ jQuery(document).ready(function($){
 
 	$('input.questions-search').wrap('<span class="live_search normal"></span>');
 
-	$('#top-menu .my-account').attr('title', $('#top-menu .my-account').text()).text('');
-	$('#top-menu .logout').attr('title', $('#top-menu .logout').text()).text('');
-
 	$(window).load(function(){
-		$('input.autocomplete, input.live_search_field').wrap('<span class="icon-search"></span>');
+		$('input.autocomplete, input.live_search_field, input#q').wrap('<span class="icon-search"></span>');
 
 		$('select:not([multiple])').select2({
 			width: 'element'
 		});
+
+		$('#account:not(.cms) a').each(function() {
+			$(this).attr('title', $(this).text()).text('');
+		});
+
+		$('#account:not(.cms) .my-page').parent().detach().prependTo('#account ul:first');
 	});
 });

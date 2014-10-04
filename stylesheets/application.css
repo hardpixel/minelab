@@ -2420,7 +2420,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.fa, #context-menu li a.submenu:before, .jstElements button[type="button"]:before, #top-menu a:before, #top-menu .icon-add.checklist-new-only:before, #header #quick-search label[for="q"]:before, #admin-menu a:before, #admin-menu .icon-add.checklist-new-only:before, tr.project [id^="favorite_project"], tr span.expander:before, tr.open span.expander:before, table.boards a.board:before, table.boards .board.icon-add.checklist-new-only:before, h3.comments:before, h3.version:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before, #watchers a.delete:before, #watchers .delete.icon-add.checklist-new-only:before, span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before, fieldset.collapsible > legend:before, .my-project:before, span.icon-search:before, table.cal .starting a:before, table.cal .starting .icon-add.checklist-new-only:before, p.cal.legend .starting:before, table.cal .ending a:before, table.cal .ending .icon-add.checklist-new-only:before, p.cal.legend .ending:before, table.cal .starting.ending a:before, p.cal.legend .starting.ending:before, button.tab-left:before, button.tab-right:before, a.close-icon:before, .close-icon.icon-add.checklist-new-only:before, .icon:before, [class*="icon-"]:before, #context-menu li a:before, #context-menu li .icon-add.checklist-new-only:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before, dt.time-entry:before, dt.attachment:before, dt.issue-closed:before, .icon-contact:before, .icon-invoice:before, .jstEditor:not(.zen) button.jstb_zenedit:before, #invoice_contact_id_add_link:before {
+.fa, #context-menu li a.submenu:before, .jstElements button[type="button"]:before, #top-menu a:before, #top-menu .icon-add.checklist-new-only:before, #admin-menu a:before, #admin-menu .icon-add.checklist-new-only:before, tr.project [id^="favorite_project"], tr span.expander:before, tr.open span.expander:before, table.boards a.board:before, table.boards .board.icon-add.checklist-new-only:before, h3.comments:before, h3.version:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before, #watchers a.delete:before, #watchers .delete.icon-add.checklist-new-only:before, span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before, fieldset.collapsible > legend:before, .my-project:before, span.icon-search:before, table.cal .starting a:before, table.cal .starting .icon-add.checklist-new-only:before, p.cal.legend .starting:before, table.cal .ending a:before, table.cal .ending .icon-add.checklist-new-only:before, p.cal.legend .ending:before, table.cal .starting.ending a:before, p.cal.legend .starting.ending:before, button.tab-left:before, button.tab-right:before, a.close-icon:before, .close-icon.icon-add.checklist-new-only:before, .icon:before, [class*="icon-"]:before, #context-menu li a:before, #context-menu li .icon-add.checklist-new-only:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before, dt.time-entry:before, dt.attachment:before, dt.issue-closed:before, .icon-contact:before, .icon-invoice:before, .jstEditor:not(.zen) button.jstb_zenedit:before, #invoice_contact_id_add_link:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -2479,10 +2479,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .pull-left {
   float: left; }
 
-.fa.pull-left, .jstElements button.pull-left[type="button"]:before, #top-menu a.pull-left:before, #top-menu .pull-left.icon-add.checklist-new-only:before, #header #quick-search label.pull-left[for="q"]:before, #admin-menu a.pull-left:before, #admin-menu .pull-left.icon-add.checklist-new-only:before, tr.project .pull-left[id^="favorite_project"], tr span.pull-left.expander:before, table.boards a.pull-left.board:before, table.boards .pull-left.board.icon-add.checklist-new-only:before, h3.pull-left.comments:before, h3.pull-left.version:before, div.issues h3.pull-left:before, div.members h3.pull-left:before, div.news h3.pull-left:before, div.projects h3.pull-left:before, #watchers a.pull-left.delete:before, #watchers .pull-left.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-left:before, span.search_for_watchers .pull-left.icon-add.checklist-new-only:before, span.add_attachment a.pull-left:before, span.add_attachment .pull-left.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-left:before, .pull-left.my-project:before, span.pull-left.icon-search:before, table.cal .starting a.pull-left:before, table.cal .starting .pull-left.icon-add.checklist-new-only:before, p.cal.legend .pull-left.starting:before, table.cal .ending a.pull-left:before, table.cal .ending .pull-left.icon-add.checklist-new-only:before, p.cal.legend .pull-left.ending:before, button.pull-left.tab-left:before, button.pull-left.tab-right:before, a.pull-left.close-icon:before, .pull-left.close-icon.icon-add.checklist-new-only:before, .pull-left.icon:before, .pull-left[class*="icon-"]:before, #context-menu li a.pull-left:before, #context-menu li .pull-left.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-left:before, tr.issue.idnt td.subject a.pull-left:before, tr.issue.idnt td.subject .pull-left.icon-add.checklist-new-only:before, dt.pull-left.time-entry:before, dt.pull-left.attachment:before, dt.pull-left.issue-closed:before, .pull-left.icon-contact:before, .pull-left.icon-invoice:before, .jstEditor:not(.zen) button.pull-left.jstb_zenedit:before, .pull-left#invoice_contact_id_add_link:before {
+.fa.pull-left, .jstElements button.pull-left[type="button"]:before, #top-menu a.pull-left:before, #top-menu .pull-left.icon-add.checklist-new-only:before, #admin-menu a.pull-left:before, #admin-menu .pull-left.icon-add.checklist-new-only:before, tr.project .pull-left[id^="favorite_project"], tr span.pull-left.expander:before, table.boards a.pull-left.board:before, table.boards .pull-left.board.icon-add.checklist-new-only:before, h3.pull-left.comments:before, h3.pull-left.version:before, div.issues h3.pull-left:before, div.members h3.pull-left:before, div.news h3.pull-left:before, div.projects h3.pull-left:before, #watchers a.pull-left.delete:before, #watchers .pull-left.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-left:before, span.search_for_watchers .pull-left.icon-add.checklist-new-only:before, span.add_attachment a.pull-left:before, span.add_attachment .pull-left.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-left:before, .pull-left.my-project:before, span.pull-left.icon-search:before, table.cal .starting a.pull-left:before, table.cal .starting .pull-left.icon-add.checklist-new-only:before, p.cal.legend .pull-left.starting:before, table.cal .ending a.pull-left:before, table.cal .ending .pull-left.icon-add.checklist-new-only:before, p.cal.legend .pull-left.ending:before, button.pull-left.tab-left:before, button.pull-left.tab-right:before, a.pull-left.close-icon:before, .pull-left.close-icon.icon-add.checklist-new-only:before, .pull-left.icon:before, .pull-left[class*="icon-"]:before, #context-menu li a.pull-left:before, #context-menu li .pull-left.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-left:before, tr.issue.idnt td.subject a.pull-left:before, tr.issue.idnt td.subject .pull-left.icon-add.checklist-new-only:before, dt.pull-left.time-entry:before, dt.pull-left.attachment:before, dt.pull-left.issue-closed:before, .pull-left.icon-contact:before, .pull-left.icon-invoice:before, .jstEditor:not(.zen) button.pull-left.jstb_zenedit:before, .pull-left#invoice_contact_id_add_link:before {
   margin-right: .3em; }
 
-.fa.pull-right, .jstElements button.pull-right[type="button"]:before, #top-menu a.pull-right:before, #top-menu .pull-right.icon-add.checklist-new-only:before, #header #quick-search label.pull-right[for="q"]:before, #admin-menu a.pull-right:before, #admin-menu .pull-right.icon-add.checklist-new-only:before, tr.project .pull-right[id^="favorite_project"], tr span.pull-right.expander:before, table.boards a.pull-right.board:before, table.boards .pull-right.board.icon-add.checklist-new-only:before, h3.pull-right.comments:before, h3.pull-right.version:before, div.issues h3.pull-right:before, div.members h3.pull-right:before, div.news h3.pull-right:before, div.projects h3.pull-right:before, #watchers a.pull-right.delete:before, #watchers .pull-right.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-right:before, span.search_for_watchers .pull-right.icon-add.checklist-new-only:before, span.add_attachment a.pull-right:before, span.add_attachment .pull-right.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-right:before, .pull-right.my-project:before, span.pull-right.icon-search:before, table.cal .starting a.pull-right:before, table.cal .starting .pull-right.icon-add.checklist-new-only:before, p.cal.legend .pull-right.starting:before, table.cal .ending a.pull-right:before, table.cal .ending .pull-right.icon-add.checklist-new-only:before, p.cal.legend .pull-right.ending:before, button.pull-right.tab-left:before, button.pull-right.tab-right:before, a.pull-right.close-icon:before, .pull-right.close-icon.icon-add.checklist-new-only:before, .pull-right.icon:before, .pull-right[class*="icon-"]:before, #context-menu li a.pull-right:before, #context-menu li .pull-right.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-right:before, tr.issue.idnt td.subject a.pull-right:before, tr.issue.idnt td.subject .pull-right.icon-add.checklist-new-only:before, dt.pull-right.time-entry:before, dt.pull-right.attachment:before, dt.pull-right.issue-closed:before, .pull-right.icon-contact:before, .pull-right.icon-invoice:before, .jstEditor:not(.zen) button.pull-right.jstb_zenedit:before, .pull-right#invoice_contact_id_add_link:before {
+.fa.pull-right, .jstElements button.pull-right[type="button"]:before, #top-menu a.pull-right:before, #top-menu .pull-right.icon-add.checklist-new-only:before, #admin-menu a.pull-right:before, #admin-menu .pull-right.icon-add.checklist-new-only:before, tr.project .pull-right[id^="favorite_project"], tr span.pull-right.expander:before, table.boards a.pull-right.board:before, table.boards .pull-right.board.icon-add.checklist-new-only:before, h3.pull-right.comments:before, h3.pull-right.version:before, div.issues h3.pull-right:before, div.members h3.pull-right:before, div.news h3.pull-right:before, div.projects h3.pull-right:before, #watchers a.pull-right.delete:before, #watchers .pull-right.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-right:before, span.search_for_watchers .pull-right.icon-add.checklist-new-only:before, span.add_attachment a.pull-right:before, span.add_attachment .pull-right.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-right:before, .pull-right.my-project:before, span.pull-right.icon-search:before, table.cal .starting a.pull-right:before, table.cal .starting .pull-right.icon-add.checklist-new-only:before, p.cal.legend .pull-right.starting:before, table.cal .ending a.pull-right:before, table.cal .ending .pull-right.icon-add.checklist-new-only:before, p.cal.legend .pull-right.ending:before, button.pull-right.tab-left:before, button.pull-right.tab-right:before, a.pull-right.close-icon:before, .pull-right.close-icon.icon-add.checklist-new-only:before, .pull-right.icon:before, .pull-right[class*="icon-"]:before, #context-menu li a.pull-right:before, #context-menu li .pull-right.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-right:before, tr.issue.idnt td.subject a.pull-right:before, tr.issue.idnt td.subject .pull-right.icon-add.checklist-new-only:before, dt.pull-right.time-entry:before, dt.pull-right.attachment:before, dt.pull-right.issue-closed:before, .pull-right.icon-contact:before, .pull-right.icon-invoice:before, .jstEditor:not(.zen) button.pull-right.jstb_zenedit:before, .pull-right#invoice_contact_id_add_link:before {
   margin-left: .3em; }
 
 .fa-spin {
@@ -2572,7 +2572,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-music:before {
   content: "\f001"; }
 
-.fa-search:before, #header #quick-search label[for="q"]:before, span.icon-search:before {
+.fa-search:before, span.icon-search:before {
   content: "\f002"; }
 
 .fa-envelope-o:before {
@@ -2587,13 +2587,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-star-o:before, .icon-fav-off:before {
   content: "\f006"; }
 
-.fa-user:before, #top-menu a.my-account:before, #top-menu .my-account.icon-add.checklist-new-only:before, #admin-menu a.users:before, #admin-menu .users.icon-add.checklist-new-only:before, #admin-menu .icon-user:before {
+.fa-user:before, #top-menu a.my-account:before, #top-menu .my-account.icon-add.checklist-new-only:before, #top-menu a.adm-users:before, #top-menu .adm-users.icon-add.checklist-new-only:before, #admin-menu a.users:before, #admin-menu .users.icon-add.checklist-new-only:before, #admin-menu .icon-user:before {
   content: "\f007"; }
 
 .fa-film:before {
   content: "\f008"; }
 
-.fa-th-large:before, #admin-menu a.workflows:before, #admin-menu .workflows.icon-add.checklist-new-only:before {
+.fa-th-large:before, #top-menu a.adm-workflows:before, #top-menu .adm-workflows.icon-add.checklist-new-only:before, #admin-menu a.workflows:before, #admin-menu .workflows.icon-add.checklist-new-only:before {
   content: "\f009"; }
 
 .fa-th:before {
@@ -2737,7 +2737,7 @@ a.close-icon:before,
 .fa-align-justify:before {
   content: "\f039"; }
 
-.fa-list:before, #admin-menu a.enumerations:before, #admin-menu .enumerations.icon-add.checklist-new-only:before {
+.fa-list:before, #top-menu a.adm-enumerations:before, #top-menu .adm-enumerations.icon-add.checklist-new-only:before, #admin-menu a.enumerations:before, #admin-menu .enumerations.icon-add.checklist-new-only:before {
   content: "\f03a"; }
 
 .fa-dedent:before,
@@ -2769,7 +2769,7 @@ a.close-icon:before,
 .fa-tint:before {
   content: "\f043"; }
 
-.fa-edit:before, #admin-menu a.custom_fields:before, #admin-menu .custom_fields.icon-add.checklist-new-only:before,
+.fa-edit:before, #top-menu a.adm-custom-fields:before, #top-menu .adm-custom-fields.icon-add.checklist-new-only:before, #admin-menu a.custom_fields:before, #admin-menu .custom_fields.icon-add.checklist-new-only:before,
 .fa-pencil-square-o:before {
   content: "\f044"; }
 
@@ -2833,7 +2833,7 @@ a.close-icon:before,
 .fa-question-circle:before, .jstElements .jstb_help:before {
   content: "\f059"; }
 
-.fa-info-circle:before, #admin-menu a.info:before, #admin-menu .info.icon-add.checklist-new-only:before, #admin-menu .icon-help:before {
+.fa-info-circle:before, #top-menu a.adm-info:before, #top-menu .adm-info.icon-add.checklist-new-only:before, #admin-menu a.info:before, #admin-menu .info.icon-add.checklist-new-only:before, #admin-menu .icon-help:before {
   content: "\f05a"; }
 
 .fa-crosshairs:before, .icon-move:before {
@@ -2891,7 +2891,7 @@ a.close-icon:before,
 .fa-fire:before {
   content: "\f06d"; }
 
-.fa-eye:before, #admin-menu a.roles:before, #admin-menu .roles.icon-add.checklist-new-only:before {
+.fa-eye:before, #top-menu a.adm-roles:before, #top-menu .adm-roles.icon-add.checklist-new-only:before, #admin-menu a.roles:before, #admin-menu .roles.icon-add.checklist-new-only:before {
   content: "\f06e"; }
 
 .fa-eye-slash:before {
@@ -2953,10 +2953,10 @@ a.close-icon:before,
 .fa-camera-retro:before {
   content: "\f083"; }
 
-.fa-key:before, #admin-menu a.server_authentication:before, #admin-menu .server_authentication.icon-add.checklist-new-only:before, #admin-menu .icon-server-authentication:before {
+.fa-key:before, #top-menu a.adm-ldap-authentication:before, #top-menu .adm-ldap-authentication.icon-add.checklist-new-only:before, #admin-menu a.server_authentication:before, #admin-menu .server_authentication.icon-add.checklist-new-only:before, #admin-menu .icon-server-authentication:before {
   content: "\f084"; }
 
-.fa-gears:before, #top-menu a.administration:before, #top-menu .administration.icon-add.checklist-new-only:before, #admin-menu a.settings:before, #admin-menu .settings.icon-add.checklist-new-only:before, #admin-menu dt.changeset:before,
+.fa-gears:before, #top-menu a.administration:before, #top-menu .administration.icon-add.checklist-new-only:before, #top-menu a.adm-settings:before, #top-menu .adm-settings.icon-add.checklist-new-only:before, #admin-menu a.settings:before, #admin-menu .settings.icon-add.checklist-new-only:before, #admin-menu dt.changeset:before,
 .fa-cogs:before {
   content: "\f085"; }
 
@@ -3086,7 +3086,7 @@ a.close-icon:before,
 .fa-arrows-alt:before, .jstEditor:not(.zen) button.jstb_zenedit:before {
   content: "\f0b2"; }
 
-.fa-group:before, #admin-menu a.groups:before, #admin-menu .groups.icon-add.checklist-new-only:before,
+.fa-group:before, #top-menu a.adm-groups:before, #top-menu .adm-groups.icon-add.checklist-new-only:before, #admin-menu a.groups:before, #admin-menu .groups.icon-add.checklist-new-only:before,
 .fa-users:before,
 #top-menu a.people:before,
 #top-menu .people.icon-add.checklist-new-only:before,
@@ -3121,7 +3121,7 @@ div.members h3:before {
 .fa-floppy-o:before {
   content: "\f0c7"; }
 
-.fa-square:before, #admin-menu a.trackers:before, #admin-menu .trackers.icon-add.checklist-new-only:before, #admin-menu dt.issue:before, #admin-menu .icon-issue:before, div.issues h3:before {
+.fa-square:before, #top-menu a.adm-trackers:before, #top-menu .adm-trackers.icon-add.checklist-new-only:before, #admin-menu a.trackers:before, #admin-menu .trackers.icon-add.checklist-new-only:before, #admin-menu dt.issue:before, #admin-menu .icon-issue:before, div.issues h3:before {
   content: "\f0c8"; }
 
 .fa-navicon:before,
@@ -3222,7 +3222,7 @@ div.members h3:before {
 .fa-bolt:before {
   content: "\f0e7"; }
 
-.fa-sitemap:before {
+.fa-sitemap:before, #top-menu a.cms:before, #top-menu .cms.icon-add.checklist-new-only:before, #admin-menu a.cms:before, #admin-menu .cms.icon-add.checklist-new-only:before {
   content: "\f0e8"; }
 
 .fa-umbrella:before {
@@ -3422,7 +3422,7 @@ div.members h3:before {
 .fa-eraser:before {
   content: "\f12d"; }
 
-.fa-puzzle-piece:before, #admin-menu a.plugins:before, #admin-menu .plugins.icon-add.checklist-new-only:before {
+.fa-puzzle-piece:before, #top-menu a.adm-plugins:before, #top-menu .adm-plugins.icon-add.checklist-new-only:before, #admin-menu a.plugins:before, #admin-menu .plugins.icon-add.checklist-new-only:before {
   content: "\f12e"; }
 
 .fa-microphone:before {
@@ -3503,7 +3503,7 @@ div.members h3:before {
 .fa-check-square:before, .icon-checked:before {
   content: "\f14a"; }
 
-.fa-pencil-square:before, #admin-menu a.issue_statuses:before, #admin-menu .issue_statuses.icon-add.checklist-new-only:before, #admin-menu dt.issue-edit:before {
+.fa-pencil-square:before, #top-menu a.adm-issue-statuses:before, #top-menu .adm-issue-statuses.icon-add.checklist-new-only:before, #admin-menu a.issue_statuses:before, #admin-menu .issue_statuses.icon-add.checklist-new-only:before, #admin-menu dt.issue-edit:before {
   content: "\f14b"; }
 
 .fa-external-link-square:before {
@@ -3812,7 +3812,7 @@ div.members h3:before {
 .fa-cube:before, h3.version:before, .icon-package:before {
   content: "\f1b2"; }
 
-.fa-cubes:before, #top-menu a.projects:before, #top-menu .projects.icon-add.checklist-new-only:before, #admin-menu a.projects:before, #admin-menu .projects.icon-add.checklist-new-only:before, #admin-menu dt.project:before, #admin-menu .icon-projects:before, div.projects h3:before {
+.fa-cubes:before, #top-menu a.projects:before, #top-menu .projects.icon-add.checklist-new-only:before, #top-menu a.adm-projects:before, #top-menu .adm-projects.icon-add.checklist-new-only:before, #admin-menu a.projects:before, #admin-menu .projects.icon-add.checklist-new-only:before, #admin-menu dt.project:before, #admin-menu .icon-projects:before, div.projects h3:before {
   content: "\f1b3"; }
 
 .fa-behance:before {
@@ -4369,12 +4369,45 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   display: block;
   background: #474D57;
   color: white;
-  padding: 1em;
-  cursor: default; }
+  padding: 0 1em;
+  cursor: default;
+  position: relative;
+  z-index: 999;
+  height: 3.15em; }
   #top-menu:after {
     content: "";
     display: table;
     clear: both; }
+  #top-menu .outer-container ul.menu-children {
+    width: 26em;
+    top: 99%;
+    border: 0;
+    background: #474D57;
+    border-radius: 0 0 4px 4px;
+    padding: 0.5em 1em 0.6em; }
+    #top-menu .outer-container ul.menu-children > li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding: 0; }
+      #top-menu .outer-container ul.menu-children > li:last-child {
+        margin-right: 0; }
+      #top-menu .outer-container ul.menu-children > li:nth-child(2n) {
+        margin-right: 0; }
+      #top-menu .outer-container ul.menu-children > li:nth-child(2n+1) {
+        clear: left; }
+      #top-menu .outer-container ul.menu-children > li a, #top-menu .outer-container ul.menu-children > li .icon-add.checklist-new-only {
+        color: #979DA7;
+        padding: 0.4em;
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+        #top-menu .outer-container ul.menu-children > li a:hover, #top-menu .outer-container ul.menu-children > li .icon-add.checklist-new-only:hover, #top-menu .outer-container ul.menu-children > li a:active, #top-menu .outer-container ul.menu-children > li .icon-add.checklist-new-only:active, #top-menu .outer-container ul.menu-children > li a:focus, #top-menu .outer-container ul.menu-children > li .icon-add.checklist-new-only:focus {
+          color: white; }
+        #top-menu .outer-container ul.menu-children > li a:before, #top-menu .outer-container ul.menu-children > li .icon-add.checklist-new-only:before {
+          margin-right: 0.5em !important; }
   #top-menu ul {
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
@@ -4390,20 +4423,17 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   #top-menu a, #top-menu .icon-add.checklist-new-only {
     color: #979DA7;
     font-size: 0.9em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
-    transition-duration: 0.3s; }
+    transition-duration: 0.3s;
+    display: inline-block; }
     #top-menu a:hover, #top-menu .icon-add.checklist-new-only:hover, #top-menu a:focus, #top-menu .icon-add.checklist-new-only:focus, #top-menu a:active, #top-menu .icon-add.checklist-new-only:active {
       color: white; }
     #top-menu a:before, #top-menu .icon-add.checklist-new-only:before {
       margin-right: 0.5em;
       vertical-align: middle; }
-    #top-menu a.my-account:before, #top-menu .my-account.icon-add.checklist-new-only:before {
-      margin-right: 0; }
-    #top-menu a.logout, #top-menu .logout.icon-add.checklist-new-only {
-      margin-right: 0; }
-      #top-menu a.logout:before, #top-menu .logout.icon-add.checklist-new-only:before {
-        margin-right: 0; }
     #top-menu a.tt_start:before, #top-menu .tt_start.icon-add.checklist-new-only:before, #top-menu a.tt_stop:before, #top-menu .tt_stop.icon-add.checklist-new-only:before {
       position: relative;
       top: 0; }
@@ -4412,8 +4442,6 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     margin-right: 1em;
     color: #979DA7;
     font-size: 0.9em;
-    position: relative;
-    top: 0.2em;
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
     animation: fadeIn 1s; }
@@ -4423,6 +4451,15 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
     animation: fadeIn 1s; }
+    #top-menu #account.cms ul li {
+      height: auto !important; }
+      #top-menu #account.cms ul li img.gravatar {
+        top: 0;
+        margin-right: 0.5em; }
+    #top-menu #account a:before, #top-menu #account .icon-add.checklist-new-only:before {
+      margin-right: 0; }
+    #top-menu #account .menu-children {
+      width: 18em; }
 
 #header {
   display: block;
@@ -4468,14 +4505,12 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
     animation: fadeIn 1s; }
-    #header #quick-search label[for="q"] {
-      position: relative;
-      z-index: 5; }
-      #header #quick-search label[for="q"]:before {
-        position: absolute;
-        right: -2.6em;
-        top: 0.2em;
-        color: #474D57; }
+    #header #quick-search .icon-search:before {
+      z-index: 5;
+      position: absolute;
+      left: 1.6em;
+      top: 0.2em;
+      color: #474D57; }
     #header #quick-search #q {
       margin-left: 1em;
       padding-left: 2em !important;
@@ -4488,6 +4523,7 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
       z-index: 0;
       color: rgba(255, 255, 255, 0.8); }
       #header #quick-search #q:active, #header #quick-search #q:focus {
+        color: #333333;
         background: white;
         width: 15em; }
   #header a, #header .icon-add.checklist-new-only, #header a:hover, #header .icon-add.checklist-new-only:hover, #header a:active, #header .icon-add.checklist-new-only:active, #header a:focus, #header .icon-add.checklist-new-only:focus {
@@ -4709,9 +4745,12 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   margin-right: auto;
   padding: 1em; }
 #login-form td {
-  padding: 0.5em; }
+  padding: 0.5em;
+  text-align: right; }
 #login-form tr {
   background: none !important; }
+#login-form #username, #login-form #password {
+  width: 100%; }
 
 div.modal {
   border-radius: 4px;
@@ -5552,9 +5591,7 @@ div.thumbnails img {
   margin: 3px; }
 
 p.other-formats {
-  max-width: 80em;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
   text-align: right;
   font-size: 0.9em;
   margin-top: 3em; }
