@@ -4386,7 +4386,7 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     margin-right: 1em;
     padding: 0; }
     #top-menu li:last-child {
-      margin-right: 0.5em; }
+      margin-right: 0.2em; }
   #top-menu a, #top-menu .icon-add.checklist-new-only {
     color: #979DA7;
     font-size: 0.9em;
@@ -4463,7 +4463,7 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
       background: rgba(71, 77, 87, 0.5); }
   #header #quick-search {
     position: relative;
-    top: 0.7em;
+    top: 0.65em;
     z-index: 5;
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
