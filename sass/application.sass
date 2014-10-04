@@ -137,6 +137,9 @@ select
 		margin-right: 1em
 		padding: 0
 
+		&:last-child
+			margin-right: .5em
+
 	a
 		color: $grey-blue
 		font-size: .9em
@@ -183,8 +186,22 @@ select
 		&.my-account
 			@extend .fa-user
 
+			&:before
+				margin-right: 0
+
 		&.logout
 			@extend .fa-sign-out
+			margin-right: 0
+
+			&:before
+				margin-right: 0
+
+		&.time-tracker-main-menu
+			@extend .fa-clock-o
+
+		&.tt_start:before, &.tt_stop:before
+			position: relative
+			top: 0
 
 	#loggedas
 		float: right
@@ -2189,6 +2206,12 @@ a.close-icon:hover
 
 .icon-file.application-pdf, .icon-pdf
 	@extend .fa-file-pdf-o
+
+.icon-start, .tt_start
+	@extend .fa-play
+
+.icon-stop, .tt_stop
+	@extend .fa-stop
 
 img.gravatar
 	background: white

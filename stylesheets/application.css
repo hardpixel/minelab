@@ -2637,7 +2637,7 @@ a.close-icon:before,
 .fa-file-o:before, .icon-file:before {
   content: "\f016"; }
 
-.fa-clock-o:before, .icon-time-add:before, dt.time-entry:before, .icon-time:before {
+.fa-clock-o:before, #top-menu a.time-tracker-main-menu:before, #top-menu .time-tracker-main-menu.icon-add.checklist-new-only:before, .icon-time-add:before, dt.time-entry:before, .icon-time:before {
   content: "\f017"; }
 
 .fa-road:before {
@@ -2791,13 +2791,13 @@ a.close-icon:before,
 .fa-backward:before {
   content: "\f04a"; }
 
-.fa-play:before {
+.fa-play:before, .icon-start:before, .tt_start:before {
   content: "\f04b"; }
 
 .fa-pause:before {
   content: "\f04c"; }
 
-.fa-stop:before {
+.fa-stop:before, .icon-stop:before, .tt_stop:before {
   content: "\f04d"; }
 
 .fa-forward:before {
@@ -4385,6 +4385,8 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     white-space: nowrap;
     margin-right: 1em;
     padding: 0; }
+    #top-menu li:last-child {
+      margin-right: 0.5em; }
   #top-menu a, #top-menu .icon-add.checklist-new-only {
     color: #979DA7;
     font-size: 0.9em;
@@ -4396,6 +4398,15 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
     #top-menu a:before, #top-menu .icon-add.checklist-new-only:before {
       margin-right: 0.5em;
       vertical-align: middle; }
+    #top-menu a.my-account:before, #top-menu .my-account.icon-add.checklist-new-only:before {
+      margin-right: 0; }
+    #top-menu a.logout, #top-menu .logout.icon-add.checklist-new-only {
+      margin-right: 0; }
+      #top-menu a.logout:before, #top-menu .logout.icon-add.checklist-new-only:before {
+        margin-right: 0; }
+    #top-menu a.tt_start:before, #top-menu .tt_start.icon-add.checklist-new-only:before, #top-menu a.tt_stop:before, #top-menu .tt_stop.icon-add.checklist-new-only:before {
+      position: relative;
+      top: 0; }
   #top-menu #loggedas {
     float: right;
     margin-right: 1em;

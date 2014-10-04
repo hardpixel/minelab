@@ -17,6 +17,9 @@ jQuery(document).ready(function($){
 
 	$('input.questions-search').wrap('<span class="live_search normal"></span>');
 
+	$('#top-menu .my-account').attr('title', $('#top-menu .my-account').text()).text('');
+	$('#top-menu .logout').attr('title', $('#top-menu .logout').text()).text('');
+
 	$(window).load(function(){
 		$('select').select2({
 			width: 'element'
