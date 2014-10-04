@@ -489,6 +489,9 @@ select
 			tr
 				background: none !important
 
+		.icon-time
+			font-size: 2em
+
 	#content
 		+span-columns(9)
 		margin-right: 0
@@ -716,13 +719,20 @@ tr.entry td.size
 	font-size: 90%
 
 tr span.expander
-	background-image: url(../images/bullet_toggle_plus.png)
-	padding-left: 8px
-	margin-left: 0
+	@extend .fa-plus-circle
 	cursor: pointer
 
+	&:before
+		@extend .fa
+		margin-right: .5em
+
 tr.open span.expander
-	background-image: url(../images/bullet_toggle_minus.png)
+	@extend .fa-minus-circle
+	cursor: pointer
+
+	&:before
+		@extend .fa
+		margin-right: .5em
 
 tr.changeset
 	height: 20px
@@ -795,25 +805,25 @@ table.plugins span.name
 
 table.list tbody tr.group td
 	font-weight: 700
-	border-bottom: 1px solid #ccc
+	border-bottom: 1px solid $medium-grey
 	text-align: left
 	padding: .8em 0 .5em .3em
 
 table.list tbody tr.group span.count
 	position: relative
-	top: -1px
-	color: #fff
-	font-size: 10px
-	background: #9DB9D5
-	border-radius: 3px
-	margin-left: 4px
-	padding: 0 6px 1px
+	color: white
+	background: $green
+	border-radius: 4px
+	margin-left: .5em
+	padding: .2em .5em
+	font-size: .85em
+	display: inline-block
 
 tr.group a.toggle-all
-	color: #aaa
-	font-size: 80%
 	font-weight: 400
 	display: none
+	margin-left: .5em
+	font-size: .85em
 
 table.list tbody tr:hover
 	background-color: rgba($orange, .1)
@@ -1580,7 +1590,7 @@ table.members td.group
 	&.normal
 		font-size: 1em
 
-.icon-search
+span.icon-search
 	@extend .fa-search
 	position: relative
 
@@ -1707,16 +1717,28 @@ table.cal td.today
 	background: #ffffdd
 
 table.cal .starting a, p.cal.legend .starting
-	background: url(../images/bullet_go.png) no-repeat -1px -2px
-	padding-left: 16px
+	@extend .fa-arrow-right
+
+	&:before
+		@extend .fa
+		margin-right: .5em
+		color: $green
 
 table.cal .ending a, p.cal.legend .ending
-	background: url(../images/bullet_end.png) no-repeat -1px -2px
-	padding-left: 16px
+	@extend .fa-arrow-left
+
+	&:before
+		@extend .fa
+		margin-right: .5em
+		color: $red
 
 table.cal .starting.ending a, p.cal.legend .starting.ending
-	background: url(../images/bullet_diamond.png) no-repeat -1px -2px
-	padding-left: 16px
+	@extend .fa-bullseye
+
+	&:before
+		@extend .fa
+		margin-right: .5em
+		color: $red
 
 .tooltip
 	position: relative
@@ -1822,32 +1844,32 @@ p.progress-info
 div.tabs-buttons
 	position: absolute
 	right: 0
-	width: 48px
-	height: 24px
+	width: 3em
 	background: white
 	bottom: 0
-	border-bottom: 1px solid #bbbbbb
+	border-bottom: 1px solid $medium-grey
 
 button.tab-left, button.tab-right
-	font-size: .9em
 	cursor: pointer
-	height: 24px
-	border: 1px solid #ccc
-	border-bottom: 1px solid #bbbbbb
 	position: absolute
-	width: 20px
+	width: 1.5em
 	bottom: -1px
-	padding: 4px
+	padding: 1em 0
+	text-align: center
+	border: 0 !important
+	color: $medium-grey
+	background: none !important
+
+	&:before
+		@extend .fa
 
 button.tab-left
-	right: 20px
-	background: #eeeeee url(../images/bullet_arrow_left.png) no-repeat 50% 50%
-	border-top-left-radius: 3px
+	left: 0
+	@extend .fa-chevron-left
 
 button.tab-right
 	right: 0
-	background: #eeeeee url(../images/bullet_arrow_right.png) no-repeat 50% 50%
-	border-top-right-radius: 3px
+	@extend .fa-chevron-right
 
 .diff_out
 	background: #fcc
@@ -2650,9 +2672,6 @@ dt.time-entry:before, dt.attachment:before, dt.issue-closed:before
 
 dt.time-entry, .icon-time
 	@extend .fa-clock-o
-
-.icon-time
-	font-size: 2em
 
 div#roadmap .related-issues, div#version-summary fieldset, #projects-index ul.projects li.root, div.wiki ul, div.wiki ol
 	margin-bottom: 1em

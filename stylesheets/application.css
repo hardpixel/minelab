@@ -2420,7 +2420,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.fa, #context-menu li a.submenu:before, .jstElements button[type="button"]:before, #top-menu a:before, #top-menu .icon-add.checklist-new-only:before, #header #quick-search label[for="q"]:before, #admin-menu a:before, #admin-menu .icon-add.checklist-new-only:before, tr.project [id^="favorite_project"], table.boards a.board:before, table.boards .board.icon-add.checklist-new-only:before, h3.comments:before, h3.version:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before, #watchers a.delete:before, #watchers .delete.icon-add.checklist-new-only:before, span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before, fieldset.collapsible > legend:before, .my-project:before, .icon-search:before, a.close-icon:before, .close-icon.icon-add.checklist-new-only:before, .icon:before, [class*="icon-"]:before, #context-menu li a:before, #context-menu li .icon-add.checklist-new-only:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before, dt.time-entry:before, dt.attachment:before, dt.issue-closed:before, .icon-contact:before, .icon-invoice:before, .jstEditor:not(.zen) button.jstb_zenedit:before, #invoice_contact_id_add_link:before {
+.fa, #context-menu li a.submenu:before, .jstElements button[type="button"]:before, #top-menu a:before, #top-menu .icon-add.checklist-new-only:before, #header #quick-search label[for="q"]:before, #admin-menu a:before, #admin-menu .icon-add.checklist-new-only:before, tr.project [id^="favorite_project"], tr span.expander:before, tr.open span.expander:before, table.boards a.board:before, table.boards .board.icon-add.checklist-new-only:before, h3.comments:before, h3.version:before, div.issues h3:before, div.members h3:before, div.news h3:before, div.projects h3:before, #watchers a.delete:before, #watchers .delete.icon-add.checklist-new-only:before, span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before, fieldset.collapsible > legend:before, .my-project:before, span.icon-search:before, table.cal .starting a:before, table.cal .starting .icon-add.checklist-new-only:before, p.cal.legend .starting:before, table.cal .ending a:before, table.cal .ending .icon-add.checklist-new-only:before, p.cal.legend .ending:before, table.cal .starting.ending a:before, p.cal.legend .starting.ending:before, button.tab-left:before, button.tab-right:before, a.close-icon:before, .close-icon.icon-add.checklist-new-only:before, .icon:before, [class*="icon-"]:before, #context-menu li a:before, #context-menu li .icon-add.checklist-new-only:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before, dt.time-entry:before, dt.attachment:before, dt.issue-closed:before, .icon-contact:before, .icon-invoice:before, .jstEditor:not(.zen) button.jstb_zenedit:before, #invoice_contact_id_add_link:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -2479,10 +2479,10 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .pull-left {
   float: left; }
 
-.fa.pull-left, .jstElements button.pull-left[type="button"]:before, #top-menu a.pull-left:before, #top-menu .pull-left.icon-add.checklist-new-only:before, #header #quick-search label.pull-left[for="q"]:before, #admin-menu a.pull-left:before, #admin-menu .pull-left.icon-add.checklist-new-only:before, tr.project .pull-left[id^="favorite_project"], table.boards a.pull-left.board:before, table.boards .pull-left.board.icon-add.checklist-new-only:before, h3.pull-left.comments:before, h3.pull-left.version:before, div.issues h3.pull-left:before, div.members h3.pull-left:before, div.news h3.pull-left:before, div.projects h3.pull-left:before, #watchers a.pull-left.delete:before, #watchers .pull-left.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-left:before, span.search_for_watchers .pull-left.icon-add.checklist-new-only:before, span.add_attachment a.pull-left:before, span.add_attachment .pull-left.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-left:before, .pull-left.my-project:before, .pull-left.icon-search:before, a.pull-left.close-icon:before, .pull-left.close-icon.icon-add.checklist-new-only:before, .pull-left.icon:before, .pull-left[class*="icon-"]:before, #context-menu li a.pull-left:before, #context-menu li .pull-left.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-left:before, tr.issue.idnt td.subject a.pull-left:before, tr.issue.idnt td.subject .pull-left.icon-add.checklist-new-only:before, dt.pull-left.time-entry:before, dt.pull-left.attachment:before, dt.pull-left.issue-closed:before, .pull-left.icon-contact:before, .pull-left.icon-invoice:before, .jstEditor:not(.zen) button.pull-left.jstb_zenedit:before, .pull-left#invoice_contact_id_add_link:before {
+.fa.pull-left, .jstElements button.pull-left[type="button"]:before, #top-menu a.pull-left:before, #top-menu .pull-left.icon-add.checklist-new-only:before, #header #quick-search label.pull-left[for="q"]:before, #admin-menu a.pull-left:before, #admin-menu .pull-left.icon-add.checklist-new-only:before, tr.project .pull-left[id^="favorite_project"], tr span.pull-left.expander:before, table.boards a.pull-left.board:before, table.boards .pull-left.board.icon-add.checklist-new-only:before, h3.pull-left.comments:before, h3.pull-left.version:before, div.issues h3.pull-left:before, div.members h3.pull-left:before, div.news h3.pull-left:before, div.projects h3.pull-left:before, #watchers a.pull-left.delete:before, #watchers .pull-left.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-left:before, span.search_for_watchers .pull-left.icon-add.checklist-new-only:before, span.add_attachment a.pull-left:before, span.add_attachment .pull-left.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-left:before, .pull-left.my-project:before, span.pull-left.icon-search:before, table.cal .starting a.pull-left:before, table.cal .starting .pull-left.icon-add.checklist-new-only:before, p.cal.legend .pull-left.starting:before, table.cal .ending a.pull-left:before, table.cal .ending .pull-left.icon-add.checklist-new-only:before, p.cal.legend .pull-left.ending:before, button.pull-left.tab-left:before, button.pull-left.tab-right:before, a.pull-left.close-icon:before, .pull-left.close-icon.icon-add.checklist-new-only:before, .pull-left.icon:before, .pull-left[class*="icon-"]:before, #context-menu li a.pull-left:before, #context-menu li .pull-left.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-left:before, tr.issue.idnt td.subject a.pull-left:before, tr.issue.idnt td.subject .pull-left.icon-add.checklist-new-only:before, dt.pull-left.time-entry:before, dt.pull-left.attachment:before, dt.pull-left.issue-closed:before, .pull-left.icon-contact:before, .pull-left.icon-invoice:before, .jstEditor:not(.zen) button.pull-left.jstb_zenedit:before, .pull-left#invoice_contact_id_add_link:before {
   margin-right: .3em; }
 
-.fa.pull-right, .jstElements button.pull-right[type="button"]:before, #top-menu a.pull-right:before, #top-menu .pull-right.icon-add.checklist-new-only:before, #header #quick-search label.pull-right[for="q"]:before, #admin-menu a.pull-right:before, #admin-menu .pull-right.icon-add.checklist-new-only:before, tr.project .pull-right[id^="favorite_project"], table.boards a.pull-right.board:before, table.boards .pull-right.board.icon-add.checklist-new-only:before, h3.pull-right.comments:before, h3.pull-right.version:before, div.issues h3.pull-right:before, div.members h3.pull-right:before, div.news h3.pull-right:before, div.projects h3.pull-right:before, #watchers a.pull-right.delete:before, #watchers .pull-right.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-right:before, span.search_for_watchers .pull-right.icon-add.checklist-new-only:before, span.add_attachment a.pull-right:before, span.add_attachment .pull-right.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-right:before, .pull-right.my-project:before, .pull-right.icon-search:before, a.pull-right.close-icon:before, .pull-right.close-icon.icon-add.checklist-new-only:before, .pull-right.icon:before, .pull-right[class*="icon-"]:before, #context-menu li a.pull-right:before, #context-menu li .pull-right.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-right:before, tr.issue.idnt td.subject a.pull-right:before, tr.issue.idnt td.subject .pull-right.icon-add.checklist-new-only:before, dt.pull-right.time-entry:before, dt.pull-right.attachment:before, dt.pull-right.issue-closed:before, .pull-right.icon-contact:before, .pull-right.icon-invoice:before, .jstEditor:not(.zen) button.pull-right.jstb_zenedit:before, .pull-right#invoice_contact_id_add_link:before {
+.fa.pull-right, .jstElements button.pull-right[type="button"]:before, #top-menu a.pull-right:before, #top-menu .pull-right.icon-add.checklist-new-only:before, #header #quick-search label.pull-right[for="q"]:before, #admin-menu a.pull-right:before, #admin-menu .pull-right.icon-add.checklist-new-only:before, tr.project .pull-right[id^="favorite_project"], tr span.pull-right.expander:before, table.boards a.pull-right.board:before, table.boards .pull-right.board.icon-add.checklist-new-only:before, h3.pull-right.comments:before, h3.pull-right.version:before, div.issues h3.pull-right:before, div.members h3.pull-right:before, div.news h3.pull-right:before, div.projects h3.pull-right:before, #watchers a.pull-right.delete:before, #watchers .pull-right.delete.icon-add.checklist-new-only:before, span.search_for_watchers a.pull-right:before, span.search_for_watchers .pull-right.icon-add.checklist-new-only:before, span.add_attachment a.pull-right:before, span.add_attachment .pull-right.icon-add.checklist-new-only:before, fieldset.collapsible > legend.pull-right:before, .pull-right.my-project:before, span.pull-right.icon-search:before, table.cal .starting a.pull-right:before, table.cal .starting .pull-right.icon-add.checklist-new-only:before, p.cal.legend .pull-right.starting:before, table.cal .ending a.pull-right:before, table.cal .ending .pull-right.icon-add.checklist-new-only:before, p.cal.legend .pull-right.ending:before, button.pull-right.tab-left:before, button.pull-right.tab-right:before, a.pull-right.close-icon:before, .pull-right.close-icon.icon-add.checklist-new-only:before, .pull-right.icon:before, .pull-right[class*="icon-"]:before, #context-menu li a.pull-right:before, #context-menu li .pull-right.icon-add.checklist-new-only:before, tr.project.idnt td.name span.pull-right:before, tr.issue.idnt td.subject a.pull-right:before, tr.issue.idnt td.subject .pull-right.icon-add.checklist-new-only:before, dt.pull-right.time-entry:before, dt.pull-right.attachment:before, dt.pull-right.issue-closed:before, .pull-right.icon-contact:before, .pull-right.icon-invoice:before, .jstEditor:not(.zen) button.pull-right.jstb_zenedit:before, .pull-right#invoice_contact_id_add_link:before {
   margin-left: .3em; }
 
 .fa-spin {
@@ -2572,7 +2572,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-music:before {
   content: "\f001"; }
 
-.fa-search:before, #header #quick-search label[for="q"]:before, .icon-search:before {
+.fa-search:before, #header #quick-search label[for="q"]:before, span.icon-search:before {
   content: "\f002"; }
 
 .fa-envelope-o:before {
@@ -2812,16 +2812,16 @@ a.close-icon:before,
 .fa-eject:before {
   content: "\f052"; }
 
-.fa-chevron-left:before {
+.fa-chevron-left:before, button.tab-left:before {
   content: "\f053"; }
 
-.fa-chevron-right:before {
+.fa-chevron-right:before, button.tab-right:before {
   content: "\f054"; }
 
-.fa-plus-circle:before, span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before, .icon-add:before, .icon-add-payment:before, .icon-multiple:before, .icon-test:before, #invoice_contact_id_add_link:before {
+.fa-plus-circle:before, tr span.expander:before, span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-new-only:before, span.add_attachment a:before, span.add_attachment .icon-add.checklist-new-only:before, .icon-add:before, .icon-add-payment:before, .icon-multiple:before, .icon-test:before, #invoice_contact_id_add_link:before {
   content: "\f055"; }
 
-.fa-minus-circle:before {
+.fa-minus-circle:before, tr.open span.expander:before {
   content: "\f056"; }
 
 .fa-times-circle:before {
@@ -2848,10 +2848,10 @@ a.close-icon:before,
 .fa-ban:before, .icon-cancel:before {
   content: "\f05e"; }
 
-.fa-arrow-left:before {
+.fa-arrow-left:before, table.cal .ending a:before, table.cal .ending .icon-add.checklist-new-only:before, p.cal.legend .ending:before {
   content: "\f060"; }
 
-.fa-arrow-right:before {
+.fa-arrow-right:before, table.cal .starting a:before, table.cal .starting .icon-add.checklist-new-only:before, p.cal.legend .starting:before {
   content: "\f061"; }
 
 .fa-arrow-up:before {
@@ -3470,7 +3470,7 @@ div.members h3:before {
 .fa-unlock-alt:before {
   content: "\f13e"; }
 
-.fa-bullseye:before {
+.fa-bullseye:before, table.cal .starting.ending a:before, table.cal .starting.ending .icon-add.checklist-new-only:before, p.cal.legend .starting.ending:before {
   content: "\f140"; }
 
 .fa-ellipsis-h:before {
@@ -4620,6 +4620,8 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
         color: white; }
     #main #sidebar table tr {
       background: none !important; }
+    #main #sidebar .icon-time {
+      font-size: 2em; }
   #main #content {
     float: left;
     display: block;
@@ -4817,13 +4819,14 @@ tr.entry td.size {
   font-size: 90%; }
 
 tr span.expander {
-  background-image: url(../images/bullet_toggle_plus.png);
-  padding-left: 8px;
-  margin-left: 0;
   cursor: pointer; }
+  tr span.expander:before {
+    margin-right: 0.5em; }
 
 tr.open span.expander {
-  background-image: url(../images/bullet_toggle_minus.png); }
+  cursor: pointer; }
+  tr.open span.expander:before {
+    margin-right: 0.5em; }
 
 tr.changeset {
   height: 20px; }
@@ -4894,25 +4897,25 @@ table.plugins span.name {
 
 table.list tbody tr.group td {
   font-weight: 700;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #CCCCCC;
   text-align: left;
   padding: 0.8em 0 0.5em 0.3em; }
 
 table.list tbody tr.group span.count {
   position: relative;
-  top: -1px;
-  color: #fff;
-  font-size: 10px;
-  background: #9DB9D5;
-  border-radius: 3px;
-  margin-left: 4px;
-  padding: 0 6px 1px; }
+  color: white;
+  background: #2ecc71;
+  border-radius: 4px;
+  margin-left: 0.5em;
+  padding: 0.2em 0.5em;
+  font-size: 0.85em;
+  display: inline-block; }
 
 tr.group a.toggle-all, tr.group .toggle-all.icon-add.checklist-new-only {
-  color: #aaa;
-  font-size: 80%;
   font-weight: 400;
-  display: none; }
+  display: none;
+  margin-left: 0.5em;
+  font-size: 0.85em; }
 
 table.list tbody tr:hover {
   background-color: rgba(243, 156, 18, 0.1); }
@@ -5624,9 +5627,9 @@ table.members td.group {
   .live_search.normal {
     font-size: 1em; }
 
-.icon-search {
+span.icon-search {
   position: relative; }
-  .icon-search:before {
+  span.icon-search:before {
     position: absolute;
     top: 0.2em;
     left: 0.5em;
@@ -5744,17 +5747,17 @@ table.cal td.odd p.day-num {
 table.cal td.today {
   background: #ffffdd; }
 
-table.cal .starting a, table.cal .starting .icon-add.checklist-new-only, p.cal.legend .starting {
-  background: url(../images/bullet_go.png) no-repeat -1px -2px;
-  padding-left: 16px; }
+table.cal .starting a:before, table.cal .starting .icon-add.checklist-new-only:before, p.cal.legend .starting:before {
+  margin-right: 0.5em;
+  color: #2ecc71; }
 
-table.cal .ending a, table.cal .ending .icon-add.checklist-new-only, p.cal.legend .ending {
-  background: url(../images/bullet_end.png) no-repeat -1px -2px;
-  padding-left: 16px; }
+table.cal .ending a:before, table.cal .ending .icon-add.checklist-new-only:before, p.cal.legend .ending:before {
+  margin-right: 0.5em;
+  color: #e74c3c; }
 
-table.cal .starting.ending a, table.cal .starting.ending .icon-add.checklist-new-only, p.cal.legend .starting.ending {
-  background: url(../images/bullet_diamond.png) no-repeat -1px -2px;
-  padding-left: 16px; }
+table.cal .starting.ending a:before, table.cal .starting.ending .icon-add.checklist-new-only:before, p.cal.legend .starting.ending:before {
+  margin-right: 0.5em;
+  color: #e74c3c; }
 
 .tooltip {
   position: relative;
@@ -5855,32 +5858,27 @@ p.progress-info {
 div.tabs-buttons {
   position: absolute;
   right: 0;
-  width: 48px;
-  height: 24px;
+  width: 3em;
   background: white;
   bottom: 0;
-  border-bottom: 1px solid #bbbbbb; }
+  border-bottom: 1px solid #CCCCCC; }
 
 button.tab-left, button.tab-right {
-  font-size: 0.9em;
   cursor: pointer;
-  height: 24px;
-  border: 1px solid #ccc;
-  border-bottom: 1px solid #bbbbbb;
   position: absolute;
-  width: 20px;
+  width: 1.5em;
   bottom: -1px;
-  padding: 4px; }
+  padding: 1em 0;
+  text-align: center;
+  border: 0 !important;
+  color: #CCCCCC;
+  background: none !important; }
 
 button.tab-left {
-  right: 20px;
-  background: #eeeeee url(../images/bullet_arrow_left.png) no-repeat 50% 50%;
-  border-top-left-radius: 3px; }
+  left: 0; }
 
 button.tab-right {
-  right: 0;
-  background: #eeeeee url(../images/bullet_arrow_right.png) no-repeat 50% 50%;
-  border-top-right-radius: 3px; }
+  right: 0; }
 
 .diff_out {
   background: #fcc; }
@@ -6533,9 +6531,6 @@ div#activity dd .description, #search-results dd .description, ul.properties li 
 
 dt.time-entry:before, dt.attachment:before, dt.issue-closed:before {
   margin-right: 0.5em; }
-
-.icon-time {
-  font-size: 2em; }
 
 div#roadmap .related-issues, div#version-summary fieldset, #projects-index ul.projects li.root, div.wiki ul, div.wiki ol {
   margin-bottom: 1em; }
