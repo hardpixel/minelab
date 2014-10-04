@@ -21,10 +21,10 @@ jQuery(document).ready(function($){
 	$('#top-menu .logout').attr('title', $('#top-menu .logout').text()).text('');
 
 	$(window).load(function(){
-		$('select').select2({
+		$('input.autocomplete, input.live_search_field').wrap('<span class="icon-search"></span>');
+
+		$('select:not([multiple])').select2({
 			width: 'element'
 		});
-
-		$('input.autocomplete, input.live_search_field').wrap('<span class="icon-search"></span>');
 	});
 });
