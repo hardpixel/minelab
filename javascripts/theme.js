@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 	$(window).load(function(){
 		$('input.autocomplete, input.live_search_field, input#q').wrap('<span class="icon-search"></span>');
 
-		$('select:not([multiple])').select2({
+		$('#quick-search select').select2({
 			width: 'element'
 		});
 
