@@ -5331,22 +5331,22 @@ div#search-results-counts li {
   margin-left: 1em; }
 
 dt.issue-note {
-  background-image: url(../images/ticket_note.png); }
+  background: url(../images/ticket_note.png) no-repeat 25px; }
 
 dt.news {
-  background-image: url(../images/news.png); }
+  background: url(../images/news.png) no-repeat 25px; }
 
 dt.message {
-  background-image: url(../images/message.png); }
+  background: url(../images/message.png) no-repeat 25px; }
 
 dt.reply {
-  background-image: url(../images/comments.png); }
+  background: url(../images/comments.png) no-repeat 25px; }
 
 dt.wiki-page {
-  background-image: url(../images/wiki_edit.png); }
+  background: url(../images/wiki_edit.png) no-repeat 25px; }
 
 dt.document {
-  background-image: url(../images/document.png); }
+  background: url(../images/document.png) no-repeat 25px; }
 
 div#roadmap .wiki h2 {
   font-size: 110%; }
