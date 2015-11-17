@@ -2917,6 +2917,59 @@ div.contact.details table.subject_header h1
 	img
 		display: none !important
 
+#time-logger-menu
+	display: inline-block
+	padding-top: 0.9em
+
+	&,
+	&:hover,
+	.icon-time:hover
+		color: #979DA7
+		cursor: default
+
+	span:hover
+		color: white
+
+	a
+		padding-top: 0
+
+	.icon-action
+		margin: -1em -0.1em 0
+		padding: 1em 10px
+
+		&:before
+			padding-top: 0.2em
+
+	.icon-start:before
+		padding-top: 0.1em
+		padding-right: 0.5em
+
+	.icon-clock:before
+		content: "\f017"
+		display: inline-block
+		font: normal normal normal 14px/1 FontAwesome
+		font-size: 1.2em
+		padding-top: -2px
+		padding-right: 0.5em
+		text-rendering: auto
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+
+	.icon-pause-action
+		margin-left: 1em
+
+	.icon-start-action:before
+		content: "\f04b"
+
+	.icon-pause-action:before
+		content: "\f04c"
+
+	.icon-stop-action:before
+		content: "\f04d"
+
+	.icon-list-action:before
+		content: "\f03a"
+
 #comments
 
 	h4

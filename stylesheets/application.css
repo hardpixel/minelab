@@ -6698,6 +6698,46 @@ div.contact.details table.subject_header h1 {
 #invoice_contact_id_add_link img {
   display: none !important; }
 
+#time-logger-menu {
+  display: inline-block;
+  padding-top: 0.9em; }
+  #time-logger-menu, #time-logger-menu:hover,
+  #time-logger-menu .icon-time:hover {
+    color: #979DA7;
+    cursor: default; }
+  #time-logger-menu span:hover {
+    color: white; }
+  #time-logger-menu a {
+    padding-top: 0; }
+  #time-logger-menu .icon-action {
+    margin: -1em -0.1em 0;
+    padding: 1em 10px; }
+    #time-logger-menu .icon-action:before {
+      padding-top: 0.2em; }
+  #time-logger-menu .icon-start:before {
+    padding-top: 0.1em;
+    padding-right: 0.5em; }
+  #time-logger-menu .icon-clock:before {
+    content: "\f017";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.2em;
+    padding-top: -2px;
+    padding-right: 0.5em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  #time-logger-menu .icon-pause-action {
+    margin-left: 1em; }
+  #time-logger-menu .icon-start-action:before {
+    content: "\f04b"; }
+  #time-logger-menu .icon-pause-action:before {
+    content: "\f04c"; }
+  #time-logger-menu .icon-stop-action:before {
+    content: "\f04d"; }
+  #time-logger-menu .icon-list-action:before {
+    content: "\f03a"; }
+
 #comments h4 {
   border: 0;
   border-top: 1px solid #CCCCCC;
