@@ -22,6 +22,8 @@ Screenshots are available at [Minlab's page](http://hardpixel.github.io/minelab/
 
 It appears that a few people are using Minelab, even though it has issues. Our time is very limited, so it would be great if those who have made changes/fixes could create a pull request.
 
+*When making changes, please make sure you are editing the application.sass file, otherwise changes will be lost.*
+
 ## Credits
 
 [Bourbon](http://bourbon.io/) | [Neat](http://neat.bourbon.io/) | [Font Awesome](http://fontawesome.io/) | [PACE](http://github.hubspot.com/pace/)
