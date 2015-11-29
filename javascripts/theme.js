@@ -24,7 +24,7 @@ jQuery(document).ready(function($){
 			width: 'element'
 		});
 
-		$('#account:not(.cms) a:not(.login):not(:register)').each(function() {
+		$('#account:not(.cms) a:not(.login):not(.register)').each(function() {
 			$(this).attr('title', $(this).text()).text('');
 		});
 
