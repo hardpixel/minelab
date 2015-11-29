@@ -1,7 +1,9 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+@charset "UTF-8";
+html {
   box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
 
 /* Framework variables */
 /* Color variables */
@@ -1057,7 +1059,7 @@
 .ui-autocomplete {
   position: absolute;
   cursor: default;
-  z-index: 3;
+  z-index: 10;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -4306,7 +4308,7 @@ a, .icon-add.checklist-new-only {
   a.collapsible.collapsed, .collapsible.collapsed.icon-add.checklist-new-only {
     background: url(../images/arrow_collapsed.png) no-repeat -5px 40%; }
 
-input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, textarea, textarea:hover, select, select:hover {
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover, textarea, textarea:hover, select, select:hover {
   padding: 0.5em;
   border-radius: 4px;
   border: 1px solid #CCCCCC;
@@ -4318,10 +4320,10 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
   max-width: 100%;
   text-align: left;
   font-size: 1em; }
-  input[type="email"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="url"]:disabled, input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="month"]:disabled, input[type="time"]:disabled, input[type="week"]:disabled, input[type="email"]:hover:disabled, input[type="number"]:hover:disabled, input[type="password"]:hover:disabled, input[type="search"]:hover:disabled, input[type="tel"]:hover:disabled, input[type="text"]:hover:disabled, input[type="url"]:hover:disabled, input[type="color"]:hover:disabled, input[type="date"]:hover:disabled, input[type="datetime"]:hover:disabled, input[type="datetime-local"]:hover:disabled, input[type="month"]:hover:disabled, input[type="time"]:hover:disabled, input[type="week"]:hover:disabled, textarea:disabled, textarea:hover:disabled, select:disabled, select:hover:disabled {
+  input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled, input[type="color"]:hover:disabled, input[type="date"]:hover:disabled, input[type="datetime"]:hover:disabled, input[type="datetime-local"]:hover:disabled, input[type="email"]:hover:disabled, input[type="month"]:hover:disabled, input[type="number"]:hover:disabled, input[type="password"]:hover:disabled, input[type="search"]:hover:disabled, input[type="tel"]:hover:disabled, input[type="text"]:hover:disabled, input[type="time"]:hover:disabled, input[type="url"]:hover:disabled, input[type="week"]:hover:disabled, input:not([type]):hover:disabled, textarea:hover:disabled, textarea:disabled, textarea:hover:disabled, select:disabled, select:hover:disabled {
     background: #F2F2F2; }
 
-input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, textarea:focus {
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus, textarea:focus {
   border-color: #66AFE9;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6); }
 
@@ -4330,7 +4332,7 @@ select {
   select:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(119, 119, 119, 0.6); }
 
-input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button, input[type="button"] + a, input[type="button"] + .icon-add.checklist-new-only, input[type="reset"] + a, input[type="reset"] + .icon-add.checklist-new-only, input[type="submit"] + a, input[type="submit"] + .icon-add.checklist-new-only, input[type="button"]:hover + a, input[type="reset"]:hover + a, input[type="submit"]:hover + a, .button + a, .button + .icon-add.checklist-new-only, .button:hover + a, #activity + a, #activity + .icon-add.checklist-new-only, #comments + p > a, #comments + p > .icon-add.checklist-new-only, .add-link a, .add-link .icon-add.checklist-new-only, .button:hover, input[type="button"] + a:hover, input[type="button"] + .icon-add.checklist-new-only:hover, input[type="reset"] + a:hover, input[type="reset"] + .icon-add.checklist-new-only:hover, input[type="submit"] + a:hover, input[type="submit"] + .icon-add.checklist-new-only:hover, .button + a:hover, .button + .icon-add.checklist-new-only:hover, #activity + a:hover, #activity + .icon-add.checklist-new-only:hover, #comments + p > a:hover, #comments + p > .icon-add.checklist-new-only:hover, .add-link a:hover, .add-link .icon-add.checklist-new-only:hover {
+button, input[type="button"], input[type="reset"], input[type="submit"], button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button, button + a, button + .icon-add.checklist-new-only, input[type="button"] + a, input[type="button"] + .icon-add.checklist-new-only, input[type="reset"] + a, input[type="reset"] + .icon-add.checklist-new-only, input[type="submit"] + a, input[type="submit"] + .icon-add.checklist-new-only, button:hover + a, input[type="button"]:hover + a, input[type="reset"]:hover + a, input[type="submit"]:hover + a, .button + a, .button + .icon-add.checklist-new-only, .button:hover + a, #activity + a, #activity + .icon-add.checklist-new-only, #comments + p > a, #comments + p > .icon-add.checklist-new-only, .add-link a, .add-link .icon-add.checklist-new-only, .button:hover, button + a:hover, button + .icon-add.checklist-new-only:hover, input[type="button"] + a:hover, input[type="button"] + .icon-add.checklist-new-only:hover, input[type="reset"] + a:hover, input[type="reset"] + .icon-add.checklist-new-only:hover, input[type="submit"] + a:hover, input[type="submit"] + .icon-add.checklist-new-only:hover, .button + a:hover, .button + .icon-add.checklist-new-only:hover, #activity + a:hover, #activity + .icon-add.checklist-new-only:hover, #comments + p > a:hover, #comments + p > .icon-add.checklist-new-only:hover, .add-link a:hover, .add-link .icon-add.checklist-new-only:hover {
   border: 1px solid #019875;
   background: #019875;
   color: white;
@@ -4341,10 +4343,10 @@ input[type="button"], input[type="reset"], input[type="submit"], input[type="but
   vertical-align: middle;
   text-align: center;
   font-size: 1em; }
-  input[type="button"] + a, input[type="button"] + .icon-add.checklist-new-only, input[type="reset"] + a, input[type="reset"] + .icon-add.checklist-new-only, input[type="submit"] + a, input[type="submit"] + .icon-add.checklist-new-only, input[type="button"]:hover + a, input[type="button"]:hover + .icon-add.checklist-new-only, input[type="reset"]:hover + a, input[type="reset"]:hover + .icon-add.checklist-new-only, input[type="submit"]:hover + a, input[type="submit"]:hover + .icon-add.checklist-new-only, .button + a, input[type="button"] + a + a, input[type="button"] + .icon-add.checklist-new-only + a, input[type="reset"] + a + a, input[type="reset"] + .icon-add.checklist-new-only + a, input[type="submit"] + a + a, input[type="submit"] + .icon-add.checklist-new-only + a, input[type="button"]:hover + a + a, input[type="reset"]:hover + a + a, input[type="submit"]:hover + a + a, .button + .icon-add.checklist-new-only + a, .button:hover + a + a, #activity + a + a, #activity + .icon-add.checklist-new-only + a, #comments + p > a + a, #comments + p > .icon-add.checklist-new-only + a, .add-link a + a, .add-link .icon-add.checklist-new-only + a, .button + .icon-add.checklist-new-only, input[type="button"] + a + .icon-add.checklist-new-only, input[type="button"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, input[type="reset"] + a + .icon-add.checklist-new-only, input[type="reset"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, input[type="submit"] + a + .icon-add.checklist-new-only, input[type="submit"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, #activity + a + .icon-add.checklist-new-only, #activity + .icon-add.checklist-new-only + .icon-add.checklist-new-only, #comments + p > a + .icon-add.checklist-new-only, #comments + p > .icon-add.checklist-new-only + .icon-add.checklist-new-only, .add-link a + .icon-add.checklist-new-only, .add-link .icon-add.checklist-new-only + .icon-add.checklist-new-only, .button:hover + a, input[type="button"] + a:hover + a, input[type="button"] + .icon-add.checklist-new-only:hover + a, input[type="reset"] + a:hover + a, input[type="reset"] + .icon-add.checklist-new-only:hover + a, input[type="submit"] + a:hover + a, input[type="submit"] + .icon-add.checklist-new-only:hover + a, .button + a:hover + a, .button + .icon-add.checklist-new-only:hover + a, #activity + a:hover + a, #activity + .icon-add.checklist-new-only:hover + a, #comments + p > a:hover + a, #comments + p > .icon-add.checklist-new-only:hover + a, .add-link a:hover + a, .add-link .icon-add.checklist-new-only:hover + a, .button:hover + .icon-add.checklist-new-only, input[type="button"] + a:hover + .icon-add.checklist-new-only, input[type="button"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, input[type="reset"] + a:hover + .icon-add.checklist-new-only, input[type="reset"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, input[type="submit"] + a:hover + .icon-add.checklist-new-only, input[type="submit"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, .button + a:hover + .icon-add.checklist-new-only, .button + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, #activity + a:hover + .icon-add.checklist-new-only, #activity + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, #comments + p > a:hover + .icon-add.checklist-new-only, #comments + p > .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, .add-link a:hover + .icon-add.checklist-new-only, .add-link .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only {
+  button + a, button + .icon-add.checklist-new-only, input[type="button"] + a, input[type="button"] + .icon-add.checklist-new-only, input[type="reset"] + a, input[type="reset"] + .icon-add.checklist-new-only, input[type="submit"] + a, input[type="submit"] + .icon-add.checklist-new-only, button:hover + a, button:hover + .icon-add.checklist-new-only, input[type="button"]:hover + a, input[type="button"]:hover + .icon-add.checklist-new-only, input[type="reset"]:hover + a, input[type="reset"]:hover + .icon-add.checklist-new-only, input[type="submit"]:hover + a, input[type="submit"]:hover + .icon-add.checklist-new-only, .button + a, button + a + a, button + .icon-add.checklist-new-only + a, input[type="button"] + a + a, input[type="button"] + .icon-add.checklist-new-only + a, input[type="reset"] + a + a, input[type="reset"] + .icon-add.checklist-new-only + a, input[type="submit"] + a + a, input[type="submit"] + .icon-add.checklist-new-only + a, button:hover + a + a, input[type="button"]:hover + a + a, input[type="reset"]:hover + a + a, input[type="submit"]:hover + a + a, .button + a + a, .button + .icon-add.checklist-new-only + a, .button:hover + a + a, #activity + a + a, #activity + .icon-add.checklist-new-only + a, #comments + p > a + a, #comments + p > .icon-add.checklist-new-only + a, .add-link a + a, .add-link .icon-add.checklist-new-only + a, .button + .icon-add.checklist-new-only, button + a + .icon-add.checklist-new-only, button + .icon-add.checklist-new-only + .icon-add.checklist-new-only, input[type="button"] + a + .icon-add.checklist-new-only, input[type="button"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, input[type="reset"] + a + .icon-add.checklist-new-only, input[type="reset"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, input[type="submit"] + a + .icon-add.checklist-new-only, input[type="submit"] + .icon-add.checklist-new-only + .icon-add.checklist-new-only, .button + a + .icon-add.checklist-new-only, .button + .icon-add.checklist-new-only + .icon-add.checklist-new-only, #activity + a + .icon-add.checklist-new-only, #activity + .icon-add.checklist-new-only + .icon-add.checklist-new-only, #comments + p > a + .icon-add.checklist-new-only, #comments + p > .icon-add.checklist-new-only + .icon-add.checklist-new-only, .add-link a + .icon-add.checklist-new-only, .add-link .icon-add.checklist-new-only + .icon-add.checklist-new-only, .button:hover + a, button + a:hover + a, button + .icon-add.checklist-new-only:hover + a, input[type="button"] + a:hover + a, input[type="button"] + .icon-add.checklist-new-only:hover + a, input[type="reset"] + a:hover + a, input[type="reset"] + .icon-add.checklist-new-only:hover + a, input[type="submit"] + a:hover + a, input[type="submit"] + .icon-add.checklist-new-only:hover + a, button:hover + a:hover + a, .button + a:hover + a, .button + .icon-add.checklist-new-only:hover + a, #activity + a:hover + a, #activity + .icon-add.checklist-new-only:hover + a, #comments + p > a:hover + a, #comments + p > .icon-add.checklist-new-only:hover + a, .add-link a:hover + a, .add-link .icon-add.checklist-new-only:hover + a, .button:hover + .icon-add.checklist-new-only, button + a:hover + .icon-add.checklist-new-only, button + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, input[type="button"] + a:hover + .icon-add.checklist-new-only, input[type="button"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, input[type="reset"] + a:hover + .icon-add.checklist-new-only, input[type="reset"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, input[type="submit"] + a:hover + .icon-add.checklist-new-only, input[type="submit"] + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, .button + a:hover + .icon-add.checklist-new-only, .button + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, #activity + a:hover + .icon-add.checklist-new-only, #activity + .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, #comments + p > a:hover + .icon-add.checklist-new-only, #comments + p > .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only, .add-link a:hover + .icon-add.checklist-new-only, .add-link .icon-add.checklist-new-only:hover + .icon-add.checklist-new-only {
     font-size: 1em; }
 
-input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:focus, input[type="button"] + a:focus, input[type="button"] + .icon-add.checklist-new-only:focus, input[type="reset"] + a:focus, input[type="reset"] + .icon-add.checklist-new-only:focus, input[type="submit"] + a:focus, input[type="submit"] + .icon-add.checklist-new-only:focus, .button + a:focus, .button + .icon-add.checklist-new-only:focus, #activity + a:focus, #activity + .icon-add.checklist-new-only:focus, #comments + p > a:focus, #comments + p > .icon-add.checklist-new-only:focus, .add-link a:focus, .add-link .icon-add.checklist-new-only:focus, .button:active, input[type="button"] + a:active, input[type="button"] + .icon-add.checklist-new-only:active, input[type="reset"] + a:active, input[type="reset"] + .icon-add.checklist-new-only:active, input[type="submit"] + a:active, input[type="submit"] + .icon-add.checklist-new-only:active, input[type="button"]:hover + a:active, input[type="button"]:hover + .icon-add.checklist-new-only:active, input[type="reset"]:hover + a:active, input[type="reset"]:hover + .icon-add.checklist-new-only:active, input[type="submit"]:hover + a:active, input[type="submit"]:hover + .icon-add.checklist-new-only:active, .button + a:active, .button + .icon-add.checklist-new-only:active, .button:hover + a:active, .button:hover + .icon-add.checklist-new-only:active, input[type="button"]:focus + a:active, input[type="button"]:focus + .icon-add.checklist-new-only:active, input[type="button"]:focus a:focus, input[type="button"]:focus .icon-add.checklist-new-only:focus, input[type="reset"]:focus + a:active, input[type="reset"]:focus + .icon-add.checklist-new-only:active, input[type="reset"]:focus a:focus, input[type="reset"]:focus .icon-add.checklist-new-only:focus, input[type="submit"]:focus + a:active, input[type="submit"]:focus + .icon-add.checklist-new-only:active, input[type="submit"]:focus a:focus, input[type="submit"]:focus .icon-add.checklist-new-only:focus, input[type="button"]:active + a:active, input[type="button"]:active + .icon-add.checklist-new-only:active, input[type="button"]:active a:focus, input[type="button"]:active .icon-add.checklist-new-only:focus, input[type="reset"]:active + a:active, input[type="reset"]:active + .icon-add.checklist-new-only:active, input[type="reset"]:active a:focus, input[type="reset"]:active .icon-add.checklist-new-only:focus, input[type="submit"]:active + a:active, input[type="submit"]:active + .icon-add.checklist-new-only:active, input[type="submit"]:active a:focus, input[type="submit"]:active .icon-add.checklist-new-only:focus, .button:focus + a:active, input[type="button"] + a:focus + a:active, input[type="button"] + .icon-add.checklist-new-only:focus + a:active, input[type="reset"] + a:focus + a:active, input[type="reset"] + .icon-add.checklist-new-only:focus + a:active, input[type="submit"] + a:focus + a:active, input[type="submit"] + .icon-add.checklist-new-only:focus + a:active, .button + a:focus + a:active, .button + .icon-add.checklist-new-only:focus + a:active, #activity + a:focus + a:active, #activity + .icon-add.checklist-new-only:focus + a:active, #comments + p > a:focus + a:active, #comments + p > .icon-add.checklist-new-only:focus + a:active, .add-link a:focus + a:active, .add-link .icon-add.checklist-new-only:focus + a:active, .button:focus + .icon-add.checklist-new-only:active, input[type="button"] + a:focus + .icon-add.checklist-new-only:active, input[type="button"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, input[type="reset"] + a:focus + .icon-add.checklist-new-only:active, input[type="reset"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, input[type="submit"] + a:focus + .icon-add.checklist-new-only:active, input[type="submit"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .button + a:focus + .icon-add.checklist-new-only:active, .button + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, #activity + a:focus + .icon-add.checklist-new-only:active, #activity + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, #comments + p > a:focus + .icon-add.checklist-new-only:active, #comments + p > .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .add-link a:focus + .icon-add.checklist-new-only:active, .add-link .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .button:focus a:focus, input[type="button"] + a:focus a:focus, input[type="button"] + .icon-add.checklist-new-only:focus a:focus, input[type="reset"] + a:focus a:focus, input[type="reset"] + .icon-add.checklist-new-only:focus a:focus, input[type="submit"] + a:focus a:focus, input[type="submit"] + .icon-add.checklist-new-only:focus a:focus, .button + a:focus a:focus, .button + .icon-add.checklist-new-only:focus a:focus, #activity + a:focus a:focus, #activity + .icon-add.checklist-new-only:focus a:focus, #comments + p > a:focus a:focus, #comments + p > .icon-add.checklist-new-only:focus a:focus, .add-link a:focus a:focus, .add-link .icon-add.checklist-new-only:focus a:focus, .button:focus .icon-add.checklist-new-only:focus, input[type="button"] + a:focus .icon-add.checklist-new-only:focus, input[type="button"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, input[type="reset"] + a:focus .icon-add.checklist-new-only:focus, input[type="reset"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, input[type="submit"] + a:focus .icon-add.checklist-new-only:focus, input[type="submit"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .button + a:focus .icon-add.checklist-new-only:focus, .button + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, #activity + a:focus .icon-add.checklist-new-only:focus, #activity + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, #comments + p > a:focus .icon-add.checklist-new-only:focus, #comments + p > .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .add-link a:focus .icon-add.checklist-new-only:focus, .add-link .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .button:active + a:active, input[type="button"] + a:active + a:active, input[type="button"] + .icon-add.checklist-new-only:active + a:active, input[type="reset"] + a:active + a:active, input[type="reset"] + .icon-add.checklist-new-only:active + a:active, input[type="submit"] + a:active + a:active, input[type="submit"] + .icon-add.checklist-new-only:active + a:active, .button + a:active + a:active, .button + .icon-add.checklist-new-only:active + a:active, #activity + a:active + a:active, #activity + .icon-add.checklist-new-only:active + a:active, #comments + p > a:active + a:active, #comments + p > .icon-add.checklist-new-only:active + a:active, .add-link a:active + a:active, .add-link .icon-add.checklist-new-only:active + a:active, .button:active + .icon-add.checklist-new-only:active, input[type="button"] + a:active + .icon-add.checklist-new-only:active, input[type="button"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, input[type="reset"] + a:active + .icon-add.checklist-new-only:active, input[type="reset"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, input[type="submit"] + a:active + .icon-add.checklist-new-only:active, input[type="submit"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .button + a:active + .icon-add.checklist-new-only:active, .button + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, #activity + a:active + .icon-add.checklist-new-only:active, #activity + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, #comments + p > a:active + .icon-add.checklist-new-only:active, #comments + p > .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .add-link a:active + .icon-add.checklist-new-only:active, .add-link .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .button:active a:focus, input[type="button"] + a:active a:focus, input[type="button"] + .icon-add.checklist-new-only:active a:focus, input[type="reset"] + a:active a:focus, input[type="reset"] + .icon-add.checklist-new-only:active a:focus, input[type="submit"] + a:active a:focus, input[type="submit"] + .icon-add.checklist-new-only:active a:focus, .button + a:active a:focus, .button + .icon-add.checklist-new-only:active a:focus, #activity + a:active a:focus, #activity + .icon-add.checklist-new-only:active a:focus, #comments + p > a:active a:focus, #comments + p > .icon-add.checklist-new-only:active a:focus, .add-link a:active a:focus, .add-link .icon-add.checklist-new-only:active a:focus, .button:active .icon-add.checklist-new-only:focus, input[type="button"] + a:active .icon-add.checklist-new-only:focus, input[type="button"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, input[type="reset"] + a:active .icon-add.checklist-new-only:focus, input[type="reset"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, input[type="submit"] + a:active .icon-add.checklist-new-only:focus, input[type="submit"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, .button + a:active .icon-add.checklist-new-only:focus, .button + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #activity + a:active .icon-add.checklist-new-only:focus, #activity + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #comments + p > a:active .icon-add.checklist-new-only:focus, #comments + p > .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, .add-link a:active .icon-add.checklist-new-only:focus, .add-link .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #activity + a:active, #activity + .icon-add.checklist-new-only:active, #activity + a:focus, #activity + .icon-add.checklist-new-only:focus, #comments + p > a:active, #comments + p > .icon-add.checklist-new-only:active, #comments + p > a:focus, #comments + p > .icon-add.checklist-new-only:focus, .add-link a:active, .add-link .icon-add.checklist-new-only:active, .add-link a:focus, .add-link .icon-add.checklist-new-only:focus {
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, .button:focus, button + a:focus, button + .icon-add.checklist-new-only:focus, input[type="button"] + a:focus, input[type="button"] + .icon-add.checklist-new-only:focus, input[type="reset"] + a:focus, input[type="reset"] + .icon-add.checklist-new-only:focus, input[type="submit"] + a:focus, input[type="submit"] + .icon-add.checklist-new-only:focus, .button + a:focus, .button + .icon-add.checklist-new-only:focus, #activity + a:focus, #activity + .icon-add.checklist-new-only:focus, #comments + p > a:focus, #comments + p > .icon-add.checklist-new-only:focus, .add-link a:focus, .add-link .icon-add.checklist-new-only:focus, .button:active, button + a:active, button + .icon-add.checklist-new-only:active, input[type="button"] + a:active, input[type="button"] + .icon-add.checklist-new-only:active, input[type="reset"] + a:active, input[type="reset"] + .icon-add.checklist-new-only:active, input[type="submit"] + a:active, input[type="submit"] + .icon-add.checklist-new-only:active, button:hover + a:active, button:hover + .icon-add.checklist-new-only:active, input[type="button"]:hover + a:active, input[type="button"]:hover + .icon-add.checklist-new-only:active, input[type="reset"]:hover + a:active, input[type="reset"]:hover + .icon-add.checklist-new-only:active, input[type="submit"]:hover + a:active, input[type="submit"]:hover + .icon-add.checklist-new-only:active, .button + a:active, .button + .icon-add.checklist-new-only:active, .button:hover + a:active, .button:hover + .icon-add.checklist-new-only:active, button:focus + a:active, button:focus + .icon-add.checklist-new-only:active, button:focus a:focus, button:focus .icon-add.checklist-new-only:focus, input[type="button"]:focus + a:active, input[type="button"]:focus + .icon-add.checklist-new-only:active, input[type="button"]:focus a:focus, input[type="button"]:focus .icon-add.checklist-new-only:focus, input[type="reset"]:focus + a:active, input[type="reset"]:focus + .icon-add.checklist-new-only:active, input[type="reset"]:focus a:focus, input[type="reset"]:focus .icon-add.checklist-new-only:focus, input[type="submit"]:focus + a:active, input[type="submit"]:focus + .icon-add.checklist-new-only:active, input[type="submit"]:focus a:focus, input[type="submit"]:focus .icon-add.checklist-new-only:focus, button:active + a:active, button:active + .icon-add.checklist-new-only:active, button:active a:focus, button:active .icon-add.checklist-new-only:focus, input[type="button"]:active + a:active, input[type="button"]:active + .icon-add.checklist-new-only:active, input[type="button"]:active a:focus, input[type="button"]:active .icon-add.checklist-new-only:focus, input[type="reset"]:active + a:active, input[type="reset"]:active + .icon-add.checklist-new-only:active, input[type="reset"]:active a:focus, input[type="reset"]:active .icon-add.checklist-new-only:focus, input[type="submit"]:active + a:active, input[type="submit"]:active + .icon-add.checklist-new-only:active, input[type="submit"]:active a:focus, input[type="submit"]:active .icon-add.checklist-new-only:focus, .button:focus + a:active, button + a:focus + a:active, button + .icon-add.checklist-new-only:focus + a:active, input[type="button"] + a:focus + a:active, input[type="button"] + .icon-add.checklist-new-only:focus + a:active, input[type="reset"] + a:focus + a:active, input[type="reset"] + .icon-add.checklist-new-only:focus + a:active, input[type="submit"] + a:focus + a:active, input[type="submit"] + .icon-add.checklist-new-only:focus + a:active, button:hover + a:focus + a:active, .button + a:focus + a:active, .button + .icon-add.checklist-new-only:focus + a:active, #activity + a:focus + a:active, #activity + .icon-add.checklist-new-only:focus + a:active, #comments + p > a:focus + a:active, #comments + p > .icon-add.checklist-new-only:focus + a:active, .add-link a:focus + a:active, .add-link .icon-add.checklist-new-only:focus + a:active, .button:focus + .icon-add.checklist-new-only:active, button + a:focus + .icon-add.checklist-new-only:active, button + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, input[type="button"] + a:focus + .icon-add.checklist-new-only:active, input[type="button"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, input[type="reset"] + a:focus + .icon-add.checklist-new-only:active, input[type="reset"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, input[type="submit"] + a:focus + .icon-add.checklist-new-only:active, input[type="submit"] + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .button + a:focus + .icon-add.checklist-new-only:active, .button + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, #activity + a:focus + .icon-add.checklist-new-only:active, #activity + .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, #comments + p > a:focus + .icon-add.checklist-new-only:active, #comments + p > .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .add-link a:focus + .icon-add.checklist-new-only:active, .add-link .icon-add.checklist-new-only:focus + .icon-add.checklist-new-only:active, .button:focus a:focus, button + a:focus a:focus, button + .icon-add.checklist-new-only:focus a:focus, input[type="button"] + a:focus a:focus, input[type="button"] + .icon-add.checklist-new-only:focus a:focus, input[type="reset"] + a:focus a:focus, input[type="reset"] + .icon-add.checklist-new-only:focus a:focus, input[type="submit"] + a:focus a:focus, input[type="submit"] + .icon-add.checklist-new-only:focus a:focus, button:hover + a:focus a:focus, .button + a:focus a:focus, .button + .icon-add.checklist-new-only:focus a:focus, #activity + a:focus a:focus, #activity + .icon-add.checklist-new-only:focus a:focus, #comments + p > a:focus a:focus, #comments + p > .icon-add.checklist-new-only:focus a:focus, .add-link a:focus a:focus, .add-link .icon-add.checklist-new-only:focus a:focus, .button:focus .icon-add.checklist-new-only:focus, button + a:focus .icon-add.checklist-new-only:focus, button + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, input[type="button"] + a:focus .icon-add.checklist-new-only:focus, input[type="button"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, input[type="reset"] + a:focus .icon-add.checklist-new-only:focus, input[type="reset"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, input[type="submit"] + a:focus .icon-add.checklist-new-only:focus, input[type="submit"] + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .button + a:focus .icon-add.checklist-new-only:focus, .button + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, #activity + a:focus .icon-add.checklist-new-only:focus, #activity + .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, #comments + p > a:focus .icon-add.checklist-new-only:focus, #comments + p > .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .add-link a:focus .icon-add.checklist-new-only:focus, .add-link .icon-add.checklist-new-only:focus .icon-add.checklist-new-only:focus, .button:active + a:active, button + a:active + a:active, button + .icon-add.checklist-new-only:active + a:active, input[type="button"] + a:active + a:active, input[type="button"] + .icon-add.checklist-new-only:active + a:active, input[type="reset"] + a:active + a:active, input[type="reset"] + .icon-add.checklist-new-only:active + a:active, input[type="submit"] + a:active + a:active, input[type="submit"] + .icon-add.checklist-new-only:active + a:active, button:hover + a:active + a:active, .button + a:active + a:active, .button + .icon-add.checklist-new-only:active + a:active, #activity + a:active + a:active, #activity + .icon-add.checklist-new-only:active + a:active, #comments + p > a:active + a:active, #comments + p > .icon-add.checklist-new-only:active + a:active, .add-link a:active + a:active, .add-link .icon-add.checklist-new-only:active + a:active, .button:active + .icon-add.checklist-new-only:active, button + a:active + .icon-add.checklist-new-only:active, button + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, input[type="button"] + a:active + .icon-add.checklist-new-only:active, input[type="button"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, input[type="reset"] + a:active + .icon-add.checklist-new-only:active, input[type="reset"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, input[type="submit"] + a:active + .icon-add.checklist-new-only:active, input[type="submit"] + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .button + a:active + .icon-add.checklist-new-only:active, .button + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, #activity + a:active + .icon-add.checklist-new-only:active, #activity + .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, #comments + p > a:active + .icon-add.checklist-new-only:active, #comments + p > .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .add-link a:active + .icon-add.checklist-new-only:active, .add-link .icon-add.checklist-new-only:active + .icon-add.checklist-new-only:active, .button:active a:focus, button + a:active a:focus, button + .icon-add.checklist-new-only:active a:focus, input[type="button"] + a:active a:focus, input[type="button"] + .icon-add.checklist-new-only:active a:focus, input[type="reset"] + a:active a:focus, input[type="reset"] + .icon-add.checklist-new-only:active a:focus, input[type="submit"] + a:active a:focus, input[type="submit"] + .icon-add.checklist-new-only:active a:focus, button:hover + a:active a:focus, .button + a:active a:focus, .button + .icon-add.checklist-new-only:active a:focus, #activity + a:active a:focus, #activity + .icon-add.checklist-new-only:active a:focus, #comments + p > a:active a:focus, #comments + p > .icon-add.checklist-new-only:active a:focus, .add-link a:active a:focus, .add-link .icon-add.checklist-new-only:active a:focus, .button:active .icon-add.checklist-new-only:focus, button + a:active .icon-add.checklist-new-only:focus, button + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, input[type="button"] + a:active .icon-add.checklist-new-only:focus, input[type="button"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, input[type="reset"] + a:active .icon-add.checklist-new-only:focus, input[type="reset"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, input[type="submit"] + a:active .icon-add.checklist-new-only:focus, input[type="submit"] + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, .button + a:active .icon-add.checklist-new-only:focus, .button + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #activity + a:active .icon-add.checklist-new-only:focus, #activity + .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #comments + p > a:active .icon-add.checklist-new-only:focus, #comments + p > .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, .add-link a:active .icon-add.checklist-new-only:focus, .add-link .icon-add.checklist-new-only:active .icon-add.checklist-new-only:focus, #activity + a:active, #activity + .icon-add.checklist-new-only:active, #activity + a:focus, #activity + .icon-add.checklist-new-only:focus, #comments + p > a:active, #comments + p > .icon-add.checklist-new-only:active, #comments + p > a:focus, #comments + p > .icon-add.checklist-new-only:focus, .add-link a:active, .add-link .icon-add.checklist-new-only:active, .add-link a:focus, .add-link .icon-add.checklist-new-only:focus {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset; }
 
 /* Layout */
@@ -4352,18 +4354,18 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   max-width: 80em;
   margin-left: auto;
   margin-right: auto; }
-  .outer-container:after {
+  .outer-container::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
 
 #wrapper {
   display: block;
   background: white; }
-  #wrapper:after {
+  #wrapper::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
 
 #top-menu {
   display: block;
@@ -4374,10 +4376,10 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   position: relative;
   z-index: 999;
   height: 3.15em; }
-  #top-menu:after {
+  #top-menu::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   #top-menu .outer-container ul.menu-children {
     width: 26em;
     top: 99%;
@@ -4465,10 +4467,10 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   display: block;
   background: #446E9B;
   color: white; }
-  #header:after {
+  #header::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   #header h1 {
     margin: 0;
     font-size: 1.5em;
@@ -4546,10 +4548,10 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   background: #F2F2F2;
   cursor: default;
   box-shadow: inset 0 -1px 0 #CCCCCC; }
-  #main-menu:after {
+  #main-menu::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   #main-menu ul {
     -webkit-animation: fadeIn 1s;
     -moz-animation: fadeIn 1s;
@@ -4595,10 +4597,10 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   -webkit-animation: fadeIn 1s;
   -moz-animation: fadeIn 1s;
   animation: fadeIn 1s; }
-  #main:after {
+  #main::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   #main.nosidebar #content {
     float: left;
     display: block;
@@ -4705,10 +4707,10 @@ input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focu
   text-align: center;
   padding: 1em;
   display: none !important; }
-  #footer:after {
+  #footer::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
 
 /* Admin index */
 #admin-index #admin-menu li {
@@ -5331,22 +5333,22 @@ div#search-results-counts li {
   margin-left: 1em; }
 
 dt.issue-note {
-  background: url(../images/ticket_note.png) no-repeat 25px; }
+  background-image: url(../images/ticket_note.png) no-repeat; }
 
 dt.news {
-  background: url(../images/news.png) no-repeat 25px; }
+  background-image: url(../images/news.png) no-repeat; }
 
 dt.message {
-  background: url(../images/message.png) no-repeat 25px; }
+  background-image: url(../images/message.png) no-repeat; }
 
 dt.reply {
-  background: url(../images/comments.png) no-repeat 25px; }
+  background-image: url(../images/comments.png) no-repeat; }
 
 dt.wiki-page {
-  background: url(../images/wiki_edit.png) no-repeat 25px; }
+  background-image: url(../images/wiki_edit.png) no-repeat; }
 
 dt.document {
-  background: url(../images/document.png) no-repeat 25px; }
+  background-image: url(../images/document.png) no-repeat; }
 
 div#roadmap .wiki h2 {
   font-size: 110%; }
@@ -5595,10 +5597,10 @@ p.other-formats {
   text-align: right;
   font-size: 0.9em;
   margin-top: 3em; }
-  p.other-formats:after {
+  p.other-formats::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
 
 .other-formats span + span:before {
   content: "| "; }
@@ -6707,7 +6709,7 @@ div.contact.details table.subject_header h1 {
     cursor: default; }
   #time-logger-menu span:hover {
     color: white; }
-  #time-logger-menu a {
+  #time-logger-menu a, #time-logger-menu .icon-add.checklist-new-only {
     padding-top: 0; }
   #time-logger-menu .icon-action {
     margin: -1em -0.1em 0;
@@ -6718,7 +6720,7 @@ div.contact.details table.subject_header h1 {
     padding-top: 0.1em;
     padding-right: 0.5em; }
   #time-logger-menu .icon-clock:before {
-    content: "\f017";
+    content: "";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 1.2em;
@@ -6730,13 +6732,13 @@ div.contact.details table.subject_header h1 {
   #time-logger-menu .icon-pause-action {
     margin-left: 1em; }
   #time-logger-menu .icon-start-action:before {
-    content: "\f04b"; }
+    content: ""; }
   #time-logger-menu .icon-pause-action:before {
-    content: "\f04c"; }
+    content: ""; }
   #time-logger-menu .icon-stop-action:before {
-    content: "\f04d"; }
+    content: ""; }
   #time-logger-menu .icon-list-action:before {
-    content: "\f03a"; }
+    content: ""; }
 
 #comments h4 {
   border: 0;
@@ -6799,5 +6801,3 @@ div[style*="clear:both"], div[style*="clear: both"] {
 
   #top-menu, #header, #main-menu, #sidebar, #footer, .contextual, .other-formats, #wiki_add_attachment, .hide-when-print {
     display: none; } }
-
-/*# sourceMappingURL=application.css.map */

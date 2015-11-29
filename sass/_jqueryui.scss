@@ -385,13 +385,14 @@
  * http://docs.jquery.com/UI/Autocomplete#theming
  */
 .ui-autocomplete {
-	position: absolute; cursor: default; z-index: 3;
-		-moz-border-radius: 0;
-		-webkit-border-radius: 0;
-		border-radius: 0;
-			-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
-			-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
-			box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	position: absolute; cursor: default;
+	z-index: 10;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
 
 /* workarounds */
