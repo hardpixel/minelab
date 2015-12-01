@@ -7,6 +7,7 @@ GEM
     coderay (1.1.0)
     execjs (2.6.0)
     ffi (1.9.10)
+    ffi (1.9.10-x86-mingw32)
     formatador (0.2.5)
     guard (2.13.0)
       formatador (>= 0.2.4)
@@ -56,6 +57,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   bourbon
