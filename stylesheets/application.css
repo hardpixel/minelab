@@ -5136,9 +5136,6 @@ fieldset, fieldset.box {
   background: none;
   margin-bottom: 1em; }
   fieldset legend, fieldset.box legend {
-    position: absolute;
-    top: 0;
-    left: 0;
     font-size: 1.2em;
     width: 100%;
     border-bottom: 1px solid #CCCCCC; }
