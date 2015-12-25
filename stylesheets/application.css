@@ -3165,7 +3165,7 @@ div.members h3:before {
 .fa-google-plus:before {
   content: "\f0d5"; }
 
-.fa-money:before, #top-menu a.finance:before, #top-menu .finance.icon-add.checklist-new-only:before, #admin-menu a.finance:before, #admin-menu .finance.icon-add.checklist-new-only:before {
+.fa-money:before, #top-menu a.expenses:before, #top-menu .expenses.icon-add.checklist-new-only:before {
   content: "\f0d6"; }
 
 .fa-caret-down:before, fieldset.collapsible.collapsed > legend:before {
@@ -3588,7 +3588,7 @@ div.members h3:before {
 .fa-sort-numeric-desc:before {
   content: "\f163"; }
 
-.fa-thumbs-up:before {
+.fa-thumbs-up:before, #top-menu a.deals:before, #top-menu .deals.icon-add.checklist-new-only:before {
   content: "\f164"; }
 
 .fa-thumbs-down:before {
@@ -3751,6 +3751,10 @@ div.members h3:before {
 
 .fa-institution:before,
 .fa-bank:before,
+#top-menu a.finance:before,
+#top-menu .finance.icon-add.checklist-new-only:before,
+#admin-menu a.finance:before,
+#admin-menu .finance.icon-add.checklist-new-only:before,
 .fa-university:before {
   content: "\f19c"; }
 
