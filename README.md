@@ -28,7 +28,8 @@ It appears that a few people are using Minelab, even though it has issues. Our t
 
 #### Prerequisites
 
-```bundle install
+```
+bundle install
 bourbon install
 neat install
 ```
