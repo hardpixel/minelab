@@ -2833,7 +2833,7 @@ a.close-icon:before,
 .fa-check-circle:before {
   content: "\f058"; }
 
-.fa-question-circle:before, .jstElements .jstb_help:before {
+.fa-question-circle:before, .jstElements .jstb_help:before, #top-menu a.help:before, #top-menu .help.icon-add.checklist-new-only:before {
   content: "\f059"; }
 
 .fa-info-circle:before, #top-menu a.adm-info:before, #top-menu .adm-info.icon-add.checklist-new-only:before, #admin-menu a.info:before, #admin-menu .info.icon-add.checklist-new-only:before, #admin-menu .icon-help:before {
@@ -6780,5 +6780,3 @@ div[style*="clear:both"], div[style*="clear: both"] {
 
   #top-menu, #header, #main-menu, #sidebar, #footer, .contextual, .other-formats, #wiki_add_attachment, .hide-when-print {
     display: none; } }
-
-/*# sourceMappingURL=application.css.map */

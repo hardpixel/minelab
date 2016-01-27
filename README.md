@@ -24,6 +24,22 @@ It appears that a few people are using Minelab, even though it has issues. Our t
 
 *When making changes, please make sure you are editing the application.sass file, otherwise changes will be lost.*
 
+### create CSS from SASS
+
+#### Prerequisites
+
+```
+bundle install
+bourbon install
+neat install
+```
+
+#### Example
+
+```
+sass --load-path bourbon --load-path neat --sourcemap=none sass/application.sass stylesheets/application.css
+```
+
 ## Credits
 
 [Bourbon](http://bourbon.io/) | [Neat](http://neat.bourbon.io/) | [Font Awesome](http://fontawesome.io/) | [PACE](http://github.hubspot.com/pace/)
