@@ -2956,7 +2956,7 @@ a.close-icon:before,
 .fa-camera-retro:before {
   content: "\f083"; }
 
-.fa-key:before, #top-menu a.adm-ldap-authentication:before, #top-menu .adm-ldap-authentication.icon-add.checklist-new-only:before, #admin-menu a.server_authentication:before, #admin-menu .server_authentication.icon-add.checklist-new-only:before, #admin-menu .icon-server-authentication:before {
+.fa-key:before, #top-menu a.pgpkeys:before, #top-menu .pgpkeys.icon-add.checklist-new-only:before, #top-menu a.adm-ldap-authentication:before, #top-menu .adm-ldap-authentication.icon-add.checklist-new-only:before, #admin-menu a.server_authentication:before, #admin-menu .server_authentication.icon-add.checklist-new-only:before, #admin-menu .icon-server-authentication:before {
   content: "\f084"; }
 
 .fa-gears:before, #top-menu a.administration:before, #top-menu .administration.icon-add.checklist-new-only:before, #top-menu a.adm-settings:before, #top-menu .adm-settings.icon-add.checklist-new-only:before, #admin-menu a.settings:before, #admin-menu .settings.icon-add.checklist-new-only:before, #admin-menu dt.changeset:before,
@@ -6780,3 +6780,5 @@ div[style*="clear:both"], div[style*="clear: both"] {
 
   #top-menu, #header, #main-menu, #sidebar, #footer, .contextual, .other-formats, #wiki_add_attachment, .hide-when-print {
     display: none; } }
+
+/*# sourceMappingURL=application.css.map */
