@@ -4280,6 +4280,21 @@ li.change.change-D {
         .pagination .pages li span, .pagination .pages li a, .pagination .pages li .icon-add.checklist-new-only {
           padding: 5px 10px; } }
 
+#main #sidebar .watchers li img.gravatar {
+  margin: 0.5em;
+  float: left; }
+#main #sidebar .watchers li a.user, #main #sidebar .watchers li .user.icon-add.checklist-new-only {
+  width: 80%;
+  display: block;
+  float: left; }
+#main #sidebar .watchers li a.delete, #main #sidebar .watchers li .delete.icon-add.checklist-new-only {
+  width: 10%;
+  text-align: center;
+  display: block;
+  float: left; }
+#main #sidebar .watchers li a.delete:before, #main #sidebar .watchers li .delete.icon-add.checklist-new-only:before {
+  margin: 0; }
+
 /* Common */
 html {
   overflow-y: scroll; }

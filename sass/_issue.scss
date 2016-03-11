@@ -1,0 +1,23 @@
+#main #sidebar .watchers {
+    li {
+        img.gravatar {
+            margin: 0.5em;
+            float: left;
+        }
+        a.user {
+            width: 80%;
+            display: block;
+            float: left;
+        }
+        a.delete {
+            width: 10%;
+            text-align: center;
+            display: block;
+            float: left;
+        }
+        a.delete:before {
+            margin: 0;
+        }
+    }
+}
+
