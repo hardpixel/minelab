@@ -4269,6 +4269,17 @@ li.change.change-D {
 .jstElements .jstb_h3:before {
   font-size: 0.8em !important; }
 
+.pagination .pages {
+  padding: 0; }
+  .pagination .pages li {
+    display: inline-block; }
+    .pagination .pages li span, .pagination .pages li a, .pagination .pages li .icon-add.checklist-new-only {
+      padding: 5px;
+      display: inline-block; }
+      @media screen and (max-width: 899px) {
+        .pagination .pages li span, .pagination .pages li a, .pagination .pages li .icon-add.checklist-new-only {
+          padding: 5px 10px; } }
+
 /* Common */
 html {
   overflow-y: scroll; }
