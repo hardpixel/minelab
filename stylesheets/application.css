@@ -4295,6 +4295,18 @@ li.change.change-D {
 #main #sidebar .watchers li a.delete:before, #main #sidebar .watchers li .delete.icon-add.checklist-new-only:before {
   margin: 0; }
 
+div.issue div.attributes .attribute {
+  overflow: hidden; }
+  div.issue div.attributes .attribute .label, div.issue div.attributes .attribute .value {
+    display: inline-block; }
+  div.issue div.attributes .attribute .label {
+    font-weight: bold;
+    margin-right: 1em; }
+div.issue div.attributes .attribute.progress .value {
+  min-width: 200px; }
+  div.issue div.attributes .attribute.progress .value p {
+    margin: 3px 0; }
+
 /* Common */
 html {
   overflow-y: scroll; }

@@ -21,3 +21,28 @@
     }
 }
 
+div.issue div.attributes {
+    .attribute {
+        overflow: hidden;
+        
+        .label, .value {
+            display: inline-block;
+        }
+        
+        .label {
+            font-weight: bold;
+            margin-right: 1em;
+        }
+    }
+    
+    .attribute.progress {
+        .value {
+            min-width: 200px;
+            
+            p {
+                margin: 3px 0;
+            }
+        }
+    }
+}
+
