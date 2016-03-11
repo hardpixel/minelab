@@ -4269,6 +4269,9 @@ li.change.change-D {
 .jstElements .jstb_h3:before {
   font-size: 0.8em !important; }
 
+.pagination-wrapper {
+  clear: both; }
+
 .pagination .pages {
   padding: 0; }
   .pagination .pages li {
