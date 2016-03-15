@@ -1,0 +1,24 @@
+.pagination-wrapper {
+    clear: both;
+}
+
+.pagination {
+    .pages {
+        padding: 0;
+        
+        li {
+            display: inline-block;
+            
+            span, a {
+                padding: 5px;
+                display: inline-block;
+                
+                @media screen and (max-width: 899px) {
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+

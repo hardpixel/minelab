@@ -1,0 +1,48 @@
+#main #sidebar .watchers {
+    li {
+        img.gravatar {
+            margin: 0.5em;
+            float: left;
+        }
+        a.user {
+            width: 80%;
+            display: block;
+            float: left;
+        }
+        a.delete {
+            width: 10%;
+            text-align: center;
+            display: block;
+            float: left;
+        }
+        a.delete:before {
+            margin: 0;
+        }
+    }
+}
+
+div.issue div.attributes {
+    .attribute {
+        overflow: hidden;
+        
+        .label, .value {
+            display: inline-block;
+        }
+        
+        .label {
+            font-weight: bold;
+            margin-right: 1em;
+        }
+    }
+    
+    .attribute.progress {
+        .value {
+            min-width: 200px;
+            
+            p {
+                margin: 3px 0;
+            }
+        }
+    }
+}
+

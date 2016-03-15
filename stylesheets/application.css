@@ -4269,6 +4269,47 @@ li.change.change-D {
 .jstElements .jstb_h3:before {
   font-size: 0.8em !important; }
 
+.pagination-wrapper {
+  clear: both; }
+
+.pagination .pages {
+  padding: 0; }
+  .pagination .pages li {
+    display: inline-block; }
+    .pagination .pages li span, .pagination .pages li a, .pagination .pages li .icon-add.checklist-new-only {
+      padding: 5px;
+      display: inline-block; }
+      @media screen and (max-width: 899px) {
+        .pagination .pages li span, .pagination .pages li a, .pagination .pages li .icon-add.checklist-new-only {
+          padding: 5px 10px; } }
+
+#main #sidebar .watchers li img.gravatar {
+  margin: 0.5em;
+  float: left; }
+#main #sidebar .watchers li a.user, #main #sidebar .watchers li .user.icon-add.checklist-new-only {
+  width: 80%;
+  display: block;
+  float: left; }
+#main #sidebar .watchers li a.delete, #main #sidebar .watchers li .delete.icon-add.checklist-new-only {
+  width: 10%;
+  text-align: center;
+  display: block;
+  float: left; }
+#main #sidebar .watchers li a.delete:before, #main #sidebar .watchers li .delete.icon-add.checklist-new-only:before {
+  margin: 0; }
+
+div.issue div.attributes .attribute {
+  overflow: hidden; }
+  div.issue div.attributes .attribute .label, div.issue div.attributes .attribute .value {
+    display: inline-block; }
+  div.issue div.attributes .attribute .label {
+    font-weight: bold;
+    margin-right: 1em; }
+div.issue div.attributes .attribute.progress .value {
+  min-width: 200px; }
+  div.issue div.attributes .attribute.progress .value p {
+    margin: 3px 0; }
+
 /* Common */
 html {
   overflow-y: scroll; }
