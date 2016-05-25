@@ -8,31 +8,71 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 
 /* Theme functions */
 
-jQuery(document).ready(function($){
-	$('#main-menu').detach().appendTo('#header');
+(function($){
+	$(function() {
+		$('#main-menu').detach().appendTo('#header');
 
-	$('#top-menu .home').text('').clone().prependTo('#header h1');
-	$('#top-menu .home').parent().remove();
+		$('#top-menu .home').text('').clone().prependTo('#header h1');
+		$('#top-menu .home').parent().remove();
 
-	$('input.questions-search').wrap('<span class="live_search normal"></span>');
+		$('input.questions-search').wrap('<span class="live_search normal"></span>');
 
-	$(window).load(function(){
-		$('input.autocomplete, input.live_search_field, input#q').wrap('<span class="icon-search"></span>');
+		$('<div id="sidebarHandler"><div id="hideSidebarButton" onclick="hideSideBar()">-</div></div>').before('#main #sidebar');
 
-		$('#quick-search select').select2({
-			width: 'element'
+		$(window).load(function(){
+			$('input.autocomplete, input.live_search_field, input#q').wrap('<span class="icon-search"></span>');
+
+			$('#quick-search select').select2({
+				width: 'element'
+			});
+
+			$('#account:not(.cms) a:not(.login):not(.register)').each(function() {
+				$(this).attr('title', $(this).text()).text('');
+			});
+
+			$('#account:not(.cms) .my-page').parent().detach().prependTo('#account ul:first');
+
+			/* Time logger compatibility */
+			if (typeof updateTimeLoggerMenu == 'function') {
+				$('#time-logger-menu').after('<span id="time-logger-menu"></span>').remove();
+				updateTimeLoggerMenu();
+			}
 		});
-
-		$('#account:not(.cms) a:not(.login):not(.register)').each(function() {
-			$(this).attr('title', $(this).text()).text('');
-		});
-
-		$('#account:not(.cms) .my-page').parent().detach().prependTo('#account ul:first');
-
-		/* Time logger compatibility */
-		if (typeof updateTimeLoggerMenu == 'function') {
-			$('#time-logger-menu').after('<span id="time-logger-menu"></span>').remove();
-			updateTimeLoggerMenu();
-		}
 	});
-});
+
+	function setCookie(c_name, value, exdays) {
+		var exdate = new Date();
+		exdate.setDate(exdate.getDate() + exdays);
+		var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+		document.cookie = c_name + "=" + c_value + ";path=/";
+	}
+
+	function getCookie(c_name) {
+		var i;
+		var x;
+		var y;
+		var ARRcookies = document.cookie.split(";");
+		for (i = 0; i < ARRcookies.length; i++) {
+			x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+			y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+			x = x.replace(/^\s+|\s+$/g, "");
+			if (x == c_name)
+				return unescape(y);
+		}
+	}
+
+	function hideSideBar() {
+		if ($('#sidebar').is(':visible')) {
+			$('#sidebar').addClass('sidebar_hidden');
+			$('#content').addClass('sidebar_hidden');
+			$('#hideSidebarButton').addClass('sidebar_hidden');
+			setCookie('sidebar_hide', 'hide', 100);
+		} else {
+			$('#sidebar').removeClass('sidebar_hidden');
+			$('#content').removeClass('sidebar_hidden');
+			$('#hideSidebarButton').removeClass('sidebar_hidden');
+			setCookie('sidebar_hide', 'show', 100);
+		}
+    	}
+
+})(jQuery);
