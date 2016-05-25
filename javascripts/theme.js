@@ -17,7 +17,25 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 
 		$('input.questions-search').wrap('<span class="live_search normal"></span>');
 
-		$('#main #sidebar').before('<div id="sidebarHandler"><div id="hideSidebarButton" onclick="hideSideBar()">-</div></div>');
+		$('#main #sidebar').before('<div id="sidebarHandler"><div id="hideSidebarButton" style="position:absolute; z-index: 20; top: 5px; cursor: pointer;"></div></div>');
+		$('#hideSidebarButton').click(function () {
+			if ($('#sidebar').is(':visible')) {
+				$('#sidebar').hide();
+				$('#content').width('100%');
+				//$('#hideSidebarButton').addClass('sidebar_hidden');
+				setCookie('sidebar_hide', 'hide', 100);
+			} else {
+				$('#sidebar').show();
+				$('#content').removeAttr('style');
+				//$('#hideSidebarButton').removeClass('sidebar_hidden');
+				setCookie('sidebar_hide', 'show', 100);
+			}
+			sideBarCollapseText();
+    	});
+    	if (getCookie('sidebar_hide') == 'hide') {
+			$('#hideSidebarButton').click();
+		}
+		sideBarCollapseText();
 
 		$(window).load(function(){
 			$('input.autocomplete, input.live_search_field, input#q').wrap('<span class="icon-search"></span>');
@@ -40,39 +58,35 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 		});
 	});
 
-	function setCookie(c_name, value, exdays) {
-		var exdate = new Date();
-		exdate.setDate(exdate.getDate() + exdays);
-		var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
-		document.cookie = c_name + "=" + c_value + ";path=/";
-	}
-
-	function getCookie(c_name) {
-		var i;
-		var x;
-		var y;
-		var ARRcookies = document.cookie.split(";");
-		for (i = 0; i < ARRcookies.length; i++) {
-			x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-			y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-			x = x.replace(/^\s+|\s+$/g, "");
-			if (x == c_name)
-				return unescape(y);
-		}
-	}
-
-	function hideSideBar() {
+	var sideBarCollapseText = function () {
+		var text;
 		if ($('#sidebar').is(':visible')) {
-			$('#sidebar').addClass('sidebar_hidden');
-			$('#content').addClass('sidebar_hidden');
-			$('#hideSidebarButton').addClass('sidebar_hidden');
-			setCookie('sidebar_hide', 'hide', 100);
+			text = '<i class="icon fa-arrow-left"></i>';
 		} else {
-			$('#sidebar').removeClass('sidebar_hidden');
-			$('#content').removeClass('sidebar_hidden');
-			$('#hideSidebarButton').removeClass('sidebar_hidden');
-			setCookie('sidebar_hide', 'show', 100);
+			 text = '<i class="icon fa-arrow-right"></i>';
 		}
-    	}
+		$('#hideSidebarButton').html(text)
+    }
 
 })(jQuery);
+
+function setCookie(c_name, value, exdays) {
+	var exdate = new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+	document.cookie = c_name + "=" + c_value + ";path=/";
+}
+
+function getCookie(c_name) {
+	var i;
+	var x;
+	var y;
+	var ARRcookies = document.cookie.split(";");
+	for (i = 0; i < ARRcookies.length; i++) {
+		x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+		y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+		x = x.replace(/^\s+|\s+$/g, "");
+		if (x == c_name)
+			return unescape(y);
+	}
+}
