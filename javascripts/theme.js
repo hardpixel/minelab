@@ -17,7 +17,7 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 
 		$('input.questions-search').wrap('<span class="live_search normal"></span>');
 
-		$('<div id="sidebarHandler"><div id="hideSidebarButton" onclick="hideSideBar()">-</div></div>').before('#main #sidebar');
+		$('#main #sidebar').before('<div id="sidebarHandler"><div id="hideSidebarButton" onclick="hideSideBar()">-</div></div>');
 
 		$(window).load(function(){
 			$('input.autocomplete, input.live_search_field, input#q').wrap('<span class="icon-search"></span>');
