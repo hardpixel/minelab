@@ -31,8 +31,8 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 				setCookie('sidebar_hide', 'show', 100);
 			}
 			sideBarCollapseText();
-    	});
-    	if (getCookie('sidebar_hide') == 'hide') {
+    		});
+    		if (getCookie('sidebar_hide') == 'hide') {
 			$('#hideSidebarButton').click();
 		}
 		sideBarCollapseText();
