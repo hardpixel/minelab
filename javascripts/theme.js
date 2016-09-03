@@ -16,22 +16,23 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 		$('#top-menu .home').parent().remove();
 
 		$('input.questions-search').wrap('<span class="live_search normal"></span>');
-
-		$('#main #sidebar').before('<div id="sidebarHandler"><div id="hideSidebarButton" style="position:absolute; z-index: 20; top: 5px; cursor: pointer;"></div></div>');
-		$('#hideSidebarButton').click(function () {
-			if ($('#sidebar').is(':visible')) {
-				$('#sidebar').hide();
-				$('#content').width('100%');
-				//$('#hideSidebarButton').addClass('sidebar_hidden');
-				setCookie('sidebar_hide', 'hide', 100);
-			} else {
-				$('#sidebar').show();
-				$('#content').removeAttr('style');
-				//$('#hideSidebarButton').removeClass('sidebar_hidden');
-				setCookie('sidebar_hide', 'show', 100);
-			}
-			sideBarCollapseText();
-    		});
+                if ($.trim($('#main #sidebar').html())) {
+			$('#main #sidebar').before('<div id="sidebarHandler"><div id="hideSidebarButton" style="position:absolute; z-index: 20; top: 5px; cursor: pointer;"></div></div>');
+			$('#hideSidebarButton').click(function () {
+				if ($('#sidebar').is(':visible')) {
+					$('#sidebar').hide();
+					$('#content').width('100%');
+					//$('#hideSidebarButton').addClass('sidebar_hidden');
+					setCookie('sidebar_hide', 'hide', 100);
+				} else {
+					$('#sidebar').show();
+					$('#content').removeAttr('style');
+					//$('#hideSidebarButton').removeClass('sidebar_hidden');
+					setCookie('sidebar_hide', 'show', 100);
+				}
+				sideBarCollapseText();
+			});
+                }
     		if (getCookie('sidebar_hide') == 'hide') {
 			$('#hideSidebarButton').click();
 		}
