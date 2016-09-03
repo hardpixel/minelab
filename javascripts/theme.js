@@ -17,7 +17,7 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 
 		$('input.questions-search').wrap('<span class="live_search normal"></span>');
                 if ($.trim($('#main #sidebar').html())) {
-			$('#main #sidebar').before('<div id="sidebarHandler"><div id="hideSidebarButton" style="position:absolute; z-index: 20; top: 5px; cursor: pointer;"></div></div>');
+			$('#main #sidebar').before('<div id="sidebarHandler"><div id="hideSidebarButton" style="position:absolute; z-index: 20; top: 2px; cursor: pointer;"></div></div>');
 			$('#hideSidebarButton').click(function () {
 				if ($('#sidebar').is(':visible')) {
 					$('#sidebar').hide();
