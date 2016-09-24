@@ -5313,10 +5313,20 @@ div#issue-changesets p {
   margin-top: 0;
   margin-bottom: 1em; }
 
+.journal div.thumbnails {
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #fafafa;
+  border: 1px solid #F2F2F2; }
 .journal ul.details {
   list-style-type: none;
-  padding-left: 0;
-  color: #777777; }
+  padding: 0.5em 1em 0.5em 1em;
+  color: #777777;
+  background-color: #fafafa;
+  margin-top: 0em;
+  border: 1px solid #F2F2F2; }
+  .journal ul.details + div.thumbnails {
+    border-top: 0;
+    margin-top: -1.05em; }
   .journal ul.details img {
     margin: 0 0 -3px 4px; }
 

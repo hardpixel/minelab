@@ -1317,11 +1317,22 @@ div#issue-changesets p
 	margin-bottom: 1em
 
 .journal
+	div.thumbnails
+		padding: 0.5em 1em 0.5em 1em
+		background-color: lighten($white, 0.5%)
+		border: 1px solid $light-grey
 
 	ul.details
 		list-style-type: none
-		padding-left: 0
+		padding: 0.5em 1em 0.5em 1em
 		color: $grey
+		background-color: lighten($white, 0.5%)
+		margin-top: 0em
+		border: 1px solid $light-grey
+
+		& + div.thumbnails
+			border-top: 0
+			margin-top: -1.05em 
 
 		img
 			margin: 0 0 -3px 4px
@@ -1640,6 +1651,7 @@ div.attachments span.author
 
 div.thumbnails
 	margin-top: .6em
+
 
 div.thumbnails div
 	background: #fff
