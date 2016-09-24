@@ -4701,6 +4701,8 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     margin-right: 0;
     z-index: 10;
     position: relative; }
+    #main #content > .contextual {
+      top: 1.6em; }
     #main #content:last-child {
       margin-right: 0; }
     #main #content .contextual {
