@@ -4239,7 +4239,7 @@ li.change.change-D {
   background: url(../images/toggle_check.png) no-repeat 3px 40%; }
 
 /* selected element */
-.context-menu-selection {
+.context-menu-selection, tr:nth-child(2n+2).context-menu-selection {
   background-color: #507AAA !important;
   color: #f8f8f8 !important; }
 
@@ -4705,7 +4705,6 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
       margin-right: 0; }
     #main #content .contextual {
       float: right;
-      top: 1.6em;
       position: relative; }
       #main #content .contextual + .breadcrumb {
         position: relative;
@@ -6587,7 +6586,7 @@ span.search_for_watchers, fieldset.settings label, #tab-content-members fieldset
   margin-top: 0; }
 
 .splitcontent, div.journal, .syntaxhl .code pre {
-  overflow: auto; }
+  padding-top: 5px; }
 
 div#search-results-counts ul {
   margin-top: 0.5em; }
