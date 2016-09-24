@@ -4711,8 +4711,8 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
       #main #content .contextual + .breadcrumb {
         position: relative;
         top: 0.8em;
-        float: right;
-        margin-right: 2em; }
+        float: left;
+        margin-right: 0.1em; }
       #main #content .contextual a:before, #main #content .contextual .icon-add.checklist-new-only:before {
         margin-left: 1em; }
     #main #content h2:first-of-type {
