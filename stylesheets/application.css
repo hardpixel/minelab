@@ -1791,12 +1791,11 @@ button.ui-button::-moz-focus-inner {
 .ui-progressbar {
   height: 12px;
   text-align: left;
-  background: #FFF url(images/progress_bar.gif) 0 -14px repeat-x; }
+  background: #FFF; }
 
 .ui-progressbar .ui-progressbar-value {
   margin: -1px;
-  height: 100%;
-  background: url(images/progress_bar.gif) 0 0 repeat-x; }
+  height: 100%; }
 
 /* Extra Input Field Styling */
 .ui-form textarea, .ui-form input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="range"]) {
