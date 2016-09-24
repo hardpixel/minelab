@@ -16,26 +16,30 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 		$('#top-menu .home').parent().remove();
 
 		$('input.questions-search').wrap('<span class="live_search normal"></span>');
-                if ($.trim($('#main #sidebar').html())) {
-			$('#main #sidebar').before('<div id="sidebarHandler"><div id="hideSidebarButton" style="position:absolute; z-index: 20; top: 2px; cursor: pointer;"></div></div>');
-			$('#hideSidebarButton').click(function () {
+
+		if ($.trim($('#main #sidebar').html())) {
+			$('#main #sidebar').before('<div id="sidebar-handler"><div id="hide-sidebar-button"></div></div>');
+
+			$('#hide-sidebar-button').click(function () {
 				if ($('#sidebar').is(':visible')) {
 					$('#sidebar').hide();
 					$('#content').width('100%');
-					//$('#hideSidebarButton').addClass('sidebar_hidden');
+
 					setCookie('sidebar_hide', 'hide', 100);
 				} else {
 					$('#sidebar').show();
 					$('#content').removeAttr('style');
-					//$('#hideSidebarButton').removeClass('sidebar_hidden');
+
 					setCookie('sidebar_hide', 'show', 100);
 				}
 				sideBarCollapseText();
 			});
-                }
-    		if (getCookie('sidebar_hide') == 'hide') {
-			$('#hideSidebarButton').click();
 		}
+
+		if (getCookie('sidebar_hide') == 'hide') {
+			$('#hide-sidebar-button').click();
+		}
+
 		sideBarCollapseText();
 
 		$(window).load(function(){
@@ -61,19 +65,21 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 
 	var sideBarCollapseText = function () {
 		var text;
+
 		if ($('#sidebar').is(':visible')) {
 			text = '<i class="icon fa-arrow-left"></i>';
 		} else {
-			 text = '<i class="icon fa-arrow-right"></i>';
+			text = '<i class="icon fa-arrow-right"></i>';
 		}
-		$('#hideSidebarButton').html(text)
-    }
+		$('#hide-sidebar-button').html(text)
+	};
 
 })(jQuery);
 
 function setCookie(c_name, value, exdays) {
 	var exdate = new Date();
 	exdate.setDate(exdate.getDate() + exdays);
+
 	var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
 	document.cookie = c_name + "=" + c_value + ";path=/";
 }
@@ -83,11 +89,14 @@ function getCookie(c_name) {
 	var x;
 	var y;
 	var ARRcookies = document.cookie.split(";");
+
 	for (i = 0; i < ARRcookies.length; i++) {
 		x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
 		y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
 		x = x.replace(/^\s+|\s+$/g, "");
-		if (x == c_name)
+
+		if (x == c_name) {
 			return unescape(y);
+		}
 	}
 }

@@ -24,19 +24,35 @@ It appears that a few people are using Minelab, even though it has issues. Our t
 
 *When making changes, please make sure you are editing the application.sass file, otherwise changes will be lost.*
 
-### create CSS from SASS
+### Create CSS from SASS
 
-#### Prerequisites
+You can use `guard` and `build.sh` to build sass files or you can do it manually.
+
+#### Use guard
+
+Use guard to convert sass to css files as you make changes.
 
 ```
 bundle install
-bourbon install
-neat install
+
+guard start
 ```
 
-#### Example
+#### Use build script
+
+Run the build script with the command below to create css files.
 
 ```
+./build.sh
+```
+
+#### Manually
+
+Run sass with the command below to create css files.
+
+```
+bundle install
+
 sass --load-path bourbon --load-path neat --sourcemap=none sass/application.sass stylesheets/application.css
 ```
 
