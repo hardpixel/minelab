@@ -5284,7 +5284,9 @@ fieldset#filters td.add-filter {
   background: url(../images/bullet_toggle_plus.png) no-repeat 0 40%;
   padding-left: 8px;
   margin-left: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-right: 8px;
+  margin-right: 0.5em; }
 
 .buttons {
   margin-bottom: 1.4em;
