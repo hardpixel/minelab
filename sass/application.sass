@@ -1255,31 +1255,45 @@ fieldset.collapsible.collapsed > legend
 fieldset#date-range p
 	margin: 2px 0
 
-fieldset#filters table
-	border-collapse: collapse
+fieldset.collapsible.collapsed
+	padding-top: 0
 
-fieldset#filters table td
-	vertical-align: middle
-	padding: 0
+fieldset#filters 
 
-fieldset#filters tr.filter
-	height: 2.1em
+	table
+		border-collapse: collapse
+		width: 100%
+		background-color: lighten($white, 1%)
+		margin-top: -1em
 
-fieldset#filters td.field
-	width: 230px
+		td
+			vertical-align: middle
+			padding: 0
 
-fieldset#filters td.operator
-	width: 180px
+		tr.filter
+			height: 2.1em
 
-fieldset#filters td.operator select
-	max-width: 170px
+		td.field
+			width: 230px
 
-fieldset#filters td.values select
-	min-width: 130px
+		td.operator
+			width: 180px
 
-fieldset#filters td.add-filter
-	text-align: right
-	vertical-align: top
+		td.operator select
+			max-width: 170px
+			min-width: 170px
+
+		td.values select
+			min-width: 170px
+
+		td.values input[type=text]
+			width: 99.9%
+
+	div.add-filter
+		margin-top: 0.5em
+		text-align: right
+		vertical-align: top
+
 
 .toggle-multiselect
 	background: url(../images/bullet_toggle_plus.png) no-repeat 0 40%
@@ -1292,6 +1306,7 @@ fieldset#filters td.add-filter
 .buttons
 	margin-bottom: 1.4em
 	margin-top: 1em
+	padding-left: 1em
 
 	a:before
 		vertical-align: middle
@@ -2790,7 +2805,7 @@ span.search_for_watchers, fieldset.settings label, #tab-content-members fieldset
 div#search-results-counts ul
 	margin-top: .5em
 
-fieldset#filters td.values input, table.progress td
+table.progress td
 	height: 1em
 
 div#activity dd .description, #search-results dd .description, ul.properties li span, .summary
