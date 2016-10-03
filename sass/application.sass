@@ -20,6 +20,9 @@
 @import issue
 
 
+// Custom Overrides
+@import overrides
+
 /* Common */
 html
 	overflow-y: scroll
@@ -48,13 +51,13 @@ h4
 	padding-bottom: 1em
 
 a
-	color: $blue
+	color: $link-color
 	+transition-duration(.3s)
 	text-decoration: none
 	font-size: 1em
 
 	&:hover, &:active, &:focus
-		color: $dark-blue
+		color: $link-color-hover
 
 	&.issue.closed, &.issue.closed:link, &.issue.closed:visited
 		color: $grey
@@ -93,9 +96,9 @@ select
 		box-shadow: 0px 1px 1px rgba(black, .075) inset, 0px 0px 8px rgba($grey, .6)
 
 #{$all-button-inputs}, #{$all-button-inputs-hover}, .button, .button:hover
-	border: 1px solid $blue-green
-	background: $blue-green
-	color: white
+	border: 1px solid $buttons-static-border
+	background: $buttons-static-bg
+	color: $buttons-static-fg
 	padding: .5em 1.5em
 	border-radius: 4px
 	cursor: pointer
@@ -107,6 +110,10 @@ select
 	+ a
 		font-size: 1em
 		@extend .button
+
+#{$all-button-inputs-hover}, .button:hover
+	background: $buttons-hover-bg
+	color: $buttons-hover-fg
 
 #{$all-button-inputs-focus}, #{$all-button-inputs-active}, .button:focus, .button:active
 	box-shadow: 0px 3px 5px rgba(black, .125) inset
