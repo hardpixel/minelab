@@ -371,7 +371,7 @@ select
 				z-index: 5
 				position: absolute
 				left: 1.6em
-				top: .2em
+				top: .15em
 				color: $dark-blue
 
 		#q
@@ -532,6 +532,14 @@ select
 	a.server_authentication, .icon-server-authentication
 		@extend .fa-key
 
+.sidebar-collapsed
+
+	#content
+		width: 100% !important
+
+	#sidebar
+		display: none !important
+
 #main
 	+row
 	padding: 0 1.5em 6em
@@ -545,8 +553,11 @@ select
 	#hide-sidebar-button
 		position: absolute
 		z-index: 20
-		top: 2px
+		top: -40px
+		padding: .5em
+		left: 0
 		cursor: pointer
+		color: $blue
 
 	#sidebar
 		+span-columns(3)
@@ -1011,6 +1022,9 @@ table.query-columns td.buttons
 	vertical-align: middle
 	text-align: center
 
+table.query-columns td.buttons input[type=button]
+	width: 2.5em
+	padding: .5em
 
 h3.version
 	margin-top: 0
@@ -1260,7 +1274,7 @@ fieldset#date-range p
 fieldset.collapsible.collapsed
 	padding-top: 0
 
-fieldset#filters 
+fieldset#filters
 
 	table
 		border-collapse: collapse
@@ -1351,7 +1365,7 @@ div#issue-changesets p
 
 		& + div.thumbnails
 			border-top: 0
-			margin-top: -1.05em 
+			margin-top: -1.05em
 
 		img
 			margin: 0 0 -3px 4px
