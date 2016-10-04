@@ -46,6 +46,18 @@ Run the build script with the command below to create css files.
 ./build.sh
 ```
 
+Using the build script you can also override any variable definition by providing a custom override scss file like this:
+
+```
+./build.sh path-to-override.scss
+```
+
+in effect, build.sh will replace the file sass/override.scss with the content of the provided file in argument. To reset the override simply run ./build.sh without any override argument
+
+```
+./build.sh
+```
+
 #### Manually
 
 Run sass with the command below to create css files.
