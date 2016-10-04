@@ -1,0 +1,79 @@
+div.contextual.scrum-menu
+	a.icon.icon-sprint-board:before
+		content: "\f0ae"
+		font: normal normal normal 14px/1 FontAwesome
+
+	a.icon.icon-burndown:before
+		content: "\f06d"
+		font: normal normal normal 14px/1 FontAwesome
+
+	a.icon.icon-product-backlog:before
+		content: "\f1b3"
+		font: normal normal normal 14px/1 FontAwesome
+
+	a.icon.icon-product-backlog:before
+		content: "\f1b3"
+		font: normal normal normal 14px/1 FontAwesome
+
+	a.icon.icon-release-plan:before
+		content: "\f1b2"
+		font: normal normal normal 14px/1 FontAwesome
+
+table.sprint-board
+	background-color: $white
+	width: 100%
+
+	border: 5px solid $grey-blue !important
+	th
+		text-align: center
+		color: black
+		padding-bottom: 0.5em
+		border-right: 5px solid $grey-blue !important
+		border-bottom: 5px solid $grey-blue !important
+
+		&:last
+			border-right: none
+
+	tbody
+		td.sprint-board
+			border: none !important
+			border-bottom: 1px solid $medium-grey !important
+			border-right: 5px solid $grey-blue !important
+
+			&:last
+				border-right: none
+
+			table.post-it
+				tr
+					background: transparent !important
+
+				td.estimation span
+					font-style: italic
+
+					&:before
+						content: "("
+					&:after
+						content: ")"
+				td.spent span
+					font-weight: bold
+
+				td.estimation, td.spent, td.pending
+					width: 33%
+					vertical-align: middle
+					text-align: center
+					padding-top: 0.5em
+
+					input[type="text"]
+						width: 80%
+
+				a.float-icon
+					padding-left: 0px
+
+				a.icon.icon-major-deviation:before
+					content: "\f06a"
+					color: $red
+					font: normal normal normal 14px/1 FontAwesome
+					
+				a.issue
+					display: block
+

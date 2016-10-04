@@ -4309,6 +4309,66 @@ div.issue div.attributes .attribute.progress .value {
   div.issue div.attributes .attribute.progress .value p {
     margin: 3px 0; }
 
+div.contextual.scrum-menu a.icon.icon-sprint-board:before, div.contextual.scrum-menu .icon.icon-sprint-board.icon-add.checklist-new-only:before {
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome; }
+div.contextual.scrum-menu a.icon.icon-burndown:before, div.contextual.scrum-menu .icon.icon-burndown.icon-add.checklist-new-only:before {
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome; }
+div.contextual.scrum-menu a.icon.icon-product-backlog:before, div.contextual.scrum-menu .icon.icon-product-backlog.icon-add.checklist-new-only:before {
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome; }
+div.contextual.scrum-menu a.icon.icon-product-backlog:before, div.contextual.scrum-menu .icon.icon-product-backlog.icon-add.checklist-new-only:before {
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome; }
+div.contextual.scrum-menu a.icon.icon-release-plan:before, div.contextual.scrum-menu .icon.icon-release-plan.icon-add.checklist-new-only:before {
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome; }
+
+table.sprint-board {
+  background-color: #F9F9F9;
+  width: 100%;
+  border: 5px solid #979DA7 !important; }
+  table.sprint-board th {
+    text-align: center;
+    color: black;
+    padding-bottom: 0.5em;
+    border-right: 5px solid #979DA7 !important;
+    border-bottom: 5px solid #979DA7 !important; }
+    table.sprint-board th:last {
+      border-right: none; }
+  table.sprint-board tbody td.sprint-board {
+    border: none !important;
+    border-bottom: 1px solid #CCCCCC !important;
+    border-right: 5px solid #979DA7 !important; }
+    table.sprint-board tbody td.sprint-board:last {
+      border-right: none; }
+    table.sprint-board tbody td.sprint-board table.post-it tr {
+      background: transparent !important; }
+    table.sprint-board tbody td.sprint-board table.post-it td.estimation span {
+      font-style: italic; }
+      table.sprint-board tbody td.sprint-board table.post-it td.estimation span:before {
+        content: "("; }
+      table.sprint-board tbody td.sprint-board table.post-it td.estimation span:after {
+        content: ")"; }
+    table.sprint-board tbody td.sprint-board table.post-it td.spent span {
+      font-weight: bold; }
+    table.sprint-board tbody td.sprint-board table.post-it td.estimation, table.sprint-board tbody td.sprint-board table.post-it td.spent, table.sprint-board tbody td.sprint-board table.post-it td.pending {
+      width: 33%;
+      vertical-align: middle;
+      text-align: center;
+      padding-top: 0.5em; }
+      table.sprint-board tbody td.sprint-board table.post-it td.estimation input[type="text"], table.sprint-board tbody td.sprint-board table.post-it td.spent input[type="text"], table.sprint-board tbody td.sprint-board table.post-it td.pending input[type="text"] {
+        width: 80%; }
+    table.sprint-board tbody td.sprint-board table.post-it a.float-icon, table.sprint-board tbody td.sprint-board table.post-it .float-icon.icon-add.checklist-new-only {
+      padding-left: 0px; }
+    table.sprint-board tbody td.sprint-board table.post-it a.icon.icon-major-deviation:before, table.sprint-board tbody td.sprint-board table.post-it .icon.icon-major-deviation.icon-add.checklist-new-only:before {
+      content: "";
+      color: #e74c3c;
+      font: normal normal normal 14px/1 FontAwesome; }
+    table.sprint-board tbody td.sprint-board table.post-it a.issue, table.sprint-board tbody td.sprint-board table.post-it .issue.icon-add.checklist-new-only {
+      display: block; }
+
 /* Common */
 html {
   overflow-y: scroll; }
