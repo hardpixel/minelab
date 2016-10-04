@@ -2796,7 +2796,7 @@ a.close-icon:before,
 .fa-share-square-o:before {
   content: "\f045"; }
 
-.fa-check-square-o:before {
+.fa-check-square-o:before, div.contextual a.icon.icon-accept:before, div.contextual .icon.icon-accept.icon-add.checklist-new-only:before {
   content: "\f046"; }
 
 .fa-arrows:before {

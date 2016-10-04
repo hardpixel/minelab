@@ -19,7 +19,9 @@
 @import "pagination";
 @import "issue";
 
+// Plugins:
 @import "plugins/scrum";
+@import "plugins/accept";
 
 // Custom Overrides
 @import "overrides";

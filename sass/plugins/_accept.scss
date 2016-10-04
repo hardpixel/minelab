@@ -1,0 +1,7 @@
+// Accept plugin http://www.redmine.org/plugins/accept
+
+div.contextual {
+	a.icon.icon-accept {
+		@extend .fa-check-square-o;
+	}
+}
