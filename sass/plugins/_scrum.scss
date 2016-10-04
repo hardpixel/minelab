@@ -1,27 +1,19 @@
 div.contextual.scrum-menu {
   a.icon.icon-sprint-board:before {
-    content: "";
-    font: normal normal normal 14px/1 FontAwesome;
+    @extend .fa-tasks;
   }
 
   a.icon.icon-burndown:before {
-    content: "";
-    font: normal normal normal 14px/1 FontAwesome;
+    @extend .fa-fire;
   }
 
-  a.icon.icon-product-backlog:before {
-    content: "";
-    font: normal normal normal 14px/1 FontAwesome;
-  }
 
   a.icon.icon-product-backlog:before {
-    content: "";
-    font: normal normal normal 14px/1 FontAwesome;
+    @extend .fa-cubes;
   }
 
   a.icon.icon-release-plan:before {
-    content: "";
-    font: normal normal normal 14px/1 FontAwesome;
+    @extend .fa-cube;
   }
 }
 
@@ -89,9 +81,8 @@ table.sprint-board {
         }
 
         a.icon.icon-major-deviation:before {
-          content: "";
+          @extend .fa-exclamation-circle;
           color: $red;
-          font: normal normal normal 14px/1 FontAwesome;
         }
 
         a.issue {

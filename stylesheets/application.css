@@ -2899,7 +2899,7 @@ a.close-icon:before,
 .fa-asterisk:before, .icon-passwd:before {
   content: "\f069"; }
 
-.fa-exclamation-circle:before {
+.fa-exclamation-circle:before, table.sprint-board tbody td.sprint-board table.post-it a.icon.icon-major-deviation:before, table.sprint-board tbody td.sprint-board table.post-it .icon.icon-major-deviation.icon-add.checklist-new-only:before {
   content: "\f06a"; }
 
 .fa-gift:before {
@@ -2908,7 +2908,7 @@ a.close-icon:before,
 .fa-leaf:before {
   content: "\f06c"; }
 
-.fa-fire:before {
+.fa-fire:before, div.contextual.scrum-menu a.icon.icon-burndown:before, div.contextual.scrum-menu .icon.icon-burndown.icon-add.checklist-new-only:before {
   content: "\f06d"; }
 
 .fa-eye:before, #top-menu a.adm-roles:before, #top-menu .adm-roles.icon-add.checklist-new-only:before, #admin-menu a.roles:before, #admin-menu .roles.icon-add.checklist-new-only:before {
@@ -3096,7 +3096,7 @@ a.close-icon:before,
 .fa-wrench:before {
   content: "\f0ad"; }
 
-.fa-tasks:before {
+.fa-tasks:before, div.contextual.scrum-menu a.icon.icon-sprint-board:before, div.contextual.scrum-menu .icon.icon-sprint-board.icon-add.checklist-new-only:before {
   content: "\f0ae"; }
 
 .fa-filter:before {
@@ -3836,10 +3836,10 @@ div.members h3:before {
 .fa-spoon:before {
   content: "\f1b1"; }
 
-.fa-cube:before, h3.version:before, .icon-package:before {
+.fa-cube:before, div.contextual.scrum-menu a.icon.icon-release-plan:before, div.contextual.scrum-menu .icon.icon-release-plan.icon-add.checklist-new-only:before, h3.version:before, .icon-package:before {
   content: "\f1b2"; }
 
-.fa-cubes:before, #top-menu a.projects:before, #top-menu .projects.icon-add.checklist-new-only:before, #top-menu a.adm-projects:before, #top-menu .adm-projects.icon-add.checklist-new-only:before, #admin-menu a.projects:before, #admin-menu .projects.icon-add.checklist-new-only:before, #admin-menu dt.project:before, #admin-menu .icon-projects:before, div.projects h3:before {
+.fa-cubes:before, div.contextual.scrum-menu a.icon.icon-product-backlog:before, div.contextual.scrum-menu .icon.icon-product-backlog.icon-add.checklist-new-only:before, #top-menu a.projects:before, #top-menu .projects.icon-add.checklist-new-only:before, #top-menu a.adm-projects:before, #top-menu .adm-projects.icon-add.checklist-new-only:before, #admin-menu a.projects:before, #admin-menu .projects.icon-add.checklist-new-only:before, #admin-menu dt.project:before, #admin-menu .icon-projects:before, div.projects h3:before {
   content: "\f1b3"; }
 
 .fa-behance:before {
@@ -4837,22 +4837,6 @@ div.issue div.attributes .attribute.progress .value {
   div.issue div.attributes .attribute.progress .value p {
     margin: 3px 0; }
 
-div.contextual.scrum-menu a.icon.icon-sprint-board:before, div.contextual.scrum-menu .icon.icon-sprint-board.icon-add.checklist-new-only:before {
-  content: "";
-  font: normal normal normal 14px/1 FontAwesome; }
-div.contextual.scrum-menu a.icon.icon-burndown:before, div.contextual.scrum-menu .icon.icon-burndown.icon-add.checklist-new-only:before {
-  content: "";
-  font: normal normal normal 14px/1 FontAwesome; }
-div.contextual.scrum-menu a.icon.icon-product-backlog:before, div.contextual.scrum-menu .icon.icon-product-backlog.icon-add.checklist-new-only:before {
-  content: "";
-  font: normal normal normal 14px/1 FontAwesome; }
-div.contextual.scrum-menu a.icon.icon-product-backlog:before, div.contextual.scrum-menu .icon.icon-product-backlog.icon-add.checklist-new-only:before {
-  content: "";
-  font: normal normal normal 14px/1 FontAwesome; }
-div.contextual.scrum-menu a.icon.icon-release-plan:before, div.contextual.scrum-menu .icon.icon-release-plan.icon-add.checklist-new-only:before {
-  content: "";
-  font: normal normal normal 14px/1 FontAwesome; }
-
 table.sprint-board {
   background-color: #F9F9F9;
   width: 100%;
@@ -4891,9 +4875,7 @@ table.sprint-board {
     table.sprint-board tbody td.sprint-board table.post-it a.float-icon, table.sprint-board tbody td.sprint-board table.post-it .float-icon.icon-add.checklist-new-only {
       padding-left: 0px; }
     table.sprint-board tbody td.sprint-board table.post-it a.icon.icon-major-deviation:before, table.sprint-board tbody td.sprint-board table.post-it .icon.icon-major-deviation.icon-add.checklist-new-only:before {
-      content: "";
-      color: #e74c3c;
-      font: normal normal normal 14px/1 FontAwesome; }
+      color: #e74c3c; }
     table.sprint-board tbody td.sprint-board table.post-it a.issue, table.sprint-board tbody td.sprint-board table.post-it .issue.icon-add.checklist-new-only {
       display: block; }
 
