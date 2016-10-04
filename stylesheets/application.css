@@ -5089,7 +5089,8 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     padding-bottom: 0.5em;
     position: relative;
     padding-left: 3.8em;
-    z-index: 0; }
+    z-index: 0;
+    margin-left: 10px; }
   #header .home {
     display: block;
     width: 3em;
@@ -5099,8 +5100,9 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.15), -1px 0 0 rgba(255, 255, 255, 0.15);
     position: absolute;
     top: 0;
-    left: 1px;
+    left: 0px;
     padding: 0.2em;
+    padding-left: 0.1em;
     text-align: center; }
     #header .home:before {
       content: url(../images/logo.svg); }
@@ -5226,7 +5228,8 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     padding: 0.5em;
     left: 0;
     cursor: pointer;
-    color: #446E9B; }
+    color: #446E9B;
+    text-shadow: 1px 1px 1px #F9F9F9, -1px -1px 1px #F9F9F9, 1px -1px 1px #F9F9F9, -1px 1px 1px #F9F9F9; }
   #main #sidebar {
     float: left;
     display: block;
