@@ -20,7 +20,12 @@ if [ -n "$1" ]; then
 	esac 
 fi
 
-[ ! -d sass ] && bundle install
+# Sanity check:
+
+type sass >/dev/null 2>&1 || bundle install
+type bourbon >/dev/null 2>&1 || bundle install
+type neat >/dev/null 2>&1 || bundle install
+
 [ ! -d bourbon ] && bourbon install
 [ ! -d neat ] && neat install
 
