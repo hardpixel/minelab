@@ -2793,7 +2793,7 @@ a.close-icon:hover {
   color: #f66914;
 }
 
-.icon, [class*="icon-"], #context-menu li a {
+.icon, [class*="icon-"], .sort-handle, #context-menu li a {
   background-image: none !important;
 
   &:before {
@@ -2980,6 +2980,31 @@ a.close-icon:hover {
 
 .icon-stop, .tt_stop {
   @extend .fa-stop;
+}
+
+.sort-handle {
+  cursor: pointer;
+  color: $link-color;
+  @include transition-duration(0.3s);
+  text-decoration: none;
+  font-size: 1em;
+  display: inline-block;
+  margin-right: 0.5em;
+  @extend .fa-arrows-v;
+
+  &:hover, &:active, &:focus {
+    color: $link-color-hover;
+  }
+
+  &:after {
+    content: "Sort";
+  }
+  &:before {
+    @extend .fa;
+
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
 }
 
 img.gravatar {
