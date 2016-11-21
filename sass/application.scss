@@ -806,6 +806,7 @@ select {
     .contextual {
       float: right;
       position: relative;
+      z-index: 10;
 
       + .breadcrumb {
         position: relative;
