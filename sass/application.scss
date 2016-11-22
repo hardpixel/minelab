@@ -935,7 +935,7 @@ div.modal {
 
 input#openid_url {
   background: url(../images/openid-bg.gif) no-repeat;
-  background-color: #fff;
+  background-color: $openid-url-fg;
   background-position: 0 50%;
   padding-left: 18px;
 }
@@ -1028,7 +1028,7 @@ tr.issue td.done_ratio table.progress {
 }
 
 table.issues td.description {
-  color: #777;
+  color: $issue_description_fg;
   font-size: 90%;
   text-align: left;
   white-space: normal;
@@ -1054,7 +1054,7 @@ tr.project {
 }
 
 tr.entry {
-  border: 1px solid #f8f8f8;
+  border: 1px solid $entry_border_color;
 }
 
 tr.entry td.filename {
@@ -1107,7 +1107,7 @@ tr.changeset ul, ol {
 
 tr.changeset td.revision_graph {
   width: 15%;
-  background-color: #fffffb;
+  background-color: $changeset_revision_graph_bg;
 }
 
 table.files tr.file td.filename {
@@ -1151,7 +1151,7 @@ tr.user td.email {
 }
 
 table.permissions td.role {
-  color: #999;
+  color: $permission_role_fg;
   font-size: 90%;
   font-weight: 400 !important;
   text-align: center;
@@ -1406,14 +1406,14 @@ span.search_for_watchers a, span.add_attachment a {
   display: inline-block;
   width: 100%;
   padding: 2em 2em 1em;
-  background: $white;
-  border: 1px solid $medium-grey;
+  background: $box_bg;
+  border: 1px solid $box_border_color;
   border-radius: 4px;
   margin: 1em 0;
 }
 
 div.square {
-  border: 1px solid #999;
+  border: 1px solid $square_border_color;
   float: left;
   overflow: hidden;
   width: 0.6em;

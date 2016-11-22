@@ -1,8 +1,9 @@
 #!/bin/sh
 
-echo "// DO NOT MODIFY THIS FILE, ALL YOUR MODIFICATIONS WILL BE LOST" > sass/_overrides.scss
+# TODO: this script really should be in a .rb file (as any redmine user would have ruby installed anyway), PR welcomed
 
-override=""
+
+override="overrides"
 nooverride="false"
 
 [ -f _overrides.scss ] && override=_overrides.scss
@@ -10,9 +11,10 @@ nooverride="false"
 if [ -n "$1" ]; then
 	case $1 in
 		--help|-h)
-			echo "Usage $0 [-c|path-to-overrides.scss]"
+			echo "Usage $0 [-c|path-to-overrides-directory]"
 			echo "Where: "
-			echo " path-to-overrides.scss : is the path to the file to use as overrides.scss (default ./_overrides.scss"
+                        echo " path-to-overrides-directory: is the path containing the overrides scss files (_overrides.scss _variables_overrides.scss and _variables_usage_overrides.scss) "
+                        echo "   (the directory may be empty or simply contains any of those files, no error will be thrown) "
 			echo " -c : ignore overrides (clean build)"
 			exit
 			;;
@@ -21,9 +23,9 @@ if [ -n "$1" ]; then
 			echo "Ignoring overrides (clean build)"
 			;;
 		*)
-			if [ ! -f $1 ]; then
-				echo "$1 file not found"
-				exit 2
+			if [ ! -d $1 ]; then
+                            echo "$1 override directory not found (or not a directory)"
+                            exit 2
 			fi
 			override=$1
 			;;
@@ -32,12 +34,18 @@ fi
 
 [ "$nooverride" = "true" ] && override=""
 
-# Applying overrides
-if [ -n "$override" ] ; then
-	echo "Applying $override to sass/_overrides.scss" 
-	echo "// Applying $override to sass/_overrides.scss"  >> sass/_overrides.scss
-	cat $override >> sass/_overrides.scss
-fi
+for file in _overrides.scss _variables_overrides.scss _variables_usage_overrides.scss ; do
+    echo "// DO NOT MODIFY THIS FILE, ALL YOUR MODIFICATIONS WILL BE LOST" > sass/$file
+
+    # Applying overrides
+    if [ -n "$override" -a -f "$override/$file" ] ; then
+            echo "Applying $override/$file to sass/$file" 
+            echo "// Applying $override/$file to sass/$file"  >> sass/_overrides.scss
+            cat $override/$file >> sass/$file
+    fi
+
+done
+
 # Sanity check:
 
 type sass >/dev/null 2>&1 || bundle install

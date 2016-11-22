@@ -1,32 +1,63 @@
 /* Framework variables */
 $max-width: 80em;
 
-/* Color variables */
+/* 
+  Colors used by this Theme
+  Redefining those variables will redefine all colors
+ */
+
+// TODO: change the color names to their actual semantic for the Theme -- goutnet
 $blue: #446E9B;
 $dark-blue: #474D57;
 $light-blue: #66AFE9;
+
 $blue-green: #019875;
+
+$true-white: #fff;
 $white: #F9F9F9;
+
 $light-grey: #F2F2F2;
 $medium-grey: #CCCCCC;
 $grey-blue: #979DA7;
 $grey: #777777;
+
 $orange: #f39c12;
+
 $red: #e74c3c;
 $green: #2ecc71;
 $yellow: #f1c40f;
+
 $text: #333333;
 
-/* UI colors, moved here to allow easier override */
+/* 
+  UI Colors usage (this section allows fine tune override in the _overrides.scss
+  by changing only the appropriate item
+*/
 
+
+//      Buttons:
 $buttons-static-bg: $blue-green;
-$buttons-static-fg: white;
+$buttons-static-fg: $true-white;
 $buttons-static-border: $buttons-static-bg;
 $buttons-hover-bg: $buttons-static-bg;
 $buttons-hover-fg: $buttons-static-fg;
 
+
+//      Links:
 $link-color: $blue;
 $link-color-hover: $dark-blue;
+$openid-url-fg: $true-white;
+
+//      Issues
+
+$issue_description_fg: $grey;
+$entry_border_color: $white;
+$changeset_revision_graph_bg: $true-white;
+$permission_role_fg: $grey;
+$square_border_color: $grey;
+$box_bg: $white;
+$box_border_color: $medium_grey;
+
 
 /* Animations */
 

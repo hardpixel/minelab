@@ -1,0 +1,5 @@
+Place overrides for your theme here:
+
+_variables_overrides.scss : will be included right after the colors definition in _variables.scss to give you a chance to change the colors of the theme directly
+_variables_usage_overrides.scss : will be included after the color usage definition, allowing more fine tune to the theme colors
+_overrides.scss : will be included after all inclusion in the application.sass letting you change virtually anything to fit your needs afterwise

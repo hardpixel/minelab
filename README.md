@@ -49,14 +49,16 @@ Run the build script with the command below to create css files.
 Using the build script you can also override any variable definition by providing a custom override scss file like this:
 
 ```
-./build.sh path-to-override.scss
+./build.sh path-to-override-directory
 ```
 
-in effect, build.sh will replace the file sass/override.scss with the content of the provided file in argument. To reset the override simply run ./build.sh without any override argument
+in effect, build.sh will replace the files _overrides.scss, _variables_overrides.scss, and _variables_usage_overrides.scss files in the sass directory with the content of the provided file in argument. To reset the override simply run ./build.sh -c to ignore the overrides (clear)
 
 ```
-./build.sh
+./build.sh -c
 ```
+
+By default build.sh looks in the overrides directory to find these files, and use them if present.
 
 #### Manually
 
@@ -67,6 +69,20 @@ bundle install
 
 sass --load-path bourbon --load-path neat --sourcemap=none sass/application.sass stylesheets/application.css
 ```
+
+## Customization
+
+Minelab theme is built to allow you to create your theme colors based on the layout provided. For this you will need some CSS knowledge and basic SASS knowledge (really that one is easy).
+
+To do so, you will also need to be able to run the build.sh script.
+
+To create your own variation of this theme, you simply need to create and fill one of these files in the overrides directory:
+
+overrides/_variables.scss               :       used to overrides the color early in the definition
+overrides/_variables_usage_overrides    :       fine tune overrides on each color usage
+overrides/_overrides.scss               :       included at the very end of the application.scss inclusion (to change each module needed)
+
+By default, build.sh will look into the root folder of the theme for directory but you can specify your own location with ./build.sh -c path-to-your-override-directory
 
 ## Credits
 
