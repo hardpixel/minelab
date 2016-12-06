@@ -35,7 +35,7 @@ body {
   color: $text;
   font-size: 14px;
   line-height: 1.4;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
@@ -1486,6 +1486,7 @@ abbr {
 }
 
 textarea.wiki-edit {
+  font: $font-editor;
   width: 99% !important;
   resize: vertical;
   margin-bottom: 1em;
