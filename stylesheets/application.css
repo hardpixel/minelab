@@ -8,7 +8,11 @@ html {
 /* Framework variables */
 /* 
   Colors used by this Theme
-  Redefining those variables will redefine all colors
+  Redefining these variables will redefine all colors
+ */
+/* 
+  Fonts used by this Theme
+  Redefining these variables will redefine all fonts
  */
 /* 
   UI Colors usage (this section allows fine tune override in the _overrides.scss
@@ -5780,6 +5784,7 @@ abbr {
   cursor: help; }
 
 textarea.wiki-edit {
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 99% !important;
   resize: vertical;
   margin-bottom: 1em; }
