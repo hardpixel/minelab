@@ -455,7 +455,7 @@ select {
     text-align: center;
 
     &:before {
-      content: url(../images/logo.svg);
+      content: url($logo);
     }
 
     &:hover, &:active {

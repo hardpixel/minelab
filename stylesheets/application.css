@@ -5115,7 +5115,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     padding-left: 0.1em;
     text-align: center; }
     #header .home:before {
-      content: url(../images/logo.svg); }
+      content: url("../images/logo.svg"); }
     #header .home:hover, #header .home:active {
       background: rgba(71, 77, 87, 0.5); }
   #header #quick-search {
