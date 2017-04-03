@@ -4,7 +4,7 @@ Minelab is a free Redmine 2.5.x theme inspired by Gitlab, written in Sass. It us
 
 ## What plugins are supported?
 
-Minlab supports all the free and lite plugins from RedmineCRM. Support for more plugins is coming in later versions.
+Minlab supports all the free and lite plugins from RedmineCRM. Support for more plugins is coming in later versions (look in the sass/plugins for more information).
 
 ## How to install it
 
