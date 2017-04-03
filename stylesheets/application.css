@@ -2616,7 +2616,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .fa-star-o:before, .icon-fav-off:before {
   content: "\f006"; }
 
-.fa-user:before, #top-menu a.my-account:before, #top-menu .my-account.icon-add.checklist-new-only:before, #top-menu a.adm-users:before, #top-menu .adm-users.icon-add.checklist-new-only:before, #admin-menu a.users:before, #admin-menu .users.icon-add.checklist-new-only:before, #admin-menu .icon-user:before {
+.fa-user:before, #top-menu a.my-account:before, #top-menu .my-account.icon-add.checklist-new-only:before, #top-menu a.adm-users:before, #top-menu .adm-users.icon-add.checklist-new-only:before, #admin-menu a.users:before, #admin-menu .users.icon-add.checklist-new-only:before, #admin-menu .icon-user:before, .icon-user:before {
   content: "\f007"; }
 
 .fa-film:before {
@@ -3770,7 +3770,7 @@ div.members h3:before {
 .fa-slack:before {
   content: "\f198"; }
 
-.fa-envelope-square:before {
+.fa-envelope-square:before, .icon-email-add:before {
   content: "\f199"; }
 
 .fa-wordpress:before {
@@ -5115,7 +5115,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     padding-left: 0.1em;
     text-align: center; }
     #header .home:before {
-      content: url("../images/logo.svg"); }
+      content: url("../../sentio/logo.jpg"); }
     #header .home:hover, #header .home:active {
       background: rgba(71, 77, 87, 0.5); }
   #header #quick-search {

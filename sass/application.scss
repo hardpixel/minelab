@@ -2913,6 +2913,15 @@ a.close-icon:hover {
   @extend .fa-lock;
 }
 
+.icon-user {
+  @extend .fa-user;
+}
+
+
+.icon-email-add {
+  @extend .fa-envelope-square;
+}
+
 .icon-unlock {
   @extend .fa-unlock;
 }
