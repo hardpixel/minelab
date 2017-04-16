@@ -4986,7 +4986,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #wrapper::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
 
 #top-menu {
   display: block;
@@ -5000,7 +5000,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #top-menu::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   #top-menu ul.menu-children {
     width: 26em;
     top: 99%;
@@ -5089,7 +5089,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #header::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   #header h1 {
     margin: 0;
     font-size: 1.5em;
@@ -5168,7 +5168,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #main-menu::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   #main-menu ul.menu-children {
     background: #CCCCCC;
     display: none;
@@ -5223,7 +5223,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #main::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   #main.nosidebar #content {
     float: left;
     display: block;
@@ -5343,7 +5343,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #footer::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
 
 /* Admin index */
 #admin-index #admin-menu li {
@@ -6264,7 +6264,7 @@ p.other-formats {
   p.other-formats::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
 
 .other-formats span + span:before {
   content: "| "; }
