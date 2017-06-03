@@ -5099,8 +5099,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     padding-bottom: 0.5em;
     position: relative;
     padding-left: 3.8em;
-    z-index: 0;
-    margin-left: 10px; }
+    z-index: 0; }
   #header .home {
     display: block;
     width: 3em;
@@ -5169,6 +5168,10 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     clear: both;
     content: "";
     display: block; }
+  #main-menu.tabs {
+    position: relative; }
+    #main-menu.tabs > ul {
+      padding-right: 3em; }
   #main-menu ul.menu-children {
     background: #CCCCCC;
     display: none;
@@ -5176,7 +5179,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     z-index: 99;
     right: 0;
     left: 0;
-    box-shadow: inset 0 -1px 0 #777777; }
+    padding: 0 1.5em; }
     #main-menu ul.menu-children.visible {
       display: block; }
   #main-menu li {
@@ -5196,9 +5199,33 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
         font-weight: 600;
         color: #446E9B;
         box-shadow: inset 0 -3px 0 #446E9B; }
-  #main-menu #new-object .icon-add {
-    position: relative;
-    top: 2px; }
+  #main-menu .tabs-buttons {
+    background: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    right: 1.5em;
+    display: block !important; }
+    #main-menu .tabs-buttons button {
+      background: none;
+      background: none !important;
+      box-shadow: none !important;
+      border: 0 !important; }
+  #main-menu .new-object-item {
+    width: 62px;
+    float: left; }
+    #main-menu .new-object-item .menu-children:before {
+      content: "-";
+      width: 62px;
+      display: table-cell;
+      float: left;
+      opacity: 0; }
+  #main-menu #new-object {
+    width: 62px; }
+    #main-menu #new-object .icon-add {
+      position: relative;
+      top: 2px; }
+      #main-menu #new-object .icon-add:before {
+        margin: 0; }
 
 #admin-menu li {
   list-style-type: none;
@@ -5237,12 +5264,14 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #main #hide-sidebar-button {
     position: absolute;
     z-index: 20;
-    top: -40px;
-    padding: 0.5em;
-    left: 0;
+    bottom: 0;
+    padding: .5em .7em;
     cursor: pointer;
-    color: #446E9B;
-    text-shadow: 1px 1px 1px #F9F9F9, -1px -1px 1px #F9F9F9, 1px -1px 1px #F9F9F9, -1px 1px 1px #F9F9F9; }
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    border-bottom: 0; }
+    #main #hide-sidebar-button i:before {
+      margin: 0; }
   #main #sidebar {
     float: left;
     display: block;
@@ -5428,6 +5457,8 @@ table {
       border-bottom: 1px solid #CCCCCC;
       font-weight: 500;
       color: #333333; }
+      table.list th.checkbox {
+        padding-left: 0; }
     table.list td {
       vertical-align: top;
       padding: 0.7em;
@@ -5856,31 +5887,38 @@ fieldset#date-range p {
 fieldset.collapsible.collapsed {
   padding-top: 0; }
 
-fieldset#filters table {
-  border-collapse: collapse;
-  width: 100%;
-  background-color: #fcfcfc;
-  margin-top: -1em; }
-  fieldset#filters table td {
-    vertical-align: middle;
-    padding: 0; }
-  fieldset#filters table tr.filter {
-    height: 2.1em; }
-  fieldset#filters table td.field {
-    width: 230px; }
-  fieldset#filters table td.operator {
-    width: 180px; }
-  fieldset#filters table td.operator select {
-    max-width: 170px;
-    min-width: 170px; }
-  fieldset#filters table td.values select {
-    min-width: 170px; }
-  fieldset#filters table td.values input[type=text] {
-    width: 99.9%; }
-fieldset#filters div.add-filter {
-  margin-top: 0.5em;
-  text-align: right;
-  vertical-align: top; }
+fieldset#filters {
+  padding-left: 0;
+  padding-right: 0; }
+  fieldset#filters table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fcfcfc;
+    margin-top: -1em; }
+    fieldset#filters table td {
+      vertical-align: middle;
+      padding: 0; }
+    fieldset#filters table tr.filter {
+      height: 2.1em; }
+    fieldset#filters table td.field {
+      width: 230px; }
+    fieldset#filters table td.operator {
+      width: 180px; }
+    fieldset#filters table td.operator select {
+      max-width: 170px;
+      min-width: 170px; }
+    fieldset#filters table td.values select {
+      min-width: 170px; }
+    fieldset#filters table td.values input[type=text] {
+      width: 99.9%; }
+  fieldset#filters div.add-filter {
+    margin-top: 0.5em;
+    text-align: right;
+    vertical-align: top; }
+
+fieldset#options {
+  padding-left: 0;
+  padding-right: 0; }
 
 .toggle-multiselect {
   background: url(../images/bullet_toggle_plus.png) no-repeat 0 40%;

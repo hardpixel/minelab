@@ -11,6 +11,7 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 (function($){
 	$(function() {
 		$('#main-menu').detach().appendTo('#header');
+		$('#main-menu #new-object').parent('li').addClass('new-object-item');
 		$('#main-menu #new-object').html('<i class="icon-add"></i>');
 
 		$('#top-menu .home').text('').clone().prependTo('#header h1');
