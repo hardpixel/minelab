@@ -5338,8 +5338,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   font-size: 0.9em;
   color: #777777;
   text-align: center;
-  padding: 1em;
-  display: none !important; }
+  padding: 1em; }
   #footer::after {
     clear: both;
     content: "";

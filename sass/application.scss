@@ -861,7 +861,6 @@ select {
   color: $grey;
   text-align: center;
   padding: 1em;
-  display: none !important;
 }
 
 /* Admin index */
@@ -1709,7 +1708,7 @@ div#issue-changesets p {
   }
   padding-left: 34px;
   border-left: 1px solid $medium-grey;
-  
+
   h4 {
     &::before {
       content: "";
