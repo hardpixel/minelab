@@ -6496,7 +6496,8 @@ table.progress {
   empty-cells: show;
   text-align: center;
   float: left;
-  margin: 1px 6px 1px 0; }
+  margin: 1px 6px 1px 0;
+  min-width: 80px; }
 
 table.progress td.closed {
   background: #BAE0BA none repeat scroll 0; }
