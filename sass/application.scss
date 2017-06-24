@@ -4,6 +4,7 @@
 
 // Variables
 @import "variables";
+@import "variables_overrides";
 
 // Extras
 @import "jqueryui";
@@ -25,6 +26,11 @@
 @import "plugins/impersonate";
 @import "plugins/tweaks";
 @import "plugins/login_audit";
+
+$logo-block-width: ($logo-width + 2 * $logo-side-padding);
+$logo-block-width-unit: $logo-block-width * 1px;
+$header-left-padding-unit: ($logo-block-width + $header-logo-spacer) * 1px;
+
 
 // Custom Overrides
 @import "overrides";

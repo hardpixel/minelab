@@ -13,10 +13,6 @@ $logo-width: 40; // px
 $logo-side-padding:  6; // px
 $header-logo-spacer: 20; //px
 
-$logo-block-width: ($logo-width + 2 * $logo-side-padding);
-$logo-block-width-unit: $logo-block-width * 1px;
-$header-left-padding-unit: ($logo-block-width + $header-logo-spacer) * 1px;
-
 $blue: #446E9B;
 $dark-blue: #474D57;
 $light-blue: #66AFE9;
