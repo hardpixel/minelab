@@ -4986,7 +4986,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #wrapper::after {
     clear: both;
     content: "";
-    display: block; }
+    display: table; }
 
 #top-menu {
   display: block;
@@ -5000,7 +5000,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #top-menu::after {
     clear: both;
     content: "";
-    display: block; }
+    display: table; }
   #top-menu ul.menu-children {
     width: 26em;
     top: 99%;
@@ -5089,7 +5089,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #header::after {
     clear: both;
     content: "";
-    display: block; }
+    display: table; }
   #header h1 {
     margin: 0;
     font-size: 1.5em;
@@ -5098,11 +5098,11 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     position: relative;
-    padding-left: 3.8em;
+    padding-left: 72px;
     z-index: 0; }
   #header .home {
     display: block;
-    width: 3em;
+    width: 6;
     height: 100%;
     border-right: 1px solid #395c82;
     border-left: 1px solid #395c82;
@@ -5167,7 +5167,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #main-menu::after {
     clear: both;
     content: "";
-    display: block; }
+    display: table; }
   #main-menu.tabs {
     position: relative; }
     #main-menu.tabs > ul {
@@ -5253,7 +5253,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #main::after {
     clear: both;
     content: "";
-    display: block; }
+    display: table; }
   #main.nosidebar #content {
     float: left;
     display: block;
@@ -5374,7 +5374,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #footer::after {
     clear: both;
     content: "";
-    display: block; }
+    display: table; }
 
 /* Admin index */
 #admin-index #admin-menu li {
@@ -6304,7 +6304,7 @@ p.other-formats {
   p.other-formats::after {
     clear: both;
     content: "";
-    display: block; }
+    display: table; }
 
 .other-formats span + span:before {
   content: "| "; }

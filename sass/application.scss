@@ -438,13 +438,13 @@ select {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     position: relative;
-    padding-left: 3.8em;
+    padding-left: $header-left-padding-unit;
     z-index: 0;
   }
 
   .home {
     display: block;
-    width: 3em;
+    width: $logo-side-padding;
     height: 100%;
     border-right: 1px solid darken($blue, 7%);
     border-left: 1px solid darken($blue, 7%);
